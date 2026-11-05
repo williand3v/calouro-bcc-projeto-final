@@ -5,7 +5,7 @@ Trabalho da disciplina **Habilidades Sociais para o Trabalho (ICP145)**.
 
 Site no ar: https://calouro-bcc-ufrj.vercel.app
 
-Código: https://github.com/williand3v/calouro-bcc-versao-final
+Código: https://github.com/williand3v/calouro-bcc-projeto-final
 
 Documentos em PDF (também na página Sobre): [Conteúdo do site](arquivos/conteudo-do-site.pdf) e [Como levantamos as informações](arquivos/como-levantamos-as-informacoes.pdf)
 
