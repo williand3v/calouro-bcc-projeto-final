@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O curso — Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero small wide">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html">Início</a><a href="guia.html">Guia</a
+            ><a href="curso.html" aria-current="page">O curso</a><a href="disciplinas.html">Disciplinas</a
+            ><a href="campus.html">Campus</a><a href="sobre.html">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>O curso</h1>
+        <p class="lead">
+          O BCC e o Instituto de Computação: como o curso é organizado, quem atende cada assunto,
+          estágio, TCC, e-mail do IC e datas.
+        </p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap wide">
+      <section class="conheca" id="conheca" aria-labelledby="ch">
+        <h2 id="ch">Conheça o curso</h2>
+        <p>
+          O Bacharelado em Ciência da Computação da UFRJ existe desde 1974. São 9 períodos, e o IC
+          oferece 50 vagas por semestre pelo SISU. A base é forte em programação, matemática e
+          sistemas, e nos últimos períodos você monta o seu caminho com as optativas.
+        </p>
+        <h3>Caminhos que o curso abre</h3>
+        <ul class="perfis">
+          <li>
+            <a href="#perfil-software"
+              ><b>Engenharia de Software</b><span>Criar, manter e operar software</span></a
+            >
+          </li>
+          <li>
+            <a href="#perfil-ciencia-dados"
+              ><b>Ciência de Dados</b><span>Analisar dados para apoiar decisões</span></a
+            >
+          </li>
+          <li>
+            <a href="#perfil-eng-dados"
+              ><b>Engenharia de Dados</b><span>Guardar e organizar dados e informação</span></a
+            >
+          </li>
+          <li>
+            <a href="#perfil-computacao-cientifica"
+              ><b>Computação Científica</b
+              ><span>Resolver problemas da ciência e da engenharia</span></a
+            >
+          </li>
+          <li>
+            <a href="#perfil-sistemas"
+              ><b>Sistemas e Comunicação</b
+              ><span>Sistemas, redes e dispositivos que precisam de desempenho</span></a
+            >
+          </li>
+          <li>
+            <a href="#perfil-teoria"
+              ><b>Teoria da Computação</b
+              ><span>Algoritmos, lógica, criptografia e computação quântica</span></a
+            >
+          </li>
+        </ul>
+        <p class="acoes">
+          <a class="btn" href="#curso-bcc">Ver o curso por dentro</a>
+          <a class="btn" href="disciplinas.html">Ver as disciplinas</a>
+        </p>
+      </section>
+
+      <div class="doc">
+        <nav class="toc" aria-label="Nesta página">
+          <details id="tocd" open>
+            <summary>Nesta página</summary>
+            <ul>
+              <li><a href="#curso-bcc">O curso de BCC</a></li>
+              <li><a href="#curso-estrutura">Como o curso é organizado</a></li>
+              <li><a href="#curso-perfis">Os seis perfis do curso</a></li>
+              <li><a href="#curso-flexivel">Optativas e livre escolha</a></li>
+              <li><a href="#curso-ementas">Onde ver a ementa de cada disciplina</a></li>
+              <li><a href="#curso-pesquisa">Pesquisa e iniciação científica</a></li>
+              <li><a href="#curso-aulas">Onde são as aulas e os laboratórios</a></li>
+              <li><a href="#quem-e-quem">Quem é quem no curso</a></li>
+              <li><a href="#complementares">Atividades complementares (90 h)</a></li>
+              <li><a href="#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a></li>
+              <li><a href="#curso-formatura">Perto de se formar</a></li>
+              <li><a href="#cainfo">Centro Acadêmico (CAInfo)</a></li>
+              <li><a href="#contas">E-mail do IC e laboratórios</a></li>
+              <li><a href="#calendario-ic">Datas do período no IC</a></li>
+            </ul>
+          </details>
+        </nav>
+        <div>
+          <label for="busca" class="legend">Buscar no curso</label>
+          <input
+            id="busca"
+            class="search"
+            type="search"
+            placeholder="Ex.: estágio, TCC, optativas, e-mail"
+            autocomplete="off"
+          />
+          <p class="empty" id="vazio" role="status">Nada encontrado. Tente outra palavra.</p>
+          <section class="topic" id="curso-bcc">
+            <h2>O curso de BCC</h2>
+            <p>
+              O Bacharelado em Ciência da Computação da UFRJ começou em 1974 e foi um dos primeiros
+              cursos de computação do Brasil. Desde dezembro de 2020 ele é responsabilidade do
+              <b>Instituto de Computação (IC)</b>, que foi criado nessa data.
+            </p>
+            <p>
+              O objetivo é uma formação <b>generalista e com base teórica forte</b>: você aprende os
+              fundamentos da computação e também como eles viram prática, para poder trabalhar no
+              mercado ou seguir para uma especialização. Ética e impacto social fazem parte da
+              formação, não são extras.
+            </p>
+            <h3>Como o IC espera que você saia do curso</h3>
+            <ul>
+              <li>
+                Crítico e reflexivo sobre as questões técnicas, éticas, sociais e legais do seu
+                tempo.
+              </li>
+              <li>Atento ao impacto da computação na sociedade e no meio ambiente.</li>
+              <li>
+                Capaz de trabalhar em equipe e de juntar a computação com outras áreas para resolver
+                problemas complexos.
+              </li>
+              <li>Disposto a continuar aprendendo, pesquisar e inovar.</li>
+            </ul>
+            <p>
+              <a class="btn" href="disciplinas.html">Ver a grade e os pré-requisitos</a>
+              <a
+                class="btn"
+                href="https://ic.ufrj.br/info/sobre-o-bcc/"
+                target="_blank"
+                rel="noopener"
+                >Sobre o curso (IC)</a
+              >
+              <a
+                class="btn"
+                href="https://docs.google.com/document/d/1ulitMwYhXa06XUjx2Ft_zG-WS89A5QDhkzDs0XhjuRc/edit?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                >Manual do Aluno BCC (Google Docs)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="curso-estrutura">
+            <h2>Como o curso é organizado</h2>
+            <p>
+              A grade tem <b>9 períodos</b> e soma <b>183 créditos</b>. O currículo em vigor é o
+              <b>2022/2</b> (para saber o seu, olhe o campo “Versão Curricular” no seu BOA). Os
+              primeiros períodos são de base: programação, matemática e sistemas. Os últimos têm
+              mais escolha: do 7º ao 9º período, 44 créditos são de optativas e de livre escolha.
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Grade do BCC por período (currículo 2022/2)
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Período</th>
+                    <th scope="col">Créditos</th>
+                    <th scope="col">Disciplinas obrigatórias</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1º</th>
+                    <td>26</td>
+                    <td>
+                      Programação de Computadores I, Processos de Software, Fundamentos de Sistemas
+                      de Computação, Números Inteiros e Criptografia, Projeto de Carreira,
+                      Introdução ao Pensamento Dedutivo
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2º</th>
+                    <td>20</td>
+                    <td>
+                      Programação de Computadores II, Organização de Dados I, Projeto Prático,
+                      Matemática Discreta, Habilidades Sociais para o Trabalho, Cálculo
+                      Infinitesimal I
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3º</th>
+                    <td>23</td>
+                    <td>
+                      Álgebra Linear Algorítmica, Estrutura dos Dados, Introdução à Modelagem de
+                      Sistemas, Introdução à Computação Numérica, Programação Orientada a Objeto,
+                      Cálculo Integral e Diferencial II
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4º</th>
+                    <td>20</td>
+                    <td>
+                      Arquitetura de Computadores e Sistemas Operacionais, Computação Científica e
+                      Análise de Dados, Tecnologia e Sociedade, Banco de Dados I, Estatística e
+                      Probabilidade
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5º</th>
+                    <td>20</td>
+                    <td>
+                      Linguagens Formais, Modelagem e Avaliação de Desempenho, Modelagem Matemática
+                      e Computacional, Computadores e Programação, Algoritmos e Grafos
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6º</th>
+                    <td>20</td>
+                    <td>
+                      Programação Concorrente, Redes de Computadores I, Introdução ao Aprendizado de
+                      Máquina, Otimização, Lógica e Computabilidade
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7º</th>
+                    <td>20</td>
+                    <td>
+                      Metodologia da Pesquisa, Segurança da Informação, mais 8 créditos de optativas
+                      e 4 de optativa do grupo Humanidades
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8º</th>
+                    <td>18</td>
+                    <td>
+                      Trabalho de Conclusão de Curso (2 créditos), mais 8 créditos de livre escolha
+                      e 8 de optativas
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9º</th>
+                    <td>16</td>
+                    <td>16 créditos de optativas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Além das disciplinas, o curso pede <b>90 horas de atividades complementares</b> (veja
+              <a href="#complementares">a seção</a>) e <b>320 horas de atividades de extensão</b>
+              (a disciplina ICPZ55, que não vale créditos mas precisa ser cumprida). Cada disciplina
+              tem pré-requisitos; o mapa clicável está na aba
+              <a href="disciplinas.html">Disciplinas</a>.
+            </p>
+          </section>
+          <section class="topic" id="curso-perfis">
+            <h2>Caminhos que o curso abre: os seis perfis</h2>
+            <p>
+              O curso é generalista, mas o projeto pedagógico descreve seis perfis profissionais que
+              você pode seguir. Eles não são habilitações separadas: são um fio condutor para você
+              escolher as optativas. Em todos eles, a base (programação, matemática, sistemas) é a
+              mesma, e os perfis se misturam. Banco de Dados I, por exemplo, serve tanto para Ciência
+              de Dados quanto para Engenharia de Dados.
+            </p>
+            <h3>Como decidir sem pressa</h3>
+            <ul>
+              <li>
+                <b>Você não precisa escolher agora.</b> Do 1º ao 6º período quase tudo é obrigatório
+                e passa por todos os perfis. A escolha pesa a partir do 7º período, quando 44
+                créditos da grade são de optativas e de livre escolha.
+              </li>
+              <li>
+                <b>Teste na prática:</b> as Oficinas Tecnológicas são disciplinas curtas, de 2
+                créditos, com foco prático, e servem para experimentar um tema sem grande
+                compromisso.
+              </li>
+              <li>
+                <b>Comece a pensar cedo:</b> Projeto de Carreira, no 1º período, é um bom lugar para
+                isso. Depois, converse com professores, veteranos e a coordenação.
+              </li>
+            </ul>
+            <h3 id="perfil-software">Engenharia de Software</h3>
+            <p>Desenvolver, manter e operar software. No começo da carreira, o trabalho costuma ser programar e testar; com a experiência, vem o gerenciamento de projetos de vários tamanhos. É um trabalho sistemático, disciplinado e que mede o que faz.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Processos de Software (1º), Projeto Prático (2º), Introdução à Modelagem de Sistemas (3º), Programação Orientada a Objeto (3º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Engenharia de Software, Análise e Projeto de Sistemas, Gestão de Projetos, Interação Humano-Computador, Desenvolvimento Web I e II, Oficinas de Desenvolvimento de Software I e II, Projeto de Teste de Software, Tópicos Especiais em Engenharia de Software I e II.</li>
+            </ul>
+            <h3 id="perfil-ciencia-dados">Ciência de Dados</h3>
+            <p>Um perfil mais novo e que mistura várias áreas. Quem trabalha nele lida com a análise de dados: supervisiona, planeja e pede a coleta, a organização, o armazenamento, a integração, o acesso e a análise dos dados, para apoiar decisões importantes. Também dá para focar em analisar e visualizar dados de natureza diferente.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Banco de Dados I (4º), Computação Científica e Análise de Dados (4º), Estatística e Probabilidade (4º), Introdução ao Aprendizado de Máquina (6º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Inteligência Artificial, Mineração de Dados, Recuperação de Informação, Web Semântica, Sistemas Colaborativos e Computação Social, Introdução ao Suporte à Decisão, Análise de Risco, Tópicos Especiais em Ciência de Dados I e II.</li>
+            </ul>
+            <h3 id="perfil-eng-dados">Engenharia de Dados</h3>
+            <p>Cuidar dos dados e da informação das organizações e da sociedade durante todo o ciclo de vida do dado, inclusive para que ele seja preservado e possa ser usado depois. Quem atua aqui escolhe os sistemas e as tecnologias das bases de dados, define os modelos (conceitual, lógico e físico) e monta as estruturas de armazenamento e acesso, para que outras pessoas consigam explorar e analisar os dados.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Organização de Dados I (2º), Estrutura dos Dados (3º), Banco de Dados I (4º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Banco de Dados II, Tecnologias para Grandes Volumes de Dados, Data Warehousing e Inteligência de Negócios, Governança e Gestão de Dados, Gestão do Conhecimento, Introdução à Gestão Estratégica de TI, Tópicos Especiais em Engenharia de Dados I e II.</li>
+            </ul>
+            <h3 id="perfil-computacao-cientifica">Computação Científica</h3>
+            <p>Um perfil que existe há várias décadas e que se mistura com outras áreas. Usa modelos matemáticos e métodos computacionais para resolver problemas concretos da ciência e da engenharia, com o computador como ferramenta de trabalho. A ideia é ir além de usar métodos prontos: é criar novas ferramentas, técnicas e teorias para esses problemas.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Cálculo Infinitesimal I (2º), Álgebra Linear Algorítmica (3º), Introdução à Computação Numérica (3º), Cálculo Integral e Diferencial II (3º), Computação Científica e Análise de Dados (4º), Modelagem Matemática e Computacional (5º), Otimização (6º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Séries e Transformadas Computacionais, Computação Científica com Equações Diferenciais Ordinárias e Parciais, Introdução ao Método dos Elementos Finitos, Otimização Linear e Não Linear, Álgebra Linear Aplicada, Métodos Numéricos I, Tópicos Especiais em Computação Científica I e II.</li>
+            </ul>
+            <h3 id="perfil-sistemas">Sistemas Computacionais e Comunicação</h3>
+            <p>Ligado à parte de tecnologia da informação e da comunicação. Quem atua aqui projeta, desenvolve, configura, monitora e gerencia sistemas que precisam de bom desempenho e boa experiência para o usuário em situações como: dados em grande volume, comunicação intensa e de vários tipos, interação com o mundo físico e uso de dispositivos embarcados e móveis.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Fundamentos de Sistemas de Computação (1º), Arquitetura de Computadores e Sistemas Operacionais (4º), Computadores e Programação (5º), Modelagem e Avaliação de Desempenho (5º), Programação Concorrente (6º), Redes de Computadores I (6º), Segurança da Informação (7º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Computação em Nuvem, Redes de Computadores II, Sistemas Distribuídos, Programação Paralela e Distribuída, Internet das Coisas, Tópicos Especiais em Sistemas Computacionais I e II, Tópicos Especiais em Arquitetura de Computadores.</li>
+            </ul>
+            <h3 id="perfil-teoria">Teoria da Computação</h3>
+            <p>Um dos perfis mais antigos da Ciência da Computação. Ele nasceu na matemática, antes mesmo de existirem computadores, da necessidade de aplicar métodos matemáticos e algoritmos rigorosos a problemas de computação. Quem segue esse caminho desenvolve e analisa algoritmos em áreas como criptografia, combinatória, métodos formais, lógica, computação paralela e distribuída, computação algébrica e computação quântica.</p>
+            <ul>
+              <li><b>Já na base obrigatória:</b> Números Inteiros e Criptografia (1º), Matemática Discreta (2º), Linguagens Formais (5º), Algoritmos e Grafos (5º), Lógica e Computabilidade (6º).</li>
+              <li><b>Optativas para seguir esse caminho:</b> Teoria de Grafos, Compiladores, Criptografia, Computação Quântica, Computação Algébrica, Algoritmos de Aproximação, Algoritmos Paralelos, Organização de Dados II, Tópicos Especiais em Teoria da Computação I e II, Tópicos Especiais em Programação.</li>
+            </ul>
+            <p>
+              A lista completa de optativas, com os pré-requisitos de cada uma, está na página
+              <a href="disciplinas.html">Disciplinas</a>. Confira no SIGA o que cada período oferece.
+              Fonte: projeto pedagógico do curso (2022).
+            </p>
+          </section>
+          <section class="topic" id="curso-flexivel">
+            <h2>Montando a sua grade: optativas e livre escolha</h2>
+            <ul>
+              <li>
+                <b>Optativas de computação:</b> as dos seis perfis acima.
+              </li>
+              <li>
+                <b>Oficinas Tecnológicas:</b> disciplinas práticas de 2 créditos e 30 horas, que
+                podem ser dadas nas férias, em 2 a 4 semanas. Os temas incluem jogos, aplicativos
+                para celular, segurança da informação e programação para maratonas.
+              </li>
+              <li>
+                <b>Disciplinas transversais:</b> Ética em Computação, Empreendedorismo e Inovação e
+                Tópicos Especiais em Informática na Sociedade.
+              </li>
+              <li>
+                <b>De outras unidades:</b> Cálculo Integral e Diferencial III e IV, Física I a IV,
+                Economia e Libras. Há também o grupo Humanidades (Ética I a IV e direitos humanos),
+                do qual você precisa cumprir 4 créditos.
+              </li>
+              <li>
+                <b>Livre escolha:</b> até duas disciplinas de qualquer curso da UFRJ.
+              </li>
+              <li>
+                <b>Fora da sala de aula:</b> projetos de extensão, projetos de iniciação científica,
+                palestras e a monitoria (Monitoria I e II valem 2 créditos cada).
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="curso-ementas">
+            <h2>Onde ver a ementa de cada disciplina</h2>
+            <p>
+              A ementa diz o que será ensinado em cada disciplina. Para ler, siga estes passos:
+            </p>
+            <ol>
+              <li>
+                Abra o
+                <a
+                  href="https://siga.ufrj.br/sira/repositorio-curriculo/ListaCursos.html"
+                  target="_blank"
+                  rel="noopener"
+                  >repositório de currículos do SIGA</a
+                >.
+              </li>
+              <li>Procure “Ciência da Computação” e abra a versão curricular <b>2022/2</b>.</li>
+              <li>Clique no <b>código</b> da disciplina (por exemplo, ICP131) para ver a ementa.</li>
+            </ol>
+            <p>
+              O SIGA também tem o <b>ementário</b>, um documento com informações das disciplinas.
+              Veja <a href="guia.html#boletim">Boletim, histórico, BOA e ementário</a>.
+            </p>
+          </section>
+          <section class="topic" id="curso-pesquisa">
+            <h2>Pesquisa, iniciação científica e pós-graduação</h2>
+            <ul>
+              <li>
+                Muitos professores do BCC também dão aula na pós-graduação do IC (o PPGI), e alguns
+                projetos de pesquisa envolvem alunos da graduação.
+              </li>
+              <li>
+                <b>PIBIC e PIBIT</b> são os programas de iniciação científica e tecnológica. Dá para
+                participar com ou sem bolsa.
+              </li>
+              <li>
+                <b>SIAC</b> (Semana de Integração Acadêmica da UFRJ) acontece todo ano. Você pode
+                apresentar um trabalho ou só assistir, e as duas coisas contam como atividade
+                complementar.
+              </li>
+              <li>
+                Três disciplinas do curso preparam para pesquisar: Tecnologia e Sociedade,
+                Metodologia da Pesquisa e o TCC.
+              </li>
+            </ul>
+            <p>
+              A página de Iniciação Científica no site do IC ainda está em construção. Para saber de
+              vagas, pergunte aos professores e à coordenação.
+            </p>
+          </section>
+          <section class="topic" id="curso-aulas">
+            <h2>Onde são as aulas e os laboratórios</h2>
+            <ul>
+              <li>
+                <b>Aulas:</b> a maioria acontece nas salas do CCMN, no bloco F (F2 e F3), com
+                projetor em todas. O IC fica no bloco E, com entrada pelo prédio do NCE: lá estão os
+                gabinetes dos professores, a secretaria e algumas salas.
+              </li>
+              <li>
+                <b>Laboratórios de computação:</b> LAB1, LAB3, LEP1 e LEP2. Locais, horários e
+                regras estão em <a href="#contas">E-mail do IC e laboratórios</a>.
+              </li>
+              <li>
+                <b>Laboratório de hardware (LSD):</b> no bloco F1, com bancadas, osciloscópios,
+                geradores de sinal e kits para experimentos com circuitos digitais.
+              </li>
+              <li>
+                <b>Biblioteca do NCE:</b> especializada em Informática, aberta a alunos e professores
+                do curso para consulta e empréstimo.
+              </li>
+            </ul>
+            <p>
+              Dados do projeto pedagógico de 2022; salas e equipamentos podem mudar. Para chegar ao
+              CCMN, veja a página <a href="campus.html">Campus</a>.
+            </p>
+          </section>
+          <section class="topic" id="quem-e-quem">
+            <h2>Quem é quem no curso</h2>
+            <p>
+              Cada assunto tem uma comissão ou secretaria. Escrever para o lugar certo é mais
+              rápido. Ao pedir algo por e-mail, informe seu nome completo e seu DRE.
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Quem atende cada assunto no IC
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Quem</th>
+                    <th scope="col">Para que serve</th>
+                    <th scope="col">E-mail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Coordenação do BCC</th>
+                    <td>
+                      Dúvidas sobre o curso e pedidos que passam pela coordenação. Em outubro de
+                      2026: Vinícius Gusmão Pereira de Sá (coordenador) e Marcello Goulart Teixeira
+                      (vice).
+                    </td>
+                    <td><a href="mailto:coord_grad@ic.ufrj.br">coord_grad@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Secretaria Acadêmica de Graduação</th>
+                    <td>Abrir processos, requerimentos e formulários.</td>
+                    <td><a href="mailto:secgrad@ic.ufrj.br">secgrad@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">COAA</th>
+                    <td>
+                      Comissão de Orientação e Acompanhamento Acadêmico. Referenda pedidos de
+                      trancamento de disciplina fora do prazo.
+                    </td>
+                    <td><a href="mailto:coaa@ic.ufrj.br">coaa@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">COAC</th>
+                    <td>Conta as horas de atividades complementares.</td>
+                    <td><a href="mailto:coac@ic.ufrj.br">coac@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comissão de Estágio</th>
+                    <td>Libera e renova estágios.</td>
+                    <td><a href="mailto:estagio@ic.ufrj.br">estagio@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comissão de Monitoria</th>
+                    <td>Ofertas e dúvidas sobre monitoria.</td>
+                    <td><a href="mailto:monitoria@ic.ufrj.br">monitoria@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comissão de Internacionalização</th>
+                    <td>Intercâmbio internacional.</td>
+                    <td><a href="mailto:intercambio@ic.ufrj.br">intercambio@ic.ufrj.br</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comissão de Equivalência (COMED)</th>
+                    <td>Equivalência de disciplinas.</td>
+                    <td>
+                      <a href="mailto:comissaoequivalencia@ic.ufrj.br"
+                        >comissaoequivalencia@ic.ufrj.br</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Direção do IC</th>
+                    <td>Assuntos gerais do instituto.</td>
+                    <td><a href="mailto:direcao@ic.ufrj.br">direcao@ic.ufrj.br</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              O IC fica no Bloco E do CCMN. Fonte e lista completa:
+              <a
+                href="https://ic.ufrj.br/info/estrutura-administrativa/"
+                target="_blank"
+                rel="noopener"
+                >Estrutura administrativa do IC</a
+              >
+              (consultada em 26/10/2026; os nomes mudam com o tempo).
+            </p>
+          </section>
+          <section class="topic" id="complementares">
+            <h2>Atividades complementares (90 h)</h2>
+            <p>
+              Para se formar, você precisa de pelo menos <b>90 horas</b> de atividades
+              complementares (a disciplina ICPX06). Elas valem desde o primeiro semestre, inclusive
+              nas férias, e não é preciso deixar tudo para o fim: ir juntando certificados ao longo
+              do curso evita correria.
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Exemplos de atividades e horas
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Atividade</th>
+                    <th scope="col">Horas concedidas</th>
+                    <th scope="col">Máximo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Estágio (mínimo de 3 meses)</th>
+                    <td>9 h por mês</td>
+                    <td>54 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Iniciação Científica, com apresentação no SIAC ou JIC</th>
+                    <td>9 h por mês</td>
+                    <td>54 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Participar de competição acadêmica (maratona, olimpíada)</th>
+                    <td>9 h por etapa</td>
+                    <td>27 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Monitoria de disciplina do IC ou de laboratório</th>
+                    <td>15 h por semestre</td>
+                    <td>30 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Apresentar trabalho em evento científico</th>
+                    <td>5 h por apresentação</td>
+                    <td>30 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ajudar a organizar evento (ex.: Semana da Computação)</th>
+                    <td>5 h por evento</td>
+                    <td>30 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Assistir palestra, seminário ou congresso</th>
+                    <td>3 h por evento</td>
+                    <td>18 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Membro de diretoria estudantil (mínimo de 3 meses)</th>
+                    <td>3 h por mês</td>
+                    <td>18 h</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Curso de idiomas</th>
+                    <td>5 h por semestre</td>
+                    <td>20 h</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Nenhum tipo de atividade conta mais de 54 h. Cada atividade precisa de comprovante
+              (certificado, declaração ou contrato). Quando você achar que já tem as 90 h, mande
+              e-mail para <a href="mailto:coac@ic.ufrj.br">coac@ic.ufrj.br</a> com nome completo,
+              DRE, o formulário preenchido e assinado e os comprovantes em PDF ou JPG. A tabela
+              completa, com todas as atividades e documentos aceitos, está na página oficial.
+            </p>
+            <p>
+              <a
+                class="btn"
+                href="https://ic.ufrj.br/info/atividades-complementares-bcc/"
+                target="_blank"
+                rel="noopener"
+                >Normas completas (IC)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="estagio-tcc">
+            <h2>Estágio, monitoria, TCC e intercâmbio</h2>
+            <ul>
+              <li>
+                <b>Estágio:</b> é opcional. A Comissão de Estágio autoriza quem tem todos os
+                créditos até o 4º período, CRA de 6,0 ou mais, e não passou do prazo máximo do
+                curso. Quem entrou a partir de 2025.1 também precisa de 120 h de extensão. A empresa
+                (ou o agente de integração) precisa ter convênio com a UFRJ, e a jornada vai até 20
+                h por semana. Mande a documentação até 15 dias antes do início; a renovação é a cada
+                6 meses, com pedido 30 dias antes do fim do termo. Pedido fora do prazo ou
+                incompleto é indeferido automaticamente. A comissão atende a cada 15 dias.
+                <a
+                  href="https://ic.ufrj.br/info/normas-estagio-bcc/"
+                  target="_blank"
+                  rel="noopener"
+                  >Normas de estágio</a
+                >
+              </li>
+              <li>
+                <b>Monitoria:</b> as vagas são divulgadas no
+                <a href="https://www.dcc.ufrj.br/~monitoriadcc/" target="_blank" rel="noopener"
+                  >site de monitoria do DCC</a
+                >. Monitoria conta horas de atividade complementar.
+              </li>
+              <li>
+                <b>TCC:</b> fica no 8º período (ICPK01) e exige ter cursado Metodologia da Pesquisa.
+                Pode ser individual ou em grupo de até 3 alunos, com 1 orientador que seja docente
+                permanente do IC. Você escreve uma monografia e apresenta em sessão pública de cerca
+                de 30 minutos para uma banca. Para passar, a nota mínima é 5,0.
+                <a href="https://ic.ufrj.br/info/tcc-bcc/" target="_blank" rel="noopener"
+                  >Regras do TCC</a
+                >
+              </li>
+              <li>
+                <b>Intercâmbio:</b> o IC só autoriza mobilidade em convênios que já existem. Para
+                editais da SGRI, fale com
+                <a href="mailto:intercambio@ic.ufrj.br">intercambio@ic.ufrj.br</a> com 3 semanas de
+                antecedência (6 meses se for dupla diplomação).
+                <a
+                  href="https://ic.ufrj.br/info/intercambio-internacional/"
+                  target="_blank"
+                  rel="noopener"
+                  >Regras do intercâmbio</a
+                >
+              </li>
+              <li>
+                <b>Formulários de requerimento</b> (trancamento de matrícula, dispensa de
+                disciplina, alteração de grau e outros):
+                <a
+                  href="https://ic.ufrj.br/info/formularios-graduacao/"
+                  target="_blank"
+                  rel="noopener"
+                  >lista no site do IC</a
+                >. O pedido vai por e-mail para a Secretaria de Graduação, com a documentação
+                completa em PDF.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="curso-formatura">
+            <h2>Perto de se formar: TCC, colação de grau e diploma</h2>
+            <p>
+              O TCC fica no 8º período (veja as regras em
+              <a href="#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>). Depois que os
+              orientadores aprovam o texto final da monografia:
+            </p>
+            <ol>
+              <li>
+                Entregue o formulário assinado pelos autores na <b>biblioteca do NCE</b>. Ela dá um
+                recibo de entrega do trabalho.
+              </li>
+              <li>
+                Pegue o <b>Nada Consta</b> em uma das bibliotecas da UFRJ.
+              </li>
+              <li>
+                Envie, pelo formulário do IC, o recibo, o Nada Consta e o pedido de abertura de
+                processo para a colação de grau.
+              </li>
+            </ol>
+            <p>
+              Os prazos mudam a cada semestre: veja o calendário de colação de grau no site do IC.
+              Quem pediu o diploma de 2024.2 em diante recebe o <b>diploma digital</b>: entre em
+              <a href="https://diplomadigital.ufrj.br/" target="_blank" rel="noopener"
+                >diplomadigital.ufrj.br</a
+              >
+              (sem “www”), clique em “Recuperar Senha” e use o e-mail cadastrado no SIGA. O arquivo
+              XML é o diploma de verdade e pode ser conferido no portal do MEC. O PDF serve só para
+              imprimir e não tem valor legal.
+            </p>
+            <p>
+              <a
+                class="btn"
+                href="https://ic.ufrj.br/info/colacao-de-grau-bcc/"
+                target="_blank"
+                rel="noopener"
+                >Colação de grau (IC)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="cainfo">
+            <h2>Centro Acadêmico (CAInfo)</h2>
+            <p>
+              O CAInfo, fundado em 1997, é a entidade estudantil oficial do curso. Todo aluno com
+              matrícula ativa no BCC já é membro, e a diretoria é formada por alunos voluntários.
+              Ele representa os alunos junto ao instituto e à universidade e cuida da sala do centro
+              acadêmico.
+            </p>
+            <ul>
+              <li>
+                <b>Sala:</b> CCMN, Bloco F, 1º andar (F1), das 10h às 15h. O horário pode mudar;
+                os avisos saem nas redes.
+              </li>
+              <li>
+                <b>Redes:</b>
+                <a href="https://www.instagram.com/cainfoufrj/" target="_blank" rel="noopener"
+                  >Instagram @cainfoufrj</a
+                >
+                ·
+                <a href="https://t.me/cainfoufrj" target="_blank" rel="noopener"
+                  >canal no Telegram</a
+                >
+              </li>
+              <li>
+                <b>Grupos de disciplinas e grupo geral:</b> peça o convite por e-mail:
+                <a href="mailto:cainfo@ic.ufrj.br">cainfo@ic.ufrj.br</a>
+              </li>
+            </ul>
+            <p>
+              <a class="btn" href="https://ic.ufrj.br/info/cainfo/" target="_blank" rel="noopener"
+                >Página do CAInfo (IC)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="contas">
+            <h2>E-mail do IC e laboratórios</h2>
+            <h3>E-mail do IC (conta Google)</h3>
+            <p>
+              Quem se cadastra no sistema do Instituto ganha uma conta de e-mail do Google, no
+              formato <b>seuusuario@ic.ufrj.br</b>, com 50 GB de espaço. Para se cadastrar, você
+              precisa:
+            </p>
+            <ul>
+              <li>
+                já estar no SIGA, com acesso ao documento “Regularmente Matriculado” (isso só libera
+                depois de atualizar seus dados pessoais e enviar a foto);
+              </li>
+              <li>ser aluno de Ciência da Computação e digitar o nome igual ao do SIGA;</li>
+              <li>informar um e-mail externo que você consiga acessar e um telefone brasileiro;</li>
+              <li>criar uma senha de 8 a 25 caracteres, com maiúscula, minúscula e número.</li>
+            </ul>
+            <p>
+              A conta só funciona <b>um dia depois</b> do cadastro, porque a sincronização roda de
+              madrugada. Para entrar, use o Gmail e escolha conta <b>Google</b> (não “Outro”).
+            </p>
+            <ul>
+              <li>
+                <b>Esqueci o usuário:</b> preencha o cadastro de novo; ele mostra o usuário que já
+                foi criado.
+              </li>
+              <li>
+                <b>Esqueci a senha:</b> use “Esqueci minha senha”; o aviso de recuperação vai para
+                seu e-mail pessoal.
+              </li>
+              <li>
+                <b>Outros problemas:</b> a Supervisão do LCI, em
+                <a href="mailto:supervisao@ic.ufrj.br">supervisao@ic.ufrj.br</a> ou na sala E-2015
+                (bloco E do CCMN, porta do NCE).
+              </li>
+            </ul>
+            <p>
+              <a
+                class="btn"
+                href="https://ic.ufrj.br/info/cadastro/"
+                target="_blank"
+                rel="noopener"
+                >Cadastro de alunos novos (IC)</a
+              >
+            </p>
+            <h3>AVA @ NCE</h3>
+            <p>
+              O AVA tem uma aba só para ele neste guia:
+              <a href="guia.html#ava-acesso">veja como entrar e resolver problemas</a>.
+            </p>
+            <h3>Laboratórios do IC</h3>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Laboratórios do IC
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Lab</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Máquinas</th>
+                    <th scope="col">Quando está aberto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">LEP1 e LEP2</th>
+                    <td>F1</td>
+                    <td>40 em cada</td>
+                    <td>Somente durante as aulas</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">LAB1</th>
+                    <td>E-2009</td>
+                    <td>30</td>
+                    <td>Até as 17h, quando não tem aula</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">LAB3</th>
+                    <td>E1</td>
+                    <td>20</td>
+                    <td>Das 8h às 20h, quando não tem aula</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              No LAB1 e no LAB3, o usuário é a parte do seu e-mail do IC antes do @. Nos LEP1 e
+              LEP2, o usuário é “convidado”. Não coma nos laboratórios e não instale programas; se
+              precisar de algum software, fale com a Supervisão.
+              <a href="https://ic.ufrj.br/info/lci/" target="_blank" rel="noopener"
+                >Regras e horários (LCI)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="calendario-ic">
+            <h2>Datas do período no IC</h2>
+            <p>
+              Estas são as datas que o IC publica. Elas servem de referência, mas o próprio IC avisa
+              que podem ficar desatualizadas: confira sempre no calendário oficial da graduação
+              (CEG/CONSUNI) antes de planejar prazo.
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Datas do IC por período
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Atividade</th>
+                    <th scope="col">2026.2</th>
+                    <th scope="col">2026.1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Duração do período</th>
+                    <td>10/08/2026 a 19/12/2026</td>
+                    <td>09/03/2026 a 18/07/2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Inscrição em disciplinas (não calouros, no SIGA)</th>
+                    <td>24/07/2026 a 03/08/2026</td>
+                    <td>23/02/2026 a 02/03/2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Alteração de pedidos de inscrição</th>
+                    <td>10/08/2026 a 21/08/2026</td>
+                    <td>09/03/2026 a 23/03/2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Desistência e trancamento de disciplinas (no SIGA)</th>
+                    <td>31/08/2026 a 10/09/2026</td>
+                    <td>30/03/2026 a 07/04/2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lançamento de graus e frequências</th>
+                    <td>10/12/2026 a 04/01/2027</td>
+                    <td>09/07/2026 a 23/07/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Fonte:
+              <a
+                href="https://ic.ufrj.br/info/calendario-academico/"
+                target="_blank"
+                rel="noopener"
+                >Calendário acadêmico do IC</a
+              >
+              (consultado em 26/10/2026).
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 03/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="busca.js"></script>
+    <script>
+      // No celular, o índice começa fechado para não ocupar a tela.
+      if (matchMedia("(max-width:720px)").matches) document.getElementById("tocd").open = false;
+      // Depois de um redirecionamento (links antigos do Guia), o navegador pode não rolar até o tópico.
+      addEventListener("load", () => document.getElementById(location.hash.slice(1))?.scrollIntoView());
+      // Busca: esconde os tópicos que não têm o que foi digitado.
+      const busca = document.getElementById("busca"),
+        vazio = document.getElementById("vazio"),
+        tops = [...document.querySelectorAll(".topic")];
+      busca.addEventListener("input", () => {
+        const q = busca.value.trim();
+        let n = 0;
+        tops.forEach((t) => {
+          const ok = !q || contem(t.textContent, q);
+          t.hidden = !ok;
+          if (ok) n++;
+        });
+        vazio.style.display = n ? "none" : "block";
+      });
+    </script>
+      <script src="tabelas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Disciplinas — Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero small wide">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html">Início</a><a href="guia.html">Guia</a
+            ><a href="curso.html">O curso</a><a href="disciplinas.html" aria-current="page">Disciplinas</a
+            ><a href="campus.html">Campus</a><a href="sobre.html">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>Mapa de disciplinas</h1>
+        <p class="lead">
+          Todas as disciplinas do BCC, obrigatórias e optativas. Clique em uma para ver o que ela
+          exige e o que libera.
+        </p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap wide">
+      <div class="tools">
+        <input
+          id="q"
+          class="search"
+          type="search"
+          placeholder="Buscar disciplina (nome ou código)"
+          aria-label="Buscar disciplina"
+          autocomplete="off"
+        />
+        <span class="legend"
+          >Clique numa disciplina: <b style="background: #dce8f7; padding: 0 6px">azul</b> = precisa
+          antes · <b style="background: #ddf1e6; padding: 0 6px">verde</b> = libera</span
+        >
+      </div>
+      <p class="empty" id="vazio" role="status">Nenhuma disciplina encontrada. Tente outra palavra.</p>
+      <h2 class="vgrupo">Obrigatórias, por período (38 disciplinas)</h2>
+      <div class="grid-periods" id="grade"></div>
+      <details class="opt" id="opt-R">
+        <summary>Optativas de escolha restrita (29 disciplinas)</summary>
+        <div class="opt-grid" id="gR"></div>
+      </details>
+      <details class="opt" id="opt-C">
+        <summary>Optativas de escolha condicionada (83 disciplinas)</summary>
+        <div class="opt-grid" id="gC"></div>
+      </details>
+      <div class="detalhe" id="detalhe" role="status" aria-live="polite" hidden></div>
+      <section class="topic" style="margin-top: 24px">
+        <h2>Sobre estes dados</h2>
+        <p>
+          Todas as disciplinas vêm da
+          <a href="https://ic.ufrj.br/info/grade-curricular-bcc/" target="_blank" rel="noopener"
+            >página da grade curricular do IC</a
+          >, lida em outubro de 2026: 38 obrigatórias, 29 optativas de escolha restrita e 83 de
+          escolha condicionada. Os nomes aparecem abreviados, como no site do IC. Nos períodos, as
+          linhas sem código (“Atividades Acadêmicas Optativas”, “Livre Escolha”) são créditos que
+          você completa com as optativas.
+        </p>
+        <p>
+          No requisito, “A ou B” significa que as duas disciplinas valem (equivalentes). Estes
+          códigos aparecem como requisito, mas não estão na lista: ICP231, MAC118, MAC128, MAE121.
+        </p>
+        <p>
+          <b>Confira sempre no site oficial:</b> o currículo que vale para você depende do seu ano
+          de ingresso.
+        </p>
+        <p>
+          <a
+            class="btn"
+            href="https://ic.ufrj.br/info/grade-curricular-bcc/"
+            target="_blank"
+            rel="noopener"
+            >Grade curricular (site do IC)</a
+          >
+          <a
+            class="btn"
+            href="https://ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf"
+            target="_blank"
+            rel="noopener"
+            >Projeto Pedagógico (PDF)</a
+          >
+        </p>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 03/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="busca.js"></script>
+    <script>
+      // Lista das disciplinas, lida da página da grade curricular do IC.
+      // c = código, n = nome, cr = créditos, ch = carga horária,
+      // p = período (1 a 9) ou tipo de optativa (R = escolha restrita, C = escolha condicionada),
+      // r = requisitos ("A=B" quer dizer que A ou B servem).
+      const D = [
+        { c: "ICP131", n: "Programação de Computadores I", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICP132", n: "Processos de Software", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICP133", n: "Fund de Sistemas de Computação", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICP134", n: "Números Inteiros Criptografia", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICP135", n: "Projeto de Carreira", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICP136", n: "Introd Pensamento Dedutivo", cr: 4.0, ch: 60, p: 1, r: [] },
+        { c: "ICPX06", n: "Atividades Complementares Bcc", cr: 2.0, ch: 90, p: 1, r: [] },
+        { c: "ICPZ55", n: "Ativ Curricular Extensão - Bcc", cr: 0.0, ch: 320, p: 1, r: [] },
+        { c: "ICP141", n: "Programação de Computadores II", cr: 4.0, ch: 60, p: 2, r: ["ICP131"] },
+        { c: "ICP142", n: "Organização de Dados I", cr: 2.0, ch: 30, p: 2, r: [] },
+        {
+          c: "ICP143",
+          n: "Projeto Prático",
+          cr: 2.0,
+          ch: 30,
+          p: 2,
+          r: ["ICP131", "ICP132", "ICP133"],
+        },
+        { c: "ICP144", n: "Matemática Discreta", cr: 4.0, ch: 60, p: 2, r: ["ICP134"] },
+        { c: "ICP145", n: "Habilidades Sociais p Trabalho", cr: 2.0, ch: 30, p: 2, r: ["ICP135"] },
+        { c: "MAE111", n: "Cálculo Infinitesimal I", cr: 6.0, ch: 90, p: 2, r: [] },
+        {
+          c: "ICP115",
+          n: "Álgebra Linear Algorítmica",
+          cr: 5.0,
+          ch: 90,
+          p: 3,
+          r: ["ICP136", "ICP144"],
+        },
+        { c: "ICP116", n: "Estrutura dos Dados", cr: 4.0, ch: 60, p: 3, r: ["ICP141"] },
+        {
+          c: "ICP237",
+          n: "Introd à Modelagem de Sistemas",
+          cr: 4.0,
+          ch: 60,
+          p: 3,
+          r: ["ICP132", "ICP141"],
+        },
+        {
+          c: "ICP238",
+          n: "Introd à Computação Numérica",
+          cr: 2.0,
+          ch: 30,
+          p: 3,
+          r: ["ICP131", "ICP133", "MAE111"],
+        },
+        { c: "ICP239", n: "Programação Orientada a Objeto", cr: 4.0, ch: 60, p: 3, r: ["ICP141"] },
+        { c: "MAE992", n: "Cálculo Integ e Diferencial II", cr: 4.0, ch: 60, p: 3, r: ["MAE111"] },
+        {
+          c: "ICP246",
+          n: "Arquitet Comput e Sist Operac",
+          cr: 4.0,
+          ch: 60,
+          p: 4,
+          r: ["ICP133", "ICP141"],
+        },
+        {
+          c: "ICP248",
+          n: "Comput Científ e Análise Dados",
+          cr: 4.0,
+          ch: 60,
+          p: 4,
+          r: ["ICP115", "ICP238", "MAE992"],
+        },
+        { c: "ICP249", n: "Tecnologia e Sociedade", cr: 4.0, ch: 60, p: 4, r: ["ICP145"] },
+        { c: "ICP489", n: "Banco de Dados I", cr: 4.0, ch: 60, p: 4, r: ["ICP116"] },
+        { c: "MAD243", n: "Estatística e Probabilidade", cr: 4.0, ch: 60, p: 4, r: ["MAE121"] },
+        { c: "ICP123", n: "Linguagens Formais", cr: 4.0, ch: 60, p: 5, r: ["ICP141", "ICP144"] },
+        {
+          c: "ICP350",
+          n: "Modelagem e Aval de Desempenho",
+          cr: 4.0,
+          ch: 60,
+          p: 5,
+          r: ["ICP115", "MAD243"],
+        },
+        {
+          c: "ICP351",
+          n: "Model Matemát e Computacional",
+          cr: 4.0,
+          ch: 60,
+          p: 5,
+          r: ["ICP115", "MAE992"],
+        },
+        { c: "ICP353", n: "Computadores e Programação", cr: 4.0, ch: 60, p: 5, r: ["ICP246"] },
+        { c: "ICP368", n: "Algoritmos e Grafos", cr: 4.0, ch: 60, p: 5, r: ["ICP116", "ICP144"] },
+        {
+          c: "ICP361",
+          n: "Programação Concorrente",
+          cr: 4.0,
+          ch: 60,
+          p: 6,
+          r: ["ICP239", "ICP353"],
+        },
+        {
+          c: "ICP362",
+          n: "Redes de Computadores I",
+          cr: 4.0,
+          ch: 60,
+          p: 6,
+          r: ["ICP131", "ICP133", "MAD243"],
+        },
+        {
+          c: "ICP363",
+          n: "Introd Aprendizado de Máquina",
+          cr: 4.0,
+          ch: 60,
+          p: 6,
+          r: ["ICP248", "MAD243"],
+        },
+        { c: "ICP365", n: "Otimização", cr: 4.0, ch: 60, p: 6, r: ["ICP115", "ICP238"] },
+        { c: "ICP370", n: "Lógica e Computabilidade", cr: 4.0, ch: 60, p: 6, r: ["ICP123"] },
+        { c: "ICP472", n: "Metodologia da Pesquisa", cr: 4.0, ch: 60, p: 7, r: ["ICP249"] },
+        {
+          c: "ICP473",
+          n: "Segurança da Informação",
+          cr: 4.0,
+          ch: 60,
+          p: 7,
+          r: ["ICP353", "ICP362"],
+        },
+        { c: "", n: "Atividades Academicas Optativas", cr: 8.0, ch: 120, p: 7, r: [] },
+        {
+          c: "",
+          n: "Atividades Academicas Optativas (Grupo Humanidades)",
+          cr: 4.0,
+          ch: 60,
+          p: 7,
+          r: [],
+        },
+        { c: "ICPK01", n: "Trab Conclusão de Curso Bcc", cr: 2.0, ch: 90, p: 8, r: ["ICP472"] },
+        { c: "", n: "Atividades Academicas de Livre Escolha", cr: 8.0, ch: 120, p: 8, r: [] },
+        { c: "", n: "Atividades Academicas Optativas", cr: 8.0, ch: 120, p: 8, r: [] },
+        { c: "", n: "Atividades Academicas Optativas", cr: 16.0, ch: 240, p: 9, r: [] },
+        { c: "FCF108", n: "Ética I", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "FCF614", n: "Ética II", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "FCF615", n: "Ética III", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "FCF616", n: "Ética IV", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP101", n: "Teoria Direitos Fundamentais", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP110", n: "Fund Direitos Humanos", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP120", n: "Fund Polít Públicas Dir Hum", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP130", n: "Tóp Esp Polít Públ Dir Hum I", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP140", n: "Tóp Esp Polít Públ Dir Hum II", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP141", n: "Tóp Esp Polít Públ Dir Hum III", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP142", n: "Tóp Esp Polít Públ Dir Hum IV", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP143", n: "Tóp Esp Polít Públ Dir Hum V", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP144", n: "Tóp Esp Polít Públ Dir Hum VI", cr: 2.0, ch: 30, p: "R", r: [] },
+        { c: "NEP145", n: "Tóp Esp Polít Públ Dir Hum VII", cr: 2.0, ch: 30, p: "R", r: [] },
+        { c: "NEP146", n: "Dir Hum, Gênero e Sexualidades", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP147", n: "Dir Hum e Democracia", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP148", n: "Dir Hum, Pens Negro e Racismo", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP149", n: "Dir Hum e Meio Ambiente", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP150", n: "Dir Hum e Saúde", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP151", n: "Dir Hum e Cultura", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP152", n: "Dir Hum, Conflit e Territórios", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP153", n: "Dir Hum e Trabalho", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP154", n: "Dir Hum e Sistema de Justiça", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP155", n: "Dir Hum e Movimentos Sociais", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP156", n: "Dir Hum, Globalização e Tecnol", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP157", n: "Dir Hum, Violência e Democrac", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP158", n: "Dir Hum e Polít Internacional", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP159", n: "Dir Hum e Desigualdade Sociais", cr: 4.0, ch: 60, p: "R", r: [] },
+        { c: "NEP160", n: "Dir Hum na América Latina", cr: 4.0, ch: 60, p: "R", r: [] },
+        {
+          c: "FIM230",
+          n: "Física III - a",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["FIT112", "MAC128=MAE992"],
+        },
+        { c: "FIM240", n: "Física IV - a", cr: 4.0, ch: 60, p: "C", r: ["FIM230"] },
+        { c: "FIT112", n: "Física I - a", cr: 4.0, ch: 60, p: "C", r: [] },
+        {
+          c: "FIT122",
+          n: "Física II - a",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["FIT112", "MAC118=MAE111"],
+        },
+        { c: "ICP005", n: "Ética em Computação", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP006", n: "Internet das Coisas", cr: 4.0, ch: 60, p: "C", r: ["ICP246", "ICP362"] },
+        {
+          c: "ICP009",
+          n: "Sist Colaborat e Comput Social",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP237"],
+        },
+        { c: "ICP010", n: "Web Semântica", cr: 4.0, ch: 60, p: "C", r: ["ICP489"] },
+        {
+          c: "ICP011",
+          n: "Tóp Esp em Ciência de Dados I",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP363", "ICP489"],
+        },
+        {
+          c: "ICP012",
+          n: "Tóp Esp em Ciência de Dados II",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP363", "ICP489"],
+        },
+        {
+          c: "ICP013",
+          n: "Séries e Transformadas Comput",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP115", "MAE992"],
+        },
+        {
+          c: "ICP014",
+          n: "Comput Científ Equaç Dif Ordin",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP248", "ICP351"],
+        },
+        { c: "ICP015", n: "Comput Científ Equaç Dif Parc", cr: 4.0, ch: 60, p: "C", r: ["ICP014"] },
+        {
+          c: "ICP016",
+          n: "Introd Métod Elementos Finitos",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP248"],
+        },
+        { c: "ICP017", n: "Otimização Linear", cr: 4.0, ch: 60, p: "C", r: ["ICP365"] },
+        { c: "ICP018", n: "Otimização Não Linear", cr: 4.0, ch: 60, p: "C", r: ["ICP365"] },
+        { c: "ICP019", n: "Álgebra Linear Aplicada", cr: 4.0, ch: 60, p: "C", r: ["ICP248"] },
+        { c: "ICP020", n: "Engenharia de Software", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP021", n: "Tóp Esp em Engenharia Dados I", cr: 4.0, ch: 60, p: "C", r: ["ICP489"] },
+        {
+          c: "ICP022",
+          n: "Tóp Esp em Engenharia Dados II",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP489"],
+        },
+        { c: "ICP023", n: "Gestão de Projetos", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP024", n: "Análise e Projeto de Sistemas", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP025", n: "Computação em Nuvem", cr: 4.0, ch: 60, p: "C", r: ["ICP246", "ICP362"] },
+        { c: "ICP026", n: "Redes de Computadores II", cr: 4.0, ch: 60, p: "C", r: ["ICP362"] },
+        {
+          c: "ICP027",
+          n: "Criptografia",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP115", "ICP131", "ICP134"],
+        },
+        { c: "ICP028", n: "Tóp Esp em Arquitetura Comput", cr: 4.0, ch: 60, p: "C", r: ["ICP246"] },
+        { c: "ICP029", n: "Empreendedorismo e Inovação", cr: 4.0, ch: 60, p: "C", r: ["ICP145"] },
+        { c: "ICP030", n: "Governança e Gestão de Dados", cr: 4.0, ch: 60, p: "C", r: ["ICP489"] },
+        {
+          c: "ICP031",
+          n: "Tóp Esp em Comp Científica I",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP351", "ICP365"],
+        },
+        {
+          c: "ICP032",
+          n: "Tóp Esp em Comp Científica II",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP351", "ICP365"],
+        },
+        { c: "ICP034", n: "Análise de Redes Sociais", cr: 4.0, ch: 60, p: "C", r: [] },
+        {
+          c: "ICP035",
+          n: "Tóp Esp em Teoria da Comput I",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP116", "ICP144"],
+        },
+        {
+          c: "ICP036",
+          n: "Tóp Esp em Teoria da Comput II",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP116", "ICP144"],
+        },
+        { c: "ICP038", n: "Fundamentos Processo Negócio", cr: 4.0, ch: 60, p: "C", r: ["ICP132"] },
+        { c: "ICP041", n: "Oficina de Desenv Software I", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP042", n: "Oficina de Desenv Software II", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP051", n: "Tóp Esp em Eng de Software I", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP052", n: "Tóp Esp em Eng de Software II", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICP061", n: "Desenvolvimento Web I", cr: 4.0, ch: 60, p: "C", r: ["ICP239"] },
+        { c: "ICP062", n: "Desenvolvimento Web II", cr: 4.0, ch: 60, p: "C", r: ["ICP239"] },
+        { c: "ICP071", n: "Tóp Esp em Sist Computacion I", cr: 4.0, ch: 60, p: "C", r: ["ICP361"] },
+        {
+          c: "ICP072",
+          n: "Tóp Esp em Sist Computacion II",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP362"],
+        },
+        {
+          c: "ICP081",
+          n: "Oficina de Teconologia I",
+          cr: 2.0,
+          ch: 30,
+          p: "C",
+          r: ["ICP141", "ICP239"],
+        },
+        {
+          c: "ICP082",
+          n: "Oficina de Teconologia II",
+          cr: 2.0,
+          ch: 30,
+          p: "C",
+          r: ["ICP141", "ICP239"],
+        },
+        {
+          c: "ICP083",
+          n: "Oficina de Teconologia III",
+          cr: 2.0,
+          ch: 30,
+          p: "C",
+          r: ["ICP141", "ICP239"],
+        },
+        {
+          c: "ICP084",
+          n: "Oficina de Teconologia IV",
+          cr: 2.0,
+          ch: 30,
+          p: "C",
+          r: ["ICP141", "ICP239"],
+        },
+        {
+          c: "ICP085",
+          n: "Oficina de Teconologia V",
+          cr: 2.0,
+          ch: 30,
+          p: "C",
+          r: ["ICP141", "ICP239"],
+        },
+        { c: "ICP091", n: "Tóp Esp em Ciência Comput I", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP092", n: "Tóp Esp em Ciência Comput II", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP093", n: "Tóp Esp em Ciência Comput III", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP094", n: "Tóp Esp em Ciência Comput IV", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP095", n: "Tóp Esp em Ciência Comput V", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "ICP096", n: "Lab Análise de Redes Sociais", cr: 4.0, ch: 60, p: "C", r: ["ICP034"] },
+        { c: "ICP100", n: "Introd Gestão Estratégica Ti", cr: 4.0, ch: 60, p: "C", r: [] },
+        {
+          c: "ICP102",
+          n: "Tecn para Grandes Vol de Dados",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP489"],
+        },
+        { c: "ICP103", n: "Análise de Risco", cr: 4.0, ch: 60, p: "C", r: ["MAD243"] },
+        { c: "ICP356", n: "Organização de Dados II", cr: 4.0, ch: 60, p: "C", r: ["ICP116"] },
+        {
+          c: "ICP357",
+          n: "Data Warehousing e Intel Negóc",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP489"],
+        },
+        { c: "ICP359", n: "Introd ao Suporte à Decisão", cr: 4.0, ch: 60, p: "C", r: ["MAD243"] },
+        {
+          c: "ICP367",
+          n: "Sistemas Distribuídos",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP361", "ICP362"],
+        },
+        { c: "ICP465", n: "Tóp Esp Informática Sociedade", cr: 4.0, ch: 60, p: "C", r: [] },
+        {
+          c: "ICP471",
+          n: "Compiladores",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP116", "ICP123", "ICP353"],
+        },
+        { c: "ICP478", n: "Métodos Numéricos I", cr: 4.0, ch: 60, p: "C", r: ["ICP231"] },
+        { c: "ICP491", n: "Banco de Dados II", cr: 4.0, ch: 60, p: "C", r: ["ICP489"] },
+        { c: "ICP508", n: "Inteligência Artificial", cr: 4.0, ch: 60, p: "C", r: ["ICP368"] },
+        { c: "ICP518", n: "Teoria de Grafos", cr: 4.0, ch: 60, p: "C", r: ["ICP368"] },
+        { c: "ICP532", n: "Mineração de Dados", cr: 4.0, ch: 60, p: "C", r: ["ICP489", "MAD243"] },
+        { c: "ICP603", n: "Gestão do Conhecimento", cr: 4.0, ch: 60, p: "C", r: ["ICP142"] },
+        { c: "ICP605", n: "Recuperação de Informação", cr: 4.0, ch: 60, p: "C", r: ["ICP116"] },
+        { c: "ICP606", n: "Tóp Esp em Programação", cr: 4.0, ch: 60, p: "C", r: ["ICP368"] },
+        { c: "ICP616", n: "Interação Humano-computador", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        {
+          c: "ICP622",
+          n: "Program Paralela e Distribuída",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP361"],
+        },
+        { c: "ICP633", n: "Algoritmos de Aproximação", cr: 4.0, ch: 60, p: "C", r: ["ICP368"] },
+        { c: "ICP636", n: "Algoritmos Paralelos", cr: 4.0, ch: 60, p: "C", r: ["ICP368"] },
+        {
+          c: "ICP638",
+          n: "Computação Algébrica",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP115", "ICP131", "ICP134"],
+        },
+        { c: "ICP639", n: "Computação Quântica", cr: 4.0, ch: 60, p: "C", r: ["ICP115", "ICP134"] },
+        { c: "ICP640", n: "Projeto Teste de Software", cr: 4.0, ch: 60, p: "C", r: ["ICP237"] },
+        { c: "ICPX03", n: "Monitoria I", cr: 2.0, ch: 90, p: "C", r: [] },
+        { c: "ICPX04", n: "Monitoria II", cr: 2.0, ch: 90, p: "C", r: ["ICPX03"] },
+        { c: "IEE115", n: "Economia", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "LEB599", n: "Est da Líng Bras de Sinais I", cr: 4.0, ch: 60, p: "C", r: [] },
+        { c: "MAE993", n: "Cálculo Int e Diferencial III", cr: 4.0, ch: 60, p: "C", r: ["MAE992"] },
+        {
+          c: "MAE994",
+          n: "Cálculo Int e Diferencial IV",
+          cr: 4.0,
+          ch: 60,
+          p: "C",
+          r: ["ICP115", "MAE992"],
+        },
+      ];
+      // por[código] = a disciplina com esse código.
+      const por = {};
+      D.forEach((x) => {
+        if (x.c) por[x.c] = x;
+      });
+      // Códigos dos requisitos de uma disciplina (separa as equivalentes "A=B").
+      const rc = (x) => x.r.flatMap((t) => t.split("="));
+      // libera[código] = as disciplinas que têm esse código como requisito.
+      const libera = {};
+      D.forEach((x) => {
+        if (x.c) rc(x).forEach((k) => (libera[k] = libera[k] || []).push(x.c));
+      });
+      // Mostra 4.0 como 4.
+      const fmt = (n) => String(n).replace(".0", "");
+      // Monta o cartão de uma disciplina (as linhas sem código são só créditos).
+      const card = (x) =>
+        x.c
+          ? `<button class="course" data-c="${x.c}"><b>${x.c} · ${fmt(x.cr)} cr</b>${x.n}</button>`
+          : `<div class="course info"><b>${fmt(x.cr)} cr</b>${x.n}</div>`;
+      // Monta os 9 períodos.
+      const grade = document.getElementById("grade"),
+        det = document.getElementById("detalhe"),
+        q = document.getElementById("q");
+      for (let p = 1; p <= 9; p++) {
+        const cs = D.filter((x) => x.p === p),
+          cred = cs.reduce((s, c) => s + c.cr, 0);
+        const s = document.createElement("section");
+        s.className = "periodo";
+        s.id = "periodo-" + p;
+        s.innerHTML =
+          `<h2>${p}º período</h2><small>${fmt(cred)} créditos</small>` +
+          cs.map(card).join("") +
+          (cs.every((x) => !x.c)
+            ? '<p class="nota">Sem disciplinas fixas: você completa os créditos com as optativas das listas abaixo.</p>'
+            : "");
+        grade.appendChild(s);
+      }
+      // Monta as caixas das optativas.
+      document.getElementById("gR").innerHTML = D.filter((x) => x.p === "R")
+        .map(card)
+        .join("");
+      document.getElementById("gC").innerHTML = D.filter((x) => x.p === "C")
+        .map(card)
+        .join("");
+      // Etiqueta de uma disciplina no painel de baixo (clicável se estiver na lista).
+      const pillOf = (k) =>
+        por[k]
+          ? `<button class="pill" data-c="${k}">${k} ${por[k].n}</button>`
+          : `<span class="pill">${k} (fora da lista)</span>`;
+      // Mostra "A ou B" quando o requisito tem equivalência.
+      const reqHtml = (t) => t.split("=").map(pillOf).join(" <i>ou</i> ");
+      // Clicou numa disciplina: pinta de azul o que ela exige e de verde o que ela libera,
+      // apaga as outras e preenche o painel de baixo.
+      function pinta(cod) {
+        const all = document.querySelectorAll(".course[data-c]");
+        all.forEach((b) => {
+          const c = b.dataset.c;
+          b.classList.remove("sel", "req", "lib", "dim");
+          if (!cod) return;
+          if (c === cod) b.classList.add("sel");
+          else if (rc(por[cod]).includes(c)) b.classList.add("req");
+          else if ((libera[cod] || []).includes(c)) b.classList.add("lib");
+          else b.classList.add("dim");
+        });
+        if (!cod) {
+          det.hidden = true;
+          return;
+        }
+        document.querySelectorAll("details.opt").forEach((d) => {
+          if (d.querySelector(".course.req,.course.lib,.course.sel")) d.open = true;
+        });
+        const c = por[cod];
+        det.hidden = false;
+        det.innerHTML = `<h2>${c.c} · ${c.n}</h2><p>${fmt(c.cr)} créditos · ${c.ch} h · ${typeof c.p === "number" ? c.p + "º período (obrigatória)" : c.p === "R" ? "optativa de escolha restrita" : "optativa de escolha condicionada"}</p>
+    <p><b>Precisa antes:</b> ${c.r.length ? c.r.map(reqHtml).join(" ") : "nenhum pré-requisito"}</p>
+    <p><b>Libera:</b> ${(libera[cod] || []).length ? libera[cod].map(pillOf).join("") : "nenhuma disciplina da lista depende dela"}</p>`;
+      }
+      // Clique num cartão de disciplina.
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest(".course[data-c]");
+        if (b && !e.target.closest("#detalhe")) pinta(b.dataset.c);
+      });
+      // Clique numa etiqueta do painel de baixo: vai para aquela disciplina.
+      det.addEventListener("click", (e) => {
+        const b = e.target.closest(".pill[data-c]");
+        if (b) {
+          pinta(b.dataset.c);
+          const t = document.querySelector(`.course[data-c="${b.dataset.c}"]`);
+          if (t) t.scrollIntoView({ block: "center" });
+        }
+      });
+      // Busca: esconde cartões, períodos e caixas sem resultado.
+      q.addEventListener("input", () => {
+        const t = q.value.trim();
+        grade.classList.toggle("filtrando", !!t);
+        document.querySelectorAll(".course").forEach((b) => {
+          b.hidden = !!t && !contem(b.textContent, t);
+        });
+        document.getElementById("vazio").style.display =
+          t && !document.querySelector(".course:not([hidden])") ? "block" : "none";
+        document.querySelectorAll(".periodo").forEach((s) => {
+          s.hidden = !!t && ![...s.querySelectorAll(".course")].some((b) => !b.hidden);
+        });
+        document.querySelectorAll("details.opt").forEach((d) => {
+          const n = [...d.querySelectorAll(".course")].filter((b) => !b.hidden).length;
+          d.hidden = !!t && !n;
+          if (t && n) d.open = true;
+        });
+      });
+    </script>
+  </body>
+</html>

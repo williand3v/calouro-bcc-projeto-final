@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero wide">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html" aria-current="page">Início</a><a href="guia.html">Guia</a
+            ><a href="curso.html">O curso</a><a href="disciplinas.html">Disciplinas</a
+            ><a href="campus.html">Campus</a><a href="sobre.html">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>Em que ponto do semestre você está?</h1>
+        <p class="lead">
+          Escolha a fase e veja o que fazer agora. O guia, as disciplinas e o campus aparecem já
+          filtrados para esse momento.
+        </p>
+        <p class="term" aria-hidden="true">
+          $ calouro --fase <b id="termfase">"antes de começar"</b>
+        </p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap wide">
+      <form class="busca" role="search" onsubmit="return false">
+        <label for="q" class="legend">Buscar no site</label>
+        <input
+          id="q"
+          name="q"
+          class="search"
+          type="search"
+          placeholder="Ex.: trancar, CRID, ônibus, RU…"
+          autocomplete="off"
+        />
+        <ul class="res" id="res" aria-live="polite"></ul>
+      </form>
+
+      <ol class="track" id="track"></ol>
+
+      <section class="panel" id="panel" aria-live="polite"></section>
+
+      <details class="datas">
+        <summary>
+          <h2>Datas do semestre 2026.2</h2>
+          <span class="dica">inscrição, alteração, trancamento e fechamento</span>
+        </summary>
+        <ul id="datas"></ul>
+        <p class="fonte">
+          Datas do calendário do IC, consultadas em 26/10/2026. O próprio IC avisa que podem mudar:
+          confira no
+          <a
+            href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf"
+            target="_blank"
+            rel="noopener"
+            >calendário acadêmico 2026 (PDF)</a
+          >. Veja também a <a href="curso.html#calendario-ic">tabela completa em O curso</a>.
+        </p>
+      </details>
+      <p class="gloss">
+        Não entendeu uma sigla (CRPID, CRID, SIGA, CCMN)?
+        <a href="guia.html#glossario">Veja o glossário</a>.
+      </p>
+
+      <div class="parts-row">
+        <a href="guia.html"><b>Guia</b><span>SIGA, CRPID, CRID, boletim, requerimentos</span></a>
+        <a href="disciplinas.html"
+          ><b>Disciplinas</b><span>Pré-requisitos do BCC em um mapa</span></a
+        >
+        <a href="campus.html"><b>Campus</b><span>Prédios, ônibus interno, RU</span></a>
+      </div>
+
+      <section class="important" id="links" aria-labelledby="li">
+        <h2 id="li">Links importantes</h2>
+        <div class="cols">
+          <div>
+            <h3>Sistemas</h3>
+            <ul>
+              <li>
+                <a href="https://portal.ufrj.br/" target="_blank" rel="noopener"
+                  >Portal do Aluno (SIGA)</a
+                >
+              </li>
+              <li>
+                <a href="https://intranet.ufrj.br/" target="_blank" rel="noopener"
+                  >Intranet: primeiro acesso</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Calendário e prazos</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Calendário acadêmico da graduação 2026 (PDF)</a
+                >
+              </li>
+              <li><a href="curso.html#calendario-ic">Datas do período no IC (inscrição, alteração, trancamento)</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Apoio e vida na UFRJ</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/"
+                  target="_blank"
+                  rel="noopener"
+                  >Bolsas e auxílios (PR7)</a
+                >
+              </li>
+              <li>
+                <a href="https://devmobufrj.github.io/BandejApp/" target="_blank" rel="noopener"
+                  >BandejApp: cardápio e horários dos RUs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/"
+                  target="_blank"
+                  rel="noopener"
+                  >Manual do Calouro UFRJ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://ufrj.br/extensao-e-sociedade/extensao/"
+                  target="_blank"
+                  rel="noopener"
+                  >Extensão</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/equipesiga_ufrj/" target="_blank" rel="noopener"
+                  >Equipe SIGA no Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Arquivos para baixar</h3>
+            <ul>
+              <li><a href="arquivos/manual-siga-ufrj.pdf" download>Manual do SIGA (PDF)</a></li>
+              <li>
+                <a href="arquivos/guia-pr7-calouros.pdf" download
+                  >Guia da PR7 para calouros (PDF)</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Fale com alguém</h3>
+            <ul>
+              <li class="contato"><span class="quem">Coordenação do BCC</span><a href="mailto:coord_grad@ic.ufrj.br">coord_grad@ic.ufrj.br</a></li>
+              <li class="contato"><span class="quem">Secretaria de Graduação</span><a href="mailto:secgrad@ic.ufrj.br">secgrad@ic.ufrj.br</a></li>
+              <li class="contato"><span class="quem">Orientação acadêmica (COAA)</span><a href="mailto:coaa@ic.ufrj.br">coaa@ic.ufrj.br</a></li>
+              <li class="contato"><span class="quem">Estágio</span><a href="mailto:estagio@ic.ufrj.br">estagio@ic.ufrj.br</a></li>
+              <li class="contato"><span class="quem">Atividades complementares</span><a href="mailto:coac@ic.ufrj.br">coac@ic.ufrj.br</a></li>
+              <li><a href="curso.html#quem-e-quem">Todos os contatos do curso</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 03/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="fases.js"></script>
+    <script src="busca.js"></script>
+    <script>
+      // Busca: na primeira vez que a pessoa clica no campo, lê os tópicos das outras páginas.
+      const PAG = { "guia.html": "Guia", "curso.html": "O curso", "campus.html": "Campus" };
+      const q = document.getElementById("q");
+      const res = document.getElementById("res");
+      let indice = null;
+      const carregar = () =>
+        (indice ||= Promise.all(
+          Object.keys(PAG).map((p) =>
+            fetch(p)
+              .then((r) => r.text())
+              .then((h) => topicos(new DOMParser().parseFromString(h, "text/html"), p))
+              .catch(() => []),
+          ),
+        ).then((l) => l.flat()));
+      q.addEventListener("focus", carregar);
+      q.addEventListener("input", async () => {
+        const lista = q.value.trim() ? buscar(await carregar(), q.value).slice(0, 8) : null;
+        res.innerHTML = !lista
+          ? ""
+          : lista.length
+            ? lista
+                .map((i) => `<li><a href="${i.u}">${i.t}<small>${PAG[i.u.split("#")[0]]}</small></a></li>`)
+                .join("")
+            : "<li class='nada'>Nada encontrado. Tente outra palavra.</li>";
+      });
+    </script>
+    <script>
+      // Conteúdo das 6 fases do semestre.
+      // n = nome, when = quando acontece, todo = o que fazer, alert = aviso,
+      // links = botões da coluna "Para esta fase", chips = situações de inscrição.
+      const phases = [
+        {
+          n: "Antes de começar",
+          when: "Antes das aulas",
+          todo: [
+            "Faça o primeiro acesso: cadastre seu e-mail na Intranet, na opção “Primeiro acesso”.",
+            "Abra o e-mail que o sistema enviou e clique no link para ativar o cadastro.",
+            "Entre no Portal do Aluno. Sua identificação é o CPF (ou o passaporte, se for estrangeiro).",
+          ],
+          alert: null,
+          links: [
+            ["Intranet", "Primeiro acesso e cadastro de e-mail", "https://intranet.ufrj.br/"],
+            ["Guia", "Primeiro acesso ao SIGA"],
+            ["Campus", "Como chegar ao CCMN"],
+          ],
+        },
+        {
+          n: "Inscrição",
+          when: "Pedidos de inscrição (a partir do 2º período)",
+          todo: [
+            "No 1º período você não precisa fazer nada: a coordenação faz sua inscrição e a grade já vem pronta.",
+            "A partir do 2º período, você pede as disciplinas pelo Portal e clica em “Finalizar pedidos”.",
+            "Ao fim do período, baixe o CRPID. Ele é o recibo dos pedidos.",
+          ],
+          alert:
+            "Você pode perder a vaga em uma turma a qualquer momento nesta fase. Fique de olho no Portal e no e-mail cadastrado.",
+          links: [
+            ["Portal do Aluno", "Entrar e fazer pedidos de inscrição", "https://portal.ufrj.br/"],
+            ["Disciplinas", "Grade recomendada do 1º período"],
+            ["Guia", "O que é o CRPID"],
+            ["Campus", "Ônibus internos até o CCMN"],
+          ],
+          chips: [
+            "Falta requisito",
+            "Horário sobreposto",
+            "Lotação esgotada",
+            "Mais de 32 créditos",
+            "Menos de 6 créditos",
+          ],
+        },
+        {
+          n: "Concordância e efetivação",
+          when: "Depois da inscrição",
+          todo: [
+            "Orientadores e coordenadores concordam (ou não) com os pedidos. Você não faz nada.",
+            "O sistema cria as inscrições de fato. Também não há ação sua.",
+            "Depois, baixe o CRID para ver em quais disciplinas conseguiu vaga.",
+          ],
+          alert: null,
+          links: [
+            ["Guia", "O que é o CRID"],
+            ["Guia", "Quem é meu orientador acadêmico"],
+          ],
+        },
+        {
+          n: "Alteração",
+          when: "Logo após o início das aulas",
+          todo: [
+            "Peça uma disciplina nova, a troca para outra turma ou o trancamento de uma turma já efetivada.",
+            "Estes pedidos só concorrem com outros pedidos desta fase. As vagas são novas.",
+            "Confira o resultado no Portal, em “Situações dos pedidos”.",
+          ],
+          alert: null,
+          links: [
+            ["Guia", "Como transferir de turma"],
+            ["Disciplinas", "Mapa de pré-requisitos"],
+          ],
+        },
+        {
+          n: "Trancamento",
+          when: "Meio do semestre",
+          todo: [
+            "Se estiver sobrecarregado, você pode trancar uma ou mais disciplinas no prazo do calendário.",
+            "Converse antes com seu orientador acadêmico ou com a COAA do curso.",
+            "Baixe o CRID de novo cerca de 2 meses depois do início das aulas e confira se as situações mudaram.",
+          ],
+          alert: null,
+          links: [
+            ["Guia", "Quais disciplinas posso trancar"],
+            [
+              "Saúde mental",
+              "Guia de serviços de saúde mental na UFRJ",
+              "https://conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores/",
+            ],
+          ],
+        },
+        {
+          n: "Fechamento",
+          when: "Fim do semestre",
+          todo: [
+            "Professores lançam grau e frequência.",
+            "Veja seu resultado no boletim e no histórico.",
+            "Planeje o próximo semestre com a grade recomendada.",
+          ],
+          alert: null,
+          links: [
+            ["Guia", "Como ler o boletim e o histórico"],
+            ["Disciplinas", "O que o próximo período libera"],
+          ],
+        },
+      ];
+
+      // Para onde cada link interno leva (a página e o tópico).
+      const ROUTES = {
+        "Primeiro acesso ao SIGA": "guia.html#primeiro-acesso",
+        "O que é o CRPID": "guia.html#crpid",
+        "O que é o CRID": "guia.html#crid",
+        "Quem é meu orientador acadêmico": "guia.html#crid",
+        "Como transferir de turma": "guia.html#alteracao",
+        "Quais disciplinas posso trancar": "guia.html#trancamento",
+        "Como ler o boletim e o histórico": "guia.html#boletim",
+        "Grade recomendada do 1º período": "disciplinas.html#periodo-1",
+        "O que o próximo período libera": "disciplinas.html",
+        "Como chegar ao CCMN": "campus.html#ccmn",
+        "Ônibus internos até o CCMN": "campus.html#ccmn",
+      };
+      const PAGES = { Guia: "guia.html", Disciplinas: "disciplinas.html", Campus: "campus.html" };
+      // Monta o botão de um link. Se o endereço começa com http, abre em nova aba.
+      function linkHtml(l) {
+        const h = l[2] || ROUTES[l[1]] || PAGES[l[0]] || "#";
+        const ext = /^https?:/.test(h);
+        return `<a href="${h}"${ext ? ' target="_blank" rel="noopener"' : ""}>${l[1]}<small>${l[0]}${ext ? " · abre em nova aba" : ""}</small></a>`;
+      }
+
+      // Vídeos mostrados nas fases: [título, canal, duração], pelo código do vídeo no YouTube.
+      const VM = {
+        wdaMdkM_VzQ: [
+          "Como acessar o SIGA UFRJ pela primeira vez",
+          "Coord. Grad. ESS (UFRJ)",
+          "1:21",
+        ],
+        "2Hf1rl2NLTQ": ["Inscrição em disciplinas SIGA", "Coord. Grad. ESS (UFRJ)", "0:42"],
+        rFjjtzWLWvw: ["Cadê a matéria? Sumiu! | Mitos da inscrição UFRJ", "Siga UFRJ", "3:58"],
+        "4uNDXCFzWyo": ["O que é CRID e CRPID? | Mitos da Inscrição UFRJ", "Siga UFRJ", "2:06"],
+      };
+      // Quais vídeos aparecem em cada fase (0 = primeira fase).
+      const VIDS = { 0: ["wdaMdkM_VzQ"], 1: ["2Hf1rl2NLTQ", "rFjjtzWLWvw"], 2: ["4uNDXCFzWyo"] };
+      // Monta a miniatura de um vídeo. O player só carrega quando a pessoa clica (script abaixo).
+      function vl(i) {
+        const [t, a, d] = VM[i];
+        return `<figure class="vlite"><button type="button" class="vthumb" data-id="${i}" data-title="${t}" aria-label="Reproduzir: ${t}" style="background-image:url(https://i.ytimg.com/vi/${i}/hqdefault.jpg)"><span class="vplay" aria-hidden="true"></span><span class="vdur">${d}</span></button><figcaption><b>${t}</b><br>Canal: ${a} · <a href="https://www.youtube.com/watch?v=${i}" target="_blank" rel="noopener">Abrir no YouTube</a></figcaption></figure>`;
+      }
+      const track = document.getElementById("track");
+      const panel = document.getElementById("panel");
+
+      // Desenha uma bolinha da linha do tempo para cada fase.
+      phases.forEach((p, i) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<button class="stop" aria-pressed="false" data-i="${i}">
+    <span class="dot">${i + 1}</span><span class="name">${p.n}</span><span class="pin">você está aqui</span></button>`;
+        track.appendChild(li);
+      });
+
+      // Mostra a fase i: marca a bolinha escolhida e preenche o painel com o conteúdo dela.
+      function show(i) {
+        const p = phases[i];
+        const r = rotuloData(i, new Date());
+        const datas = r
+          ? ` · <b>${r.texto}</b>${r.encerrado ? ' <span class="enc">(prazo encerrado)</span>' : ""}`
+          : "";
+        document.getElementById("termfase").textContent = '"' + p.n.toLowerCase() + '"';
+        track.querySelectorAll(".stop").forEach((b, j) => b.setAttribute("aria-pressed", j === i));
+        panel.innerHTML = `
+    <div>
+      <h2>${p.n}</h2>
+      <p class="when">${p.when}${datas} · calendário: <a href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf" target="_blank" rel="noopener">calendário acadêmico 2026 (PDF)</a></p>
+      <ul>${p.todo.map((t) => `<li>${t}</li>`).join("")}</ul>
+      ${p.alert ? `<div class="alert">${p.alert}</div>` : ""}
+      ${p.chips ? `<div class="chips" aria-label="Situações de inscrição que você pode ver">${p.chips.map((c) => `<span class="chip">${c}</span>`).join("")}</div>` : ""}
+      ${VIDS[i] ? '<div class="vrow">' + VIDS[i].map(vl).join("") + "</div>" : ""}
+    </div>
+    <div class="links">
+      <h3>Para esta fase</h3>
+      ${p.links.map(linkHtml).join("")}
+    </div>`;
+      }
+      // Clicar numa bolinha troca a fase.
+      track.addEventListener("click", (e) => {
+        const b = e.target.closest(".stop");
+        if (b) show(+b.dataset.i);
+      });
+      // A página abre na primeira fase.
+      show(0);
+
+      // Bloco "Datas do semestre": lê as datas de fases.js, o mesmo lugar que o painel usa.
+      document.getElementById("datas").innerHTML =
+        `<li><b>Período letivo</b><span>${periodoLetivo()}</span></li>` +
+        linhasDoSemestre(
+          phases.map((p) => p.n),
+          new Date(),
+        )
+          .map((l) => {
+            const quando = l.texto
+              ? l.texto + (l.encerrado ? " <em>(encerrado)</em>" : "")
+              : "sem data publicada";
+            return `<li><b>${l.nome}</b><span>${quando}</span>${l.desc ? `<small>${l.desc}</small>` : ""}</li>`;
+          })
+          .join("");
+    </script>
+    <script>
+      // Botão "Copiar" ao lado de cada e-mail de "Links importantes" (só se o navegador permitir).
+      if (navigator.clipboard)
+        document.querySelectorAll(".important a[href^='mailto:']").forEach((a) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "copiar";
+          b.textContent = "Copiar";
+          b.setAttribute("aria-label", "Copiar " + a.textContent);
+          b.setAttribute("aria-live", "polite");
+          b.onclick = () =>
+            navigator.clipboard.writeText(a.textContent).then(() => {
+              b.textContent = "Copiado";
+              setTimeout(() => (b.textContent = "Copiar"), 2000);
+            });
+          a.after(b);
+        });
+    </script>
+    <script>
+      // Clicar numa miniatura de vídeo troca a imagem pelo player do YouTube (versão sem cookies).
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest(".vthumb");
+        if (!b) return;
+        const f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.id + "?autoplay=1";
+        f.title = b.dataset.title;
+        f.allow = "autoplay; encrypted-media; picture-in-picture";
+        f.allowFullscreen = true;
+        f.referrerPolicy = "strict-origin-when-cross-origin";
+        b.replaceWith(f);
+        f.focus();
+      });
+    </script>
+  </body>
+</html>

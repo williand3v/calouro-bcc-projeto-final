@@ -1,0 +1,746 @@
+/* ==========================================================================
+   Calouro BCC: estilos do site
+   Cores e fonte seguem o guia de identidade visual da UFRJ (Azul UFRJ e Montserrat).
+
+   Como o arquivo esta organizado:
+     1. Variaveis e base
+     2. Layout das paginas
+     3. Faixa de aviso, topo (logos e menu) e rodape
+     4. Pagina inicial: linha do tempo, painel e links
+     5. Guia: indice, busca e topicos
+     6. Disciplinas: cartoes e painel de requisitos
+     7. Campus: onibus, mapas e tabelas
+     8. Videos
+     9. Ajustes para tela larga (computador)
+    10. Ajustes para celular
+   ========================================================================== */
+
+
+/* 1. Variaveis e base ------------------------------------------------------ */
+
+:root {
+  --ink: #0F2238;      /* texto */
+  --blue: #003366;     /* Azul UFRJ */
+  --muted: #475A70;    /* texto secundario */
+  --paper: #EAF0F6;    /* fundo da pagina */
+  --card: #FFFFFF;     /* fundo dos cartoes */
+  --line: #CBD5DF;     /* bordas leves */
+  --sign: #F5C518;     /* amarelo de destaque */
+  --link: #1F5FD6;     /* links */
+  --done: #2F7D5B;     /* verde (disciplina que a outra libera) */
+  --r: 10px;           /* arredondamento padrao */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 16px/1.6 Montserrat, system-ui, sans-serif;
+}
+
+.legend { font-size: 14px; color: var(--muted); }
+.note   { margin-top: 28px; font-size: 14px; color: var(--muted); }
+
+/* link "Ir para o conteudo": so aparece quando recebe foco pelo teclado */
+.skip {
+  position: absolute; left: -999px; top: 8px; z-index: 10;
+  background: #fff; color: var(--blue);
+  font-weight: 700; padding: 8px 12px; border-radius: 6px;
+}
+.skip:focus { left: 8px; }
+
+
+/* 2. Layout das paginas ---------------------------------------------------- */
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.wrap.wide {
+  max-width: 1400px;
+  padding-left: clamp(16px, 3vw, 48px);
+  padding-right: clamp(16px, 3vw, 48px);
+}
+
+
+/* 3. Faixa de aviso, topo e rodape ---------------------------------------- */
+
+.draft {
+  background: #001F3F; color: #fff;
+  font-size: 14px; padding: 8px 16px; text-align: center;
+}
+
+/* Topo azul: degrade com brilho no canto superior direito */
+.hero {
+  position: relative; overflow: hidden;
+  color: #fff;
+  background-color: var(--blue);
+  background-image:
+    radial-gradient(900px 520px at 88% -12%, #0F5AA8 0%, rgba(15, 90, 168, 0) 62%),
+    radial-gradient(760px 420px at -5% 115%, #00244A 0%, rgba(0, 36, 74, 0) 65%);
+  background-size: auto;
+  padding-bottom: 48px; margin-bottom: 32px;
+}
+.hero > * { position: relative; z-index: 1; }
+.hero.small { padding-bottom: 28px; margin-bottom: 28px; }
+
+.hero .in { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.hero.wide .in { max-width: 1400px; padding: 0 clamp(16px, 3vw, 48px); }
+
+.hero h1 {
+  font: 800 clamp(30px, 5vw, 48px)/1.1 Montserrat, sans-serif;
+  letter-spacing: -.02em;
+  margin: 44px 0 10px; max-width: 18ch;
+}
+.hero.small h1 { margin-top: 28px; max-width: none; }
+
+.lead { color: #D6E2F0; max-width: 58ch; margin: 0 0 20px; }
+
+/* faixa com logos e menu */
+.topwrap {
+  padding: 0 clamp(16px, 3vw, 48px);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+header.top {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; padding: 20px 0;
+}
+
+.lockup {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 12px 14px; line-height: 1.15;
+}
+.lockup img.ufrj { height: 84px; width: auto; display: block; }
+.lockup .sep { width: 1px; align-self: stretch; background: rgba(255, 255, 255, .5); }
+.lockup .unit { font: 600 13px/1.25 Montserrat, sans-serif; }
+
+/* o logo do IC e escuro, por isso fica numa etiqueta branca */
+.icbadge { background: #fff; border-radius: 6px; padding: 4px 8px; display: flex; }
+.icbadge img { height: 28px; width: auto; display: block; }
+
+nav.parts { display: flex; gap: clamp(20px, 3vw, 44px); }
+nav.parts a {
+  color: #fff; text-decoration: none;
+  font-size: 18px; font-weight: 700;
+  padding: 8px 0; margin-left: 0;
+  border-bottom: 2px solid transparent;
+}
+nav.parts a:hover,
+nav.parts a[aria-current="page"] { border-color: var(--sign); }
+nav.parts a:focus-visible { outline: 3px solid var(--sign); outline-offset: 3px; }
+
+/* linha que imita um terminal, na pagina inicial */
+.term {
+  display: inline-block; margin: 0; padding: 6px 12px;
+  font: 500 14px "JetBrains Mono", ui-monospace, monospace;
+  background: rgba(0, 0, 0, .35); color: #fff;
+  border: 1px solid rgba(255, 255, 255, .25); border-radius: 6px;
+}
+.term b { color: var(--sign); font-weight: 500; }
+
+/* rodape: texto, logo da UFRJ, texto */
+.foot { background: #001F3F; color: #D6E2F0; margin-top: 28px; padding: 22px 0; }
+.foot .in {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 32px; align-items: center;
+  padding: 0 clamp(16px, 3vw, 48px);
+}
+.foot p { margin: 0; font-size: 13.5px; line-height: 1.5; }
+.foot b { color: #fff; }
+.foot a { color: #fff; text-decoration: underline; }
+.foot a:focus-visible { outline: 3px solid var(--sign); outline-offset: 2px; }
+.foot .fl { text-align: right; }
+.foot .fr { text-align: left; }
+.foot img { height: 104px; width: auto; margin: -10px 0; }
+
+
+/* 4. Pagina inicial -------------------------------------------------------- */
+
+/* linha do tempo com as 6 fases */
+.track {
+  position: relative; margin: 8px 0 0; padding: 0; list-style: none;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 0;
+}
+.track::before {              /* a linha que liga as fases */
+  content: ""; position: absolute; left: 8%; right: 8%; top: 19px;
+  height: 4px; background: #9DB4CE; border-radius: 2px;
+}
+.track li { position: relative; text-align: center; }
+
+.stop {
+  all: unset; cursor: pointer; touch-action: manipulation;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  width: 100%; padding: 0 4px 8px;
+}
+.stop:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; border-radius: 8px; }
+.stop .dot {                  /* bolinha numerada */
+  position: relative; z-index: 1; width: 42px; height: 42px;
+  display: grid; place-items: center; border-radius: 50%;
+  background: var(--card); border: 3px solid var(--line);
+  font: 700 15px Montserrat, sans-serif; color: var(--muted);
+  transition: transform .15s, border-color .15s;
+}
+.stop .name { font-size: 14px; font-weight: 600; line-height: 1.2; max-width: 11ch; }
+.pin {                        /* etiqueta "voce esta aqui" */
+  display: block; margin-top: 2px; padding: 2px 8px;
+  font-size: 13px; font-weight: 600;
+  background: var(--blue); color: #fff; border-radius: 99px;
+  visibility: hidden;
+}
+/* fase escolhida */
+.stop[aria-pressed="true"] .dot {
+  background: var(--sign); border-color: var(--blue);
+  color: var(--ink); transform: scale(1.18);
+}
+.stop[aria-pressed="true"] .name { color: var(--ink); }
+.stop[aria-pressed="true"] .pin { visibility: visible; }
+
+/* painel com o que fazer na fase */
+.panel {
+  display: grid; grid-template-columns: 3fr 2fr; gap: 28px;
+  margin-top: 28px; padding: 24px;
+  background: var(--card); border-radius: var(--r);
+  border: 2px solid var(--blue); border-top: 8px solid var(--blue);
+}
+.panel h2 { font: 700 26px/1.15 Montserrat, sans-serif; margin: 0 0 6px; color: var(--blue); }
+.panel ul { margin: 0; padding-left: 20px; }
+.panel li { margin: 6px 0; }
+.when { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
+.panel .when a { color: var(--link); }
+.when b { color: var(--ink); }
+/* bloco "Datas do semestre", na pagina inicial */
+.datas {
+  margin-top: 28px; padding: 20px 24px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+}
+.datas summary { cursor: pointer; padding: 6px 0; }
+.datas summary:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.datas summary h2 { display: inline; font: 700 22px Montserrat, sans-serif; margin: 0 12px 0 0; color: var(--blue); }
+.datas .dica { color: var(--muted); font-size: 14px; }
+.datas[open] summary { margin-bottom: 8px; }
+.datas ul { list-style: none; margin: 0; padding: 0; }
+.datas li {
+  display: grid; grid-template-columns: 17rem 19rem 1fr; gap: 2px 16px;
+  align-items: baseline; padding: 10px 0; border-top: 1px solid var(--line);
+}
+.datas li span { white-space: nowrap; }
+.datas li:first-child { border-top: 0; }
+.datas li b { color: var(--blue); }
+.datas li small { color: var(--muted); font-size: 14px; }
+.datas em { font-style: italic; color: var(--muted); }
+.datas .fonte { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.datas .fonte a { color: var(--link); }
+@media (max-width: 720px) {
+  .datas { padding: 16px; }
+  .datas li { grid-template-columns: 1fr; }
+  .datas li span { white-space: normal; }
+}
+
+.gloss { margin: 14px 4px 0; color: var(--muted); font-size: 15px; }
+.gloss a { color: var(--link); }
+.when .enc { font-style: italic; }
+
+.alert {
+  margin-top: 14px; padding: 10px 12px; font-size: 15px;
+  background: #FFF6D1; border-left: 4px solid var(--sign);
+  border-radius: 0 8px 8px 0;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chip {
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: 99px; padding: 2px 10px; font-size: 14px;
+}
+
+/* coluna "Para esta fase" */
+.links h3 { font: 600 15px Montserrat; margin: 0 0 10px; color: var(--muted); }
+.links a {
+  display: block; margin-bottom: 8px; padding: 12px 14px;
+  background: var(--card); border: 2px solid var(--blue); border-radius: 8px;
+  color: var(--blue); font-weight: 600; text-decoration: none;
+}
+.links a:hover { background: var(--paper); }
+.links a small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+/* o primeiro link é o passo principal da fase */
+.links a:first-of-type { background: var(--blue); color: #fff; }
+.links a:first-of-type:hover { background: #0B4A8A; }
+.links a:first-of-type small { color: #D6E2F0; }
+
+/* "Conheca o curso": primeiro bloco da pagina inicial */
+.conheca {
+  margin: 0 0 28px; padding: 24px;
+  background: var(--card); border: 1px solid var(--line);
+  border-left: 8px solid var(--sign); border-radius: var(--r);
+}
+.conheca h2 { font: 700 26px/1.15 Montserrat, sans-serif; margin: 0 0 8px; color: var(--blue); }
+.conheca > p { margin: 0 0 16px; max-width: 70ch; }
+.conheca h3 { font: 600 15px Montserrat, sans-serif; margin: 0 0 10px; color: var(--muted); }
+.perfis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 18px; padding: 0; list-style: none; }
+.perfis a {
+  display: block; height: 100%; padding: 12px 14px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 8px;
+  color: var(--ink); text-decoration: none;
+}
+.perfis a:hover { border-color: var(--ink); }
+.perfis a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.perfis b { display: block; color: var(--blue); }
+.perfis span { display: block; font-size: 14px; color: var(--muted); }
+.conheca .acoes { margin: 0; }
+@media (max-width: 860px) { .perfis { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .perfis { grid-template-columns: 1fr; } .conheca { padding: 18px; } }
+
+/* tres blocos azuis: Guia, Disciplinas, Campus */
+.parts-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+.parts-row a {
+  display: block; padding: 16px 18px;
+  background: var(--blue); color: #fff; border-radius: var(--r); text-decoration: none;
+}
+.parts-row a:hover { background: #0B4A8A; }
+.parts-row a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+.parts-row b { font: 700 18px Montserrat; }
+.parts-row span { display: block; color: #D6E2F0; font-size: 15px; }
+
+/* bloco "Links importantes": os grupos fluem em colunas, sem buracos */
+.important {
+  margin-top: 40px; padding: 20px 24px;
+  background: var(--blue); color: #fff; border-radius: var(--r);
+}
+.important h2 { font: 700 22px Montserrat, sans-serif; margin: 0 0 12px; color: #fff; }
+.important .cols { display: block; column-count: 3; column-gap: 48px; }
+.important .cols > div { break-inside: avoid; margin: 0 0 22px; }
+.important h3 {
+  font: 600 15px Montserrat; margin: 0 0 8px; padding-bottom: 4px;
+  color: #B9CCE3; border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+.important ul { margin: 0; padding: 0; list-style: none; }
+.important li { margin: 6px 0; }
+.important a { color: #fff; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+/* e-mails: nome em cima, endereço e botão "Copiar" embaixo */
+.contato { display: flex; flex-wrap: wrap; align-items: center; gap: 0 10px; }
+.contato .quem { flex-basis: 100%; font-size: 14px; color: #B9CCE3; }
+.copiar {
+  min-height: 32px; padding: 2px 12px; cursor: pointer;
+  font: 600 13px Montserrat, sans-serif; color: #fff;
+  background: transparent; border: 1px solid #B9CCE3; border-radius: 99px;
+}
+.copiar:hover { background: rgba(255, 255, 255, .15); }
+.copiar:focus-visible { outline: 3px solid var(--sign); outline-offset: 2px; }
+
+/* contorno de foco dos links dentro dos blocos */
+.important a:focus-visible,
+.panel .when a:focus-visible,
+.links a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.important a:focus-visible { outline-color: var(--sign); }
+
+
+/* 5. Guia (e pagina Sobre) ------------------------------------------------- */
+
+.doc { display: grid; grid-template-columns: 230px 1fr; gap: 32px; align-items: start; }
+.doc > * { min-width: 0; }
+
+/* lista de optativas de cada perfil */
+.topic .opt { font-size: 15px; color: var(--muted); }
+
+
+/* abas do Guia (SIGA / IC / AVA / UFRJ) */
+.abas { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.abas button {
+  min-height: 44px; padding: 8px 22px; cursor: pointer;
+  font: 700 16px Montserrat, sans-serif; color: var(--blue);
+  background: var(--card); border: 2px solid var(--blue); border-radius: 99px;
+}
+.abas button:hover { background: var(--paper); }
+.abas button[aria-pressed="true"] { background: var(--blue); color: #fff; }
+.abas button:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+
+.toc {
+  position: sticky; top: 12px;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 14px 16px;
+}
+.toc summary { font: 700 15px Montserrat, sans-serif; color: var(--blue); cursor: pointer; padding: 4px 0; }
+.toc details[open] summary { margin-bottom: 6px; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 2px 0; }
+.toc a { display: block; padding: 6px 0; color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 500; }
+.toc a:hover { color: var(--link); text-decoration: underline; }
+
+.search {
+  width: 100%; margin-bottom: 16px; padding: 10px 12px;
+  font: 500 16px Montserrat, sans-serif;
+  background: #fff; color: var(--ink);
+  border: 2px solid var(--blue); border-radius: 8px;
+}
+.busca { margin-bottom: 24px; }
+.busca .search { margin-bottom: 0; }
+.res { list-style: none; margin: 0; padding: 0; }
+.res a, .res .nada {
+  display: block; margin-top: 6px; padding: 10px 14px;
+  background: #fff; border: 1px solid var(--line); border-radius: 8px;
+}
+.res a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.res a:hover { border-color: var(--blue); color: var(--link); }
+.res a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.res small { display: block; font-weight: 400; color: var(--muted); }
+.empty {            /* "Nada encontrado" */
+  display: none; padding: 10px 12px;
+  background: #FFF6D1; border-left: 4px solid var(--sign); border-radius: 0 8px 8px 0;
+}
+
+.topic {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--r); padding: 20px 24px; margin-bottom: 16px;
+}
+.topic h2 {
+  font: 700 22px Montserrat, sans-serif; margin: 0 0 8px; color: var(--blue);
+  border-left: 6px solid var(--blue); padding-left: 12px;
+}
+.topic h3 { font: 700 16px Montserrat, sans-serif; margin: 16px 0 4px; }
+.topic p, .topic li { max-width: 68ch; }
+.topic a { color: var(--link); }
+.topic dl { margin: 8px 0 0; }
+.topic dt { font-weight: 700; margin-top: 12px; }
+.topic dd { margin: 2px 0 0; color: var(--muted); }
+
+.btn {
+  display: inline-block; margin: 4px 8px 4px 0; padding: 10px 16px;
+  background: var(--blue); color: #fff !important;
+  font-weight: 700; text-decoration: none; border-radius: 8px;
+}
+.btn:hover { background: #0B4A8A; }
+
+.todo { background: #FFF6D1; border-left: 4px solid var(--sign); border-radius: 0 8px 8px 0; padding: 12px 14px; }
+
+/* listas de definicao em duas colunas (so em tela larga) */
+.cols { margin: 8px 0 0; }
+.topic dl.cols dt { margin-top: 0; padding-top: 14px; }
+
+/* contorno de foco do teclado */
+.toc a:focus-visible, .toc summary:focus-visible, .search:focus-visible,
+.course:focus-visible, .pill:focus-visible, .btn:focus-visible,
+details.opt > summary:focus-visible, .pontos button:focus-visible,
+.line summary:focus-visible, .others > summary:focus-visible,
+.vthumb:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+
+
+/* 6. Disciplinas ----------------------------------------------------------- */
+
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 16px; }
+.tools .search { margin: 0; flex: 1 1 260px; }
+
+.grid-periods { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.periodo { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; }
+.periodo h2 { font: 700 16px Montserrat, sans-serif; margin: 0 0 2px; color: var(--blue); }
+.periodo small { display: block; margin-bottom: 8px; color: var(--muted); font-size: 13px; }
+.periodo .nota { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.filtrando .periodo small { display: none; }   /* o total de creditos nao vale para o resultado da busca */
+
+/* cartao de uma disciplina (e um botao) */
+.course {
+  all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer;
+  margin-bottom: 6px; padding: 8px 10px;
+  background: var(--paper); border: 2px solid var(--line); border-radius: 8px;
+  font-size: 13.5px; line-height: 1.3;
+}
+.course b { display: block; font-size: 12px; color: var(--muted); font-weight: 600; }
+.course[hidden] { display: none; }   /* o "all: unset" acima anula o hidden, entao a busca nao escondia o cartao */
+.course.sel { background: var(--sign); border-color: var(--blue); }  /* a escolhida */
+.course.req { background: #DCE8F7; border-color: var(--link); }      /* precisa antes */
+.course.lib { background: #DDF1E6; border-color: var(--done); }      /* e liberada por ela */
+.course.dim { opacity: .35; }                                         /* sem ligacao */
+.course.info { cursor: default; background: #fff; border-style: dashed; }  /* creditos sem codigo */
+/* painel fixo embaixo, com requisitos da disciplina escolhida */
+.detalhe {
+  position: sticky; bottom: 0; margin-top: 16px; padding: 14px 18px;
+  background: var(--blue); color: #fff;
+  border-radius: var(--r) var(--r) 0 0; box-shadow: 0 -4px 16px rgba(0, 0, 0, .2);
+}
+.detalhe h2 { font: 700 18px Montserrat, sans-serif; margin: 0 0 4px; }
+.detalhe p { margin: 2px 0; font-size: 15px; max-width: none; }
+.detalhe i { opacity: .8; margin: 0 2px; }
+.pill {
+  all: unset; cursor: pointer; display: inline-block; margin: 2px 4px 2px 0; padding: 2px 10px;
+  background: #fff; color: var(--blue); border-radius: 99px; font-size: 13px; font-weight: 700;
+}
+
+/* optativas, em caixas que abrem e fecham */
+details.opt {
+  margin-top: 16px; padding: 12px 16px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+}
+details.opt > summary { cursor: pointer; font: 700 18px Montserrat, sans-serif; color: var(--blue); }
+.opt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; margin-top: 12px; }
+.opt-grid .course { margin: 0; }
+
+
+/* 7. Campus ---------------------------------------------------------------- */
+
+/* cartoes das linhas de onibus */
+.ccmn { margin-top: 40px; }
+.ccmn h2 {
+  font: 700 24px Montserrat, sans-serif; margin: 0 0 6px; color: var(--blue);
+  border-left: 6px solid var(--blue); padding-left: 12px;
+}
+.ccmn .note a { color: var(--link); }
+.lines { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0; }
+.line {
+  display: flex; gap: 12px; padding: 14px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+}
+.line > div:last-child { min-width: 0; overflow-wrap: anywhere; }
+.line .num {             /* numero da linha */
+  flex: none; width: 44px; height: 44px; display: grid; place-items: center;
+  background: var(--blue); color: #fff; border: 2px solid var(--blue); border-radius: 8px;
+  font: 700 22px Montserrat, sans-serif;
+}
+.line h3 { font: 700 16px/1.25 Montserrat, sans-serif; margin: 0 0 4px; }
+.line p { margin: 0; font-size: 14.5px; line-height: 1.45; color: var(--muted); }
+.line details { margin-top: 8px; font-size: 14px; }
+.line details p { margin: 6px 0 0; }
+.line summary { cursor: pointer; color: var(--link); font-weight: 600; }
+.others { margin: 8px 0 16px; }
+.others > summary { cursor: pointer; font-weight: 600; color: var(--blue); padding: 6px 0; }
+.line summary:hover, .others > summary:hover { text-decoration: underline; }
+
+/* mapa clicavel (Leaflet) com a lista de pontos ao lado */
+.mapa-box { display: grid; grid-template-columns: 220px 1fr; gap: 12px; align-items: start; margin: 8px 0; }
+.mapa { width: 100%; height: 440px; border: 2px solid var(--blue); border-radius: var(--r); }
+.pontos { list-style: none; margin: 0; padding: 0; }
+.pontos li { margin-bottom: 6px; }
+.pontos button {
+  all: unset; box-sizing: border-box; cursor: pointer;
+  display: flex; align-items: center; gap: 8px; width: 100%; padding: 8px 10px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 8px;
+  font-size: 14px; font-weight: 600;
+}
+.pontos button:hover { border-color: var(--blue); }
+.pt {                    /* bolinha do ponto: amarela = RU, azul = CCMN, branca = parada */
+  display: inline-block; flex: none; width: 18px; height: 18px;
+  background: var(--sign); border: 3px solid var(--blue); border-radius: 50%;
+}
+.pt.sede { background: var(--blue); border-color: #fff; box-shadow: 0 0 0 2px var(--blue); }
+.pt.bus { background: #fff; }
+
+/* mapa oficial da Prefeitura Universitaria, com a legenda numerada */
+.mapaof { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 24px; align-items: start; margin: 8px 0; }
+.mapaof img { width: 100%; height: auto; display: block; background: #fff; border: 2px solid var(--blue); border-radius: var(--r); }
+.legendamapa { margin: 0; padding-left: 30px; columns: 1; }
+.legendamapa li { margin: 3px 0; padding-left: 4px; font-size: 15px; }
+.legendamapa li.dest { font-weight: 700; color: var(--blue); background: #FFF6D1; border-radius: 4px; }
+
+/* tabelas (documentos, RUs, bibliotecas) */
+.tabela-wrap { overflow-x: auto; margin: 8px 0; }
+.tabela { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+.tabela caption { text-align: left; position: absolute; left: -999px; }   /* so para leitor de tela */
+.tabela th, .tabela td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: middle; }
+.tabela thead th { background: var(--blue); color: #fff; font-weight: 700; }
+.tabela tbody th { background: var(--paper); color: var(--blue); font-weight: 700; }
+.tabela td[rowspan] { background: #FFF6D1; text-align: center; font-weight: 600; }
+.tabela td b { color: var(--blue); }
+
+
+/* 8. Videos ---------------------------------------------------------------- */
+
+/* miniatura que vira o player quando recebe o clique */
+.vthumb {
+  all: unset; box-sizing: border-box; position: relative; display: block;
+  width: 100%; aspect-ratio: 16/9; cursor: pointer; overflow: hidden;
+  background-size: cover; background-position: center;
+  border: 2px solid var(--blue); border-radius: 8px;
+}
+.vplay { position: absolute; left: 50%; top: 50%; width: 56px; height: 40px; margin: -20px 0 0 -28px; background: #E62117; border-radius: 10px; }
+.vplay::after {          /* triangulo do botao de play */
+  content: ""; position: absolute; left: 23px; top: 11px;
+  border-left: 16px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent;
+}
+.vdur { position: absolute; right: 6px; bottom: 6px; padding: 1px 6px; background: rgba(0, 0, 0, .8); color: #fff; font: 600 12px Montserrat, sans-serif; border-radius: 4px; }
+
+/* aba Videos */
+.vgrupo { font: 700 20px Montserrat, sans-serif; color: var(--blue); margin: 28px 0 12px; border-left: 6px solid var(--blue); padding-left: 12px; }
+.vgrupo:first-child { margin-top: 0; }
+.vgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.vcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; }
+.vcard h3 { font: 700 15px/1.3 Montserrat, sans-serif; margin: 10px 0 4px; color: var(--blue); }
+.vcard p { margin: 4px 0; font-size: 14px; }
+.vcard a { color: var(--link); }
+.vcard iframe, .vlite iframe { width: 100%; aspect-ratio: 16/9; border: 2px solid var(--blue); border-radius: 8px; }
+
+/* videos dentro dos topicos do Guia e da pagina inicial */
+.vrow { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 8px 0; }
+.vlite { margin: 0; }
+.vlite figcaption { font-size: 14px; margin-top: 6px; line-height: 1.35; }
+/* na página inicial os vídeos ficam em coluna única, bem maiores */
+.panel .vrow { grid-template-columns: 1fr; margin-top: 16px; }
+.panel .vlite { max-width: 560px; }
+
+
+/* Sobre: números do projeto e trechos de código ------------------------- */
+
+.numeros { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+.topic .numeros li { max-width: none; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; color: var(--muted); font-size: 14px; line-height: 1.3; }
+.numeros b { display: block; font: 800 32px/1.1 Montserrat, sans-serif; color: var(--blue); font-variant-numeric: tabular-nums; }
+.tabela code { font: 500 13px "JetBrains Mono", ui-monospace, monospace; background: var(--paper); padding: 1px 5px; border-radius: 4px; }
+.estrutura { margin: 12px 0 0; }
+.estrutura img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--r); background: #fff; }
+.estrutura figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+.fontes-aba details.opt { margin-top: 10px; }
+.fontes-aba ul { margin: 10px 0 0; }
+.fontes-aba li { margin-bottom: 4px; }
+.fontes-aba a { overflow-wrap: anywhere; }
+
+/* 9. Tela larga (computador) ----------------------------------------------- */
+
+@media (min-width: 900px) {
+  /* texto um pouco maior nas paginas largas */
+  .wrap.wide { font-size: 18px; }
+  .wide .topic h2 { font-size: 26px; }
+  .wide .topic h3 { font-size: 18px; }
+  .wide .search { font-size: 18px; padding: 12px 14px; }
+  .wide .legend, .wide .vlite figcaption { font-size: 15px; }
+  .wide .tabela { font-size: 16.5px; }
+  .wide .tabela caption { font-size: 15px; }
+  .wide .toc summary { font-size: 17px; }
+  .wide .toc a { font-size: 16.5px; padding: 7px 0; }
+
+  /* pagina inicial */
+  .wide .panel h2 { font-size: 30px; }
+  .wide .panel li { font-size: 18px; }
+  .wide .when { font-size: 17px; }
+  .wide .alert { font-size: 17px; }
+  .wide .chip { font-size: 15px; }
+  .wide .links a { font-size: 17px; }
+  .wide .links a small { font-size: 15px; }
+  .wide .stop .name { font-size: 16px; max-width: 14ch; }
+  .wide .parts-row b { font-size: 21px; }
+  .wide .parts-row span { font-size: 16.5px; }
+  .wide .important h2 { font-size: 26px; }
+  .wide .important h3 { font-size: 16.5px; }
+  .wide .important li { font-size: 17px; }
+
+  /* disciplinas */
+  .wide .periodo h2 { font-size: 18px; }
+  .wide .periodo small { font-size: 14px; }
+  .wide .course { font-size: 15px; padding: 10px 12px; }
+  .wide .course b { font-size: 13px; }
+  .wide .detalhe h2 { font-size: 20px; }
+  .wide .detalhe p { font-size: 17px; }
+  .wide .pill { font-size: 14px; padding: 3px 12px; }
+
+  /* campus e videos */
+  .wide .line h3 { font-size: 17px; }
+  .wide .line p, .wide .line details { font-size: 16px; }
+  .wide .mapa { height: 520px; }
+  .wide .pontos button { font-size: 15.5px; }
+  .wide .vgrupo { font-size: 23px; }
+  .wide .vcard h3 { font-size: 17px; }
+  .wide .vcard p { font-size: 15.5px; }
+}
+
+/* indice mais largo nas paginas largas */
+.wide .doc { grid-template-columns: 290px minmax(0, 1fr); gap: 40px; }
+.wide .topic { padding: 24px 32px; }
+.wide .topic p, .wide .topic li { max-width: 100ch; }
+
+@media (min-width: 1000px) {
+  /* situacoes, fases e glossario em duas colunas */
+  .wide .topic dl.cols { column-count: 2; column-gap: 56px; }
+  .wide .topic dl.cols dt { break-after: avoid; }
+  .wide .topic dl.cols dd { break-inside: avoid; }
+}
+
+
+/* 10. Celular e telas medias ----------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .wide .doc { grid-template-columns: 240px minmax(0, 1fr); gap: 24px; }
+}
+
+@media (max-width: 900px) {
+  .grid-periods { grid-template-columns: repeat(2, 1fr); }
+  .vgrid { grid-template-columns: repeat(2, 1fr); }
+  .mapaof { grid-template-columns: 1fr; }
+  .important .cols, .wide .important .cols { column-count: 2; }
+
+  /* rodape empilhado: logo em cima, textos embaixo */
+  .foot .in { grid-template-columns: 1fr; gap: 10px; text-align: center; }
+  .foot .fl, .foot .fr { text-align: center; }
+  .foot img { order: -1; margin: 0 auto; height: 84px; }
+}
+
+@media (max-width: 720px) {
+  /* faixa de aviso e topo */
+  .draft { font-size: 12px; padding: 6px 12px; line-height: 1.35; }
+  .topwrap { padding: 0 16px; }
+  header.top { flex-wrap: wrap; row-gap: 0; padding: 12px 0 0; }
+  .lockup { flex-wrap: nowrap; gap: 10px; width: 100%; }
+  .lockup img.ufrj { height: 52px; }
+  .lockup .sep { min-height: 36px; }
+  .lockup .unit { font-size: 12px; flex: 1 1 auto; }
+  .icbadge { padding: 3px 6px; }
+  .icbadge img { height: 26px; }
+
+  /* menu em 2 linhas de 3 itens: nenhum nome quebra no meio */
+  nav.parts {
+    flex: 1 0 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 8px;
+    margin-top: 10px; padding-top: 2px; border-top: 1px solid rgba(255, 255, 255, .2);
+  }
+  nav.parts a { font-size: 16px; padding: 12px 2px; text-align: center; white-space: nowrap; }
+
+  .hero { padding-bottom: 28px; margin-bottom: 20px; }
+  .hero.small { padding-bottom: 20px; margin-bottom: 20px; }
+  .hero h1 { margin-top: 22px; font-size: 30px; }
+  .hero.small h1 { margin-top: 18px; }
+  .lead { font-size: 15px; margin-bottom: 14px; }
+  .term { font-size: 12px; padding: 5px 10px; }
+
+  /* linha do tempo na vertical */
+  .track { display: flex; flex-direction: column; row-gap: 14px; margin: 8px 0 0 6px; }
+  .track::before { left: 19px; right: auto; top: 22px; bottom: 22px; width: 4px; height: auto; }
+  .track li { text-align: left; }
+  .stop { flex-direction: row; gap: 14px; padding: 7px 0; }
+  .stop .dot { flex: none; }
+  .stop .name { max-width: none; font-size: 16px; line-height: 1.25; }
+  .stop .pin { margin: 0 0 0 4px; }
+
+  /* pagina inicial */
+  .panel { grid-template-columns: 1fr; }
+  .parts-row { grid-template-columns: 1fr; }
+
+  /* guia */
+  .doc, .wide .doc { grid-template-columns: minmax(0, 1fr); }
+  .toc { position: static; }
+  .toc a { padding: 10px 0; }
+
+  /* disciplinas */
+  .grid-periods { grid-template-columns: 1fr; }
+
+  /* campus */
+  .lines { grid-template-columns: 1fr; }
+  .mapa-box { grid-template-columns: 1fr; }
+  .mapa { height: 340px; }
+
+  /* videos */
+  .vgrid, .vrow { grid-template-columns: 1fr; }
+
+  /* tabelas viram cartoes (a classe .empilha vem de tabelas.js) */
+  .tabela.empilha { min-width: 0; }
+  .tabela.empilha thead { position: absolute; left: -999px; }
+  .tabela.empilha, .tabela.empilha tbody, .tabela.empilha tr,
+  .tabela.empilha th, .tabela.empilha td { display: block; }
+  .tabela.empilha tr { margin-bottom: 12px; background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .tabela.empilha th, .tabela.empilha td { border: 0; border-bottom: 1px solid var(--line); }
+  .tabela.empilha tr > :last-child { border-bottom: 0; }
+  .tabela.empilha tbody th { background: var(--blue); color: #fff; }
+  .tabela.empilha td::before { content: attr(data-label); display: block; font-size: 13px; font-weight: 600; color: var(--muted); }
+
+}
+
+@media (max-width: 600px) {
+  .important .cols, .wide .important .cols { column-count: 1; }
+  /* areas de toque maiores */
+  .important li a { display: inline-block; padding: 7px 0; }
+  .toc summary { padding: 10px 0; }
+}
+
+/* quem prefere menos movimento nao ve a animacao das bolinhas */
+@media (prefers-reduced-motion: reduce) {
+  .stop .dot { transition: none; }
+}

@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/videos", "destination": "/guia", "permanent": true }
+  ]
+}

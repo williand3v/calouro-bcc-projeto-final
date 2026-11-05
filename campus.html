@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus — Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero small wide">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html">Início</a><a href="guia.html">Guia</a
+            ><a href="curso.html">O curso</a><a href="disciplinas.html">Disciplinas</a
+            ><a href="campus.html" aria-current="page">Campus</a><a href="sobre.html">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>Campus</h1>
+        <p class="lead">
+          Como chegar à UFRJ, ônibus internos até o CCMN, onde fica o IC e onde comer na Cidade
+          Universitária (Ilha do Fundão).
+        </p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap wide">
+      <section class="topic" id="chegar" style="margin-top: 0">
+        <h2>Como chegar à UFRJ</h2>
+        <p>
+          Alguns ônibus da cidade do Rio de Janeiro já deixam você <b>em frente ao CCMN</b>, sem
+          precisar trocar para um ônibus interno.
+        </p>
+        <p>Para saber qual ônibus pegar a partir de onde você está, use o <b>Moovit</b>:</p>
+        <ol>
+          <li>Abra o Moovit (aplicativo ou site).</li>
+          <li>No destino, digite <b>CCMN UFRJ</b>.</li>
+          <li>Escolha a rota que mais combina com você e confira os horários em tempo real.</li>
+        </ol>
+        <p>
+          <a class="btn" href="https://moovitapp.com/" target="_blank" rel="noopener"
+            >Abrir o Moovit</a
+          >
+        </p>
+        <p class="legend">
+          As linhas e os horários mudam. Se o ônibus não deixar no CCMN, desça na Estação de
+          Integração UFRJ e use os ônibus internos (veja abaixo).
+        </p>
+      </section>
+
+      <section class="ccmn" id="ccmn" aria-labelledby="hc" style="margin-top: 32px">
+        <h2 id="hc">Ônibus internos até o CCMN</h2>
+        <p class="when">
+          Desça do BRT na Estação de Integração UFRJ e pegue uma linha interna. Três linhas passam
+          pelo ponto <b>CCMN / CT</b>:
+        </p>
+        <div class="lines">
+          <article class="line">
+            <div class="num">5</div>
+            <div>
+              <h3>Estação x CT/CCMN</h3>
+              <p>
+                Expressa, só nos horários de pico: sai da Estação das 7h às 9h, das 11h às 13h e das
+                17h às 19h30, e vai direto ao CCMN/CT. O intervalo varia conforme o fiscal de linha.
+              </p>
+              <details>
+                <summary>Ver itinerário</summary>
+                <p>
+                  <b>Ida:</b> Estação Integração UFRJ → Hospital Universitário / CCS bloco A →
+                  Prefeitura Universitária → Cepel → Cenpes I → CCMN / CT
+                </p>
+                <p>
+                  <b>Volta:</b> CCMN / CT → Cenpes II → EEFD → Antiga Bio-Rio → CCS (Banco do
+                  Brasil) → CCS bloco A / Hospital Universitário → Estação Integração UFRJ
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="line">
+            <div class="num">1</div>
+            <div>
+              <h3>BRT/Estação x Gráfica</h3>
+              <p>
+                Das 5h às 6h45 sai do BRT. Das 7h às 19h sai da Estação a cada 10 min; das 19h às
+                23h59, a cada 30 min.
+              </p>
+              <details>
+                <summary>Ver itinerário</summary>
+                <p>
+                  <b>Ida:</b> Estação Integração UFRJ → Hospital Universitário / CCS bloco A →
+                  Prefeitura Universitária → Cepel → Cenpes I → CCMN / CT → CT / F. de Letras →
+                  Xistoquímica → Reitoria (escadaria) → CPST / DFO → Incubadora → Gráfica
+                </p>
+                <p>
+                  <b>Volta:</b> Gráfica → COPPEAD → CETEM → Reitoria / F. de Letras → F. de Letras /
+                  CT → CCMN / CT → Cenpes II → EEFD → DIPRO → Residência Estudantil 1 → Antiga
+                  Bio-Rio → CCS (Banco do Brasil) → CCS bloco A / Hospital Universitário → Estação
+                  Integração UFRJ
+                </p>
+              </details>
+            </div>
+          </article>
+          <article class="line">
+            <div class="num">4</div>
+            <div>
+              <h3>BRT/Estação x Parque Tecnológico/COPPEAD</h3>
+              <p>
+                Das 6h10 às 6h50 sai do BRT. Das 7h10 às 18h50 sai da Estação, a cada 15 min (a cada
+                20 min à noite, até 20h30). Depois das 20h30, use a Linha 1 para chegar ao Parque
+                Tecnológico.
+              </p>
+              <details>
+                <summary>Ver itinerário</summary>
+                <p>
+                  <b>Ida:</b> Estação Integração UFRJ → Hospital Universitário / CCS bloco A →
+                  Prefeitura Universitária → Cepel → Cenpes 1 → CCMN / CT → CT / F. de Letras →
+                  Reitoria (lateral) → CPST / DFO → Incubadora → Parque Tecnológico (7 paradas:
+                  Pró-reitorias, AmBev, IBM (Reitoria), Senai, atrás da Schlumberger, lateral da
+                  Schlumberger e saída do Parque, perto das cancelas)
+                </p>
+                <p>
+                  <b>Volta:</b> Parque Tecnológico → COPPEAD → CETEM → Reitoria / F. de Letras → F.
+                  de Letras / CT → CCMN / CT → Cenpes 2 → EEFD → Antiga Bio-Rio → CCS (Banco do
+                  Brasil) → CCS bloco A / Hospital Universitário → Estação Integração UFRJ
+                </p>
+              </details>
+            </div>
+          </article>
+        </div>
+        <details class="others">
+          <summary>Outras linhas internas (não passam pelo CCMN)</summary>
+          <div class="lines">
+            <article class="line">
+              <div class="num">2</div>
+              <div>
+                <h3>Estação x COPPEAD</h3>
+                <p>
+                  Das 7h05 às 19h05 sai da Estação e das 7h25 às 18h45 sai da COPPEAD, a cada 40
+                  min.
+                </p>
+                <details>
+                  <summary>Ver itinerário</summary>
+                  <p>
+                    <b>Ida:</b> Estação Integração UFRJ → Hospital Universitário / CCS bloco A →
+                    Prefeitura Universitária → Cepel → Cenpes 1 → CT / F. de Letras → Prédio Jorge
+                    Machado Moreira (escadaria) → CETEM → COPPEAD
+                  </p>
+                  <p><b>Volta:</b> COPPEAD → CETEM → F. de Letras</p>
+                </details>
+              </div>
+            </article>
+            <article class="line">
+              <div class="num">3</div>
+              <div>
+                <h3>BRT/Estação x Residência Estudantil</h3>
+                <p>Das 5h às 6h45 sai do BRT. Das 7h às 23h59 sai da Estação, a cada 10 min.</p>
+                <details>
+                  <summary>Ver itinerário</summary>
+                  <p>
+                    <b>Ida:</b> Estação Integração UFRJ → Hospital Universitário / CCS bloco A →
+                    Prefeitura Universitária → EEFD → DIPRO → Residência Estudantil 1
+                  </p>
+                  <p>
+                    <b>Volta:</b> Residência Estudantil 1 → Antiga Bio-Rio → CCS (Banco do Brasil) →
+                    CCS bloco A / Hospital Universitário → Estação Integração UFRJ
+                  </p>
+                </details>
+              </div>
+            </article>
+            <article class="line">
+              <div class="num">6</div>
+              <div>
+                <h3>Residência Estudantil x Reitoria</h3>
+                <p>De segunda a sexta, das 7h às 22h, a cada 60 min.</p>
+                <details>
+                  <summary>Ver itinerário</summary>
+                  <p>
+                    <b>Ida:</b> Residência Estudantil 1 → Antiga Bio-Rio → CCS (Banco do Brasil) →
+                    Prefeitura Universitária → Cepel → CEPE → IF (novo) → CT / F. de Letras →
+                    Reitoria (frente)
+                  </p>
+                  <p>
+                    <b>Volta:</b> CETEM → Reitoria / F. de Letras → F. de Letras / CT → Cenpes II →
+                    EEFD → DIPRO → Residência Estudantil 1
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
+        </details>
+        <p class="when">
+          <b>Para voltar:</b> as linhas 1, 4 e 5 saem do CCMN/CT e passam por Cenpes II, EEFD,
+          antiga Bio-Rio e CCS até a Estação de Integração UFRJ.
+        </p>
+        <p class="note">
+          Fonte:
+          <a
+            href="https://prefeitura.ufrj.br/servicos/transporte-integrado/linhas-internas/"
+            target="_blank"
+            rel="noopener"
+            >Prefeitura Universitária, linhas internas</a
+          >, consultada em outubro de 2026. Horários mudam: confira lá antes de sair.
+        </p>
+      </section>
+
+      <section class="topic" id="onde-fica" style="margin-top: 32px">
+        <h2>Onde fica o Instituto de Computação</h2>
+        <p>
+          O IC fica no <b>Bloco E do CCMN</b> (Centro de Ciências Matemáticas e da Natureza),
+          Avenida Athos da Silveira Ramos, 274, Cidade Universitária, Rio de Janeiro. Telefones:
+          (21) 3938-3338, 3938-3393 e 3938-9516.
+        </p>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+        />
+        <div class="mapa-box">
+          <ul class="pontos" id="pontos" aria-label="Pontos do mapa"></ul>
+          <div
+            id="mapa"
+            class="mapa"
+            role="region"
+            aria-label="Mapa da Cidade Universitária com CCMN, restaurantes universitários e paradas"
+          ></div>
+        </div>
+        <p class="legend">
+          Posições aproximadas, a partir do OpenStreetMap. O ponto do RU Central é uma estimativa:
+          confira no local.
+        </p>
+        <p>
+          <a
+            class="btn"
+            href="https://www.openstreetmap.org/search?query=CCMN%20UFRJ%20Cidade%20Universit%C3%A1ria"
+            target="_blank"
+            rel="noopener"
+            >Abrir mapa maior</a
+          >
+          <a class="btn" href="https://ic.ufrj.br/info/contato/" target="_blank" rel="noopener"
+            >Contato e localização (site do IC)</a
+          >
+        </p>
+      </section>
+
+      <section class="topic" id="mapa-oficial">
+        <h2>Mapa da Cidade Universitária</h2>
+        <p>
+          Mapa oficial da Prefeitura Universitária, com os principais lugares numerados. O
+          <b>CCMN é o número 10</b>. Clique na imagem para abrir em tamanho maior.
+        </p>
+        <div class="mapaof">
+          <a href="img/mapa-cidade-universitaria.png" target="_blank" rel="noopener"
+            ><img
+              src="img/mapa-cidade-universitaria.png"
+              width="781"
+              height="768"
+              loading="lazy"
+              alt="Mapa da Ilha do Fundão com 31 lugares numerados. A lista de nomes está ao lado."
+          /></a>
+          <ol class="legendamapa">
+            <li>Alojamento Estudantil</li>
+            <li>Fundação Bio Rio</li>
+            <li>Usina Verde</li>
+            <li>Centro de Ciências da Saúde (CCS)</li>
+            <li>Instituto de Puericultura e Pediatria (IPPMG)</li>
+            <li>Prefeitura UFRJ</li>
+            <li>Centro de Pesquisas de Energia Elétrica (CEPEL)</li>
+            <li>Centro de Pesquisas e Desenvolvimento (CENPES)</li>
+            <li>Clube de Empregados da Petrobrás</li>
+            <li class="dest">Centro de Ciências Matemáticas e da Natureza (CCMN)</li>
+            <li>Instituto de Física (IF)</li>
+            <li>Centro de Tecnologia (CT)</li>
+            <li>Instituto de Macromolécula Eloísa Mano</li>
+            <li>CT2</li>
+            <li>Polo de Xistoquímica</li>
+            <li>Instituto de Engenharia Nuclear (IEN)</li>
+            <li>
+              Reitoria / Escola de Belas Artes (EBA) / Faculdade de Arquitetura e Urbanismo (FAU)
+            </li>
+            <li>Incubadora de Empresas</li>
+            <li>Gráfica UFRJ</li>
+            <li>Polo Verde da Ilha de Bom Jesus</li>
+            <li>Instituto COOPEAD de Administração</li>
+            <li>Centro de Tecnologia Mineral (CETEM)</li>
+            <li>Faculdade de Letras (FL)</li>
+            <li>Instituto de Química / LADETEC</li>
+            <li>Centro de Pesquisas da Petrobrás</li>
+            <li>Campos de Rugby e Hóquei</li>
+            <li>Escola de Educação Física e Desportos (EEFD)</li>
+            <li>Parque do Catalão</li>
+            <li>Vila Residencial</li>
+            <li>Parque Tecnológico</li>
+            <li>Hospital Universitário</li>
+          </ol>
+        </div>
+        <p class="legend">
+          Fonte:
+          <a href="https://prefeitura.ufrj.br/mapas/" target="_blank" rel="noopener"
+            >Prefeitura Universitária da UFRJ, mapas</a
+          >.
+        </p>
+      </section>
+
+      <section class="topic" id="ru">
+        <h2>Restaurantes Universitários (RU) no Fundão</h2>
+        <p>
+          Quatro unidades ficam na Cidade Universitária. O <b>RU Central</b> é o principal: é a
+          cozinha que produz as refeições dos outros restaurantes, que são levadas até eles duas
+          vezes por dia.
+        </p>
+        <ul>
+          <li>
+            <b>RU Central:</b> Av. Carlos Chagas Filho, s/n, Ilha do Fundão. Telefones: (21)
+            3938-6840 e 3938-6842. É a única unidade que funciona o ano todo, sem pausas, e também
+            atende os moradores da Residência Estudantil.
+          </li>
+          <li><b>RU CT:</b> Av. Athos da Silveira Ramos, 149, entrada principal do Bloco A.</li>
+          <li><b>RU2 CT:</b> Av. Horácio Macedo, 2030, Bloco H, Centro de Tecnologia.</li>
+          <li><b>RU Letras:</b> Av. Horácio Macedo, 2151, Bloco G.</li>
+        </ul>
+        <p>
+          <b>Preço para estudantes:</b> R$ 2,00 por refeição. Quem recebe auxílio da PR7 pode ter
+          isenção. <b>Para entrar</b>, apresente um documento oficial que comprove o vínculo de
+          estudante. <b>Pagamento:</b> a UFRJ cita cartão de débito, dinheiro e Pix, mas o BandejApp
+          informa só dinheiro. Por garantia, leve dinheiro.
+        </p>
+        <h3>Horários</h3>
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption class="legend">
+              Horários das refeições nos RUs do Fundão
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Refeição</th>
+                <th scope="col">Seg a sex<br />RU Central</th>
+                <th scope="col">Seg a sex<br />Outras unidades</th>
+                <th scope="col">Sáb, dom e feriados</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Almoço</th>
+                <td><b>11h às 14h15</b></td>
+                <td><b>11h às 14h15</b></td>
+                <td rowspan="2">Só o RU Central abre</td>
+              </tr>
+              <tr>
+                <th scope="row">Jantar</th>
+                <td><b>17h30 às 20h15</b></td>
+                <td><b>17h30 às 20h15</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="legend">
+          Os horários mudam. Confira o cardápio e o horário atual no
+          <a
+            href="https://devmobufrj.github.io/BandejApp/#/Informacoes"
+            target="_blank"
+            rel="noopener"
+            >BandejApp</a
+          >.
+        </p>
+        <p>
+          <a
+            class="btn"
+            href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/restaurantes-universitarios/"
+            target="_blank"
+            rel="noopener"
+            >Página oficial dos RUs</a
+          >
+        </p>
+      </section>
+
+      <section class="topic" id="bibliotecas">
+        <h2>Bibliotecas no CCMN e no CT</h2>
+        <p>Quatro bibliotecas atendem quem estuda no CCMN e no CT. Horários de segunda a sexta:</p>
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption>
+              Bibliotecas na Cidade Universitária
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Biblioteca</th>
+                <th scope="col">Onde</th>
+                <th scope="col">Horário</th>
+                <th scope="col">Contato</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Núcleo de Computação Eletrônica (NCE)</th>
+                <td>Prédio do CCMN, Bloco C</td>
+                <td><b>9h às 17h</b></td>
+                <td>
+                  (21) 3938-3223<br /><a href="mailto:biblioteca@nce.ufrj.br"
+                    >biblioteca@nce.ufrj.br</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Central do CCMN</th>
+                <td>Prédio do CCMN, Bloco A</td>
+                <td><b>8h às 20h30</b></td>
+                <td>
+                  (21) 3938-9446<br /><a href="mailto:ccmnbib@bib.ccmn.ufrj.br"
+                    >ccmnbib@bib.ccmn.ufrj.br</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Instituto de Matemática (Prof. Leopoldo Nachbin)</th>
+                <td>Prédio do CT, Bloco C, sala 120</td>
+                <td><b>8h30 às 20h30</b></td>
+                <td>
+                  (21) 3938-7397<br /><a href="mailto:atendimento.bib@im.ufrj.br"
+                    >atendimento.bib@im.ufrj.br</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Central do CT</th>
+                <td>Av. Athos da Silveira Ramos, 149, Bloco B, 2º andar</td>
+                <td><b>7h às 19h</b></td>
+                <td>
+                  (21) 3938-7304<br /><a href="mailto:biblioteca@ct.ufrj.br"
+                    >biblioteca@ct.ufrj.br</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="legend">
+          Dados das páginas do Sistema de Bibliotecas e Informação (SiBI), publicadas em 2019. Os
+          horários podem ter mudado: confirme com a biblioteca antes de ir.
+        </p>
+        <p>
+          <a
+            class="btn"
+            href="https://sibi.ufrj.br/2019/09/17/informacoes-bibliotecas-ciencias-exatas-e-da-terra/"
+            target="_blank"
+            rel="noopener"
+            >Todas as bibliotecas de Exatas (SiBI)</a
+          >
+          <a
+            class="btn"
+            href="https://minerva.ufrj.br/F?RN=139388233"
+            target="_blank"
+            rel="noopener"
+            >Catálogo Minerva</a
+          >
+        </p>
+        <h3>Vídeo</h3>
+        <div class="vrow">
+          <figure class="vlite">
+            <button
+              type="button"
+              class="vthumb"
+              data-id="Z3XFYhk-xbU"
+              data-title="Boas-vindas, Biblioteca do NCE/UFRJ 2023: Calouros de Ciência da Computação"
+              aria-label="Reproduzir: Boas-vindas, Biblioteca do NCE/UFRJ 2023: Calouros de Ciência da Computação"
+              style="background-image: url(https://i.ytimg.com/vi/Z3XFYhk-xbU/hqdefault.jpg)"
+            >
+              <span class="vplay" aria-hidden="true"></span><span class="vdur">1:01</span>
+            </button>
+            <figcaption>
+              <b>Boas-vindas, Biblioteca do NCE/UFRJ 2023: Calouros de Ciência da Computação</b
+              ><br />Canal: Biblioteca do NCE ·
+              <a href="https://www.youtube.com/watch?v=Z3XFYhk-xbU" target="_blank" rel="noopener"
+                >Abrir no YouTube</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 03/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script>
+      // Pontos do mapa clicável.
+      // n = nome, t = descrição, c = [latitude, longitude] (do OpenStreetMap), k = tipo (sede, ru ou bus).
+      const PONTOS = [
+        {
+          n: "CCMN",
+          t: "Centro de Ciências Matemáticas e da Natureza. Aqui fica o Instituto de Computação.",
+          c: [-22.85761, -43.23285],
+          k: "sede",
+        },
+        {
+          n: "Ponto de ônibus CT/CCMN",
+          t: "Parada das linhas internas 1, 4 e 5.",
+          c: [-22.85818, -43.23142],
+          k: "bus",
+        },
+        {
+          n: "RU Central",
+          t: "O principal. Av. Carlos Chagas Filho, s/n (posição aproximada).",
+          c: [-22.84474, -43.23442],
+          k: "ru",
+        },
+        {
+          n: "RU CT",
+          t: "Av. Athos da Silveira Ramos, 149, entrada principal do Bloco A.",
+          c: [-22.8594, -43.23083],
+          k: "ru",
+        },
+        {
+          n: "RU2 CT",
+          t: "Av. Horácio Macedo, 2030, Bloco H.",
+          c: [-22.86157, -43.22826],
+          k: "ru",
+        },
+        {
+          n: "RU Letras",
+          t: "Av. Horácio Macedo, 2151, Bloco G.",
+          c: [-22.85998, -43.22527],
+          k: "ru",
+        },
+        {
+          n: "Estação de Integração UFRJ",
+          t: "Desembarque do BRT. Daqui saem as linhas internas.",
+          c: [-22.8405, -43.2374],
+          k: "bus",
+        },
+      ];
+      // Cria o mapa (Leaflet). O zoom pela rodinha fica desligado para não atrapalhar a rolagem da página.
+      const mapa = L.map("mapa", { scrollWheelZoom: false });
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "&copy; Contribuidores do OpenStreetMap",
+      }).addTo(mapa);
+      // Para cada ponto: um marcador no mapa e um botão na lista ao lado.
+      const lista = document.getElementById("pontos"),
+        marcas = [];
+      PONTOS.forEach((p, i) => {
+        const m = L.marker(p.c, {
+          icon: L.divIcon({
+            className: "",
+            html: '<span class="pt ' + p.k + '"></span>',
+            iconSize: [24, 24],
+            iconAnchor: [12, 12],
+          }),
+          title: p.n,
+          alt: p.n,
+        })
+          .addTo(mapa)
+          .bindPopup("<b>" + p.n + "</b><br>" + p.t);
+        marcas.push(m);
+        const li = document.createElement("li");
+        li.innerHTML =
+          '<button type="button"><span class="pt ' + p.k + '"></span>' + p.n + "</button>";
+        li.firstChild.addEventListener("click", () => {
+          mapa.flyTo(p.c, 17);
+          m.openPopup();
+          document.getElementById("mapa").scrollIntoView({ block: "nearest" });
+        });
+        lista.appendChild(li);
+      });
+      // Enquadra o mapa para mostrar todos os pontos.
+      mapa.fitBounds(L.latLngBounds(PONTOS.map((p) => p.c)), { padding: [30, 30] });
+    </script>
+    <script>
+      // Clicar numa miniatura de vídeo troca a imagem pelo player do YouTube (versão sem cookies).
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest(".vthumb");
+        if (!b) return;
+        const f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.id + "?autoplay=1";
+        f.title = b.dataset.title;
+        f.allow = "autoplay; encrypted-media; picture-in-picture";
+        f.allowFullscreen = true;
+        f.referrerPolicy = "strict-origin-when-cross-origin";
+        b.replaceWith(f);
+        f.focus();
+      });
+    </script>
+      <script src="tabelas.js"></script>
+  </body>
+</html>

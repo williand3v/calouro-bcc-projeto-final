@@ -1,0 +1,1784 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guia — Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero small wide">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html">Início</a><a href="guia.html" aria-current="page">Guia</a
+            ><a href="curso.html">O curso</a><a href="disciplinas.html">Disciplinas</a
+            ><a href="campus.html">Campus</a><a href="sobre.html">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>Guia do calouro</h1>
+        <p class="lead">
+          Quatro partes: o SIGA (inscrição, trancamento, CRPID, CRID e documentos), a UFRJ (bolsas, RU e
+          segurança), o AVA (sala de aula virtual) e as dicas dos veteranos, em português simples.
+        </p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap wide">
+      <div class="abas" role="group" aria-label="Partes do guia">
+        <button type="button" data-aba="siga" aria-pressed="true">SIGA</button>
+        <button type="button" data-aba="ufrj" aria-pressed="false">UFRJ</button>
+        <button type="button" data-aba="ava" aria-pressed="false">AVA</button>
+        <button type="button" data-aba="dicas" aria-pressed="false">Dicas dos veteranos</button>
+      </div>
+      <div class="doc">
+        <nav class="toc" aria-label="Neste guia">
+          <details id="tocd" open>
+            <summary>Neste guia</summary>
+            <ul>
+              <li><a href="#primeiro-acesso">Primeiro acesso ao Portal</a></li>
+              <li><a href="#fases">As fases do semestre</a></li>
+              <li><a href="#inscricao">Como pedir disciplinas</a></li>
+              <li><a href="#alteracao">Trocar de turma ou trancar (período de alteração)</a></li>
+              <li><a href="#trancamento">Trancamento de disciplinas</a></li>
+              <li>
+                <a href="#situacoes">Situações de inscrição (o que cada mensagem significa)</a>
+              </li>
+              <li><a href="#crpid">CRPID: o recibo dos seus pedidos</a></li>
+              <li><a href="#crid">CRID: o comprovante das inscrições</a></li>
+              <li><a href="#boletim">Boletim, histórico, BOA e ementário</a></li>
+              <li><a href="#documentos">Declarações e documentos</a></li>
+              <li><a href="#requerimentos">Requerimentos e extensão</a></li>
+              <li><a href="#ava-acesso">O que é o AVA e como entrar</a></li>
+              <li><a href="#ava-senha">Primeiro acesso, senha e e-mail</a></li>
+              <li><a href="#ava-curso">Não vejo minha disciplina</a></li>
+              <li><a href="#ava-dados">Atualizar meus dados e e-mail</a></li>
+              <li><a href="#dicas-onde">Onde os veteranos conversam</a></li>
+              <li><a href="#dicas-lembretes">Lembretes que ajudam a não perder o prazo</a></li>
+              <li><a href="#dicas-avisos">Mais avisos do manual do SIGA</a></li>
+              <li><a href="#dicas-semestre">Dicas para o primeiro semestre</a></li>
+              <li><a href="#dicas-acumular">Não deixe a matéria acumular</a></li>
+              <li><a href="#dicas-antes">Antes do primeiro dia</a></li>
+              <li><a href="#dicas-trabalhos">Trabalhos e provas</a></li>
+              <li><a href="#dicas-carreira">Carreira e experiência</a></li>
+              <li><a href="#dicas-cuide">Cuide de você</a></li>
+              <li><a href="#ufrj-vida">Vida acadêmica</a></li>
+              <li><a href="#bolsas">Bolsas e auxílios (PR7)</a></li>
+              <li><a href="#pr7-auxilios">Auxílios da PR7: quais são e quanto valem</a></li>
+              <li><a href="#pr7-como">Como pedir um auxílio</a></li>
+              <li><a href="#pr7-apoio">Outros serviços da PR7</a></li>
+              <li><a href="#ru-guia">Restaurante Universitário</a></li>
+              <li><a href="#seguranca">Segurança e ouvidoria</a></li>
+              <li><a href="#contatos">Contatos e apoio</a></li>
+              <li><a href="#glossario">Glossário</a></li>
+              <li><a href="#arquivos">Arquivos e links oficiais</a></li>
+            </ul>
+          </details>
+        </nav>
+        <div>
+          <label for="busca" class="legend">Buscar no guia</label>
+          <input
+            id="busca"
+            class="search"
+            type="search"
+            placeholder="Ex.: trancar, CRID, lotação esgotada"
+            autocomplete="off"
+          />
+          <p class="empty" id="vazio" role="status">Nada encontrado. Tente outra palavra.</p>
+          <section class="topic" id="primeiro-acesso">
+            <h2>Primeiro acesso ao Portal</h2>
+            <p>
+              Antes de entrar no Portal do Aluno, cadastre o e-mail que você quer usar na
+              <a href="https://intranet.ufrj.br/" target="_blank" rel="noopener">Intranet</a>, na
+              opção “Primeiro acesso”.
+            </p>
+            <ol>
+              <li>Preencha seus dados e clique em “Cadastrar”.</li>
+              <li>Abra o e-mail que o sistema enviou e clique no link para ativar o cadastro.</li>
+              <li>
+                Entre no
+                <a href="https://portal.ufrj.br/" target="_blank" rel="noopener">Portal do Aluno</a
+                >. Sua identificação é o CPF (ou o número do passaporte, se for estrangeiro) e a
+                senha é a que você criou na Intranet.
+              </li>
+            </ol>
+            <p>
+              Esqueceu a senha ou precisa trocar o e-mail? Escreva para
+              <a href="mailto:portalaluno@dre.ufrj.br">portalaluno@dre.ufrj.br</a>.
+            </p>
+            <p>
+              Também existe o aplicativo gratuito <b>Portal Aluno UFRJ</b>, para
+              <a
+                href="https://play.google.com/store/apps/details?id=br.ufrj.gnosys.mobile&amp;hl=pt_BR"
+                target="_blank"
+                rel="noopener"
+                >Android</a
+              >
+              e iOS (procure “Portal Aluno UFRJ” na App Store).
+            </p>
+            <h3>Vídeo</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="wdaMdkM_VzQ"
+                  data-title="Como acessar o SIGA UFRJ pela primeira vez"
+                  aria-label="Reproduzir: Como acessar o SIGA UFRJ pela primeira vez"
+                  style="background-image: url(https://i.ytimg.com/vi/wdaMdkM_VzQ/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">1:21</span>
+                </button>
+                <figcaption>
+                  <b>Como acessar o SIGA UFRJ pela primeira vez</b><br />Canal: Coord. Grad. ESS
+                  (UFRJ) ·
+                  <a
+                    href="https://www.youtube.com/watch?v=wdaMdkM_VzQ"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="fases">
+            <h2>As fases do semestre</h2>
+            <dl class="cols">
+              <dt>Inscrição</dt>
+              <dd>
+                No início do semestre você pede as disciplinas pelo Portal. No 1º período a
+                coordenação faz a inscrição por você e a grade já vem pronta.
+              </dd>
+              <dt>Concordância</dt>
+              <dd>
+                Orientadores e coordenadores concordam (ou não) com os pedidos. Você não faz nada.
+              </dd>
+              <dt>Efetivação</dt>
+              <dd>O sistema cria as inscrições de fato no CRID. Você não faz nada.</dd>
+              <dt>Alteração</dt>
+              <dd>
+                Você pode pedir uma disciplina nova, trocar de turma ou trancar uma turma já
+                efetivada. Esses pedidos só concorrem com outros pedidos desta fase (as vagas são
+                novas).
+              </dd>
+              <dt>Regularização</dt>
+              <dd>
+                Coordenação, COAA ou secretaria autorizam (ou não) inscrições irregulares, como
+                falta de requisito, horário sobreposto, mais de 32 créditos ou menos de 6. Você pode
+                pedir a regularização à secretaria, com justificativa.
+              </dd>
+              <dt>Trancamento</dt>
+              <dd>
+                Última vez em que a aba “Inscrição em disciplinas” abre para alteração: serve para
+                trancar o que você não quer cursar neste semestre.
+              </dd>
+              <dt>Fechamento</dt>
+              <dd>
+                O período é encerrado: os pedidos são apagados, o CRID deixa de ser emitido e o
+                semestre entra no boletim e no histórico com grau I (Incompleto) até os professores
+                lançarem notas e frequência.
+              </dd>
+            </dl>
+            <p>
+              As datas de cada fase estão no
+              <a
+                href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf"
+                target="_blank"
+                rel="noopener"
+                >calendário acadêmico 2026 (PDF)</a
+              >.
+            </p>
+            <h3>Vídeo</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="J0uClBvRVgM"
+                  data-title="Corre que a inscrição abriu! | Mitos da inscrição UFRJ"
+                  aria-label="Reproduzir: Corre que a inscrição abriu! | Mitos da inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/J0uClBvRVgM/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">1:40</span>
+                </button>
+                <figcaption>
+                  <b>Corre que a inscrição abriu! | Mitos da inscrição UFRJ</b><br />Canal: Siga
+                  UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=J0uClBvRVgM"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="inscricao">
+            <h2>Como pedir disciplinas</h2>
+            <p>
+              A partir do 2º período, no Portal: “Inscrição em disciplinas” → “Minha grade horária”
+              → “Meu curso”. Escolha o período, ou as abas de eletivas e de turmas de outros cursos.
+              Não esqueça de clicar em <b>“Finalizar pedidos”</b>.
+            </p>
+            <p>O sistema <b>não</b> atende por ordem de chegada. A classificação usa:</p>
+            <ul>
+              <li>
+                <b>Critérios fixos:</b> primeiro alunos do curso da turma (depois da mesma unidade,
+                do mesmo centro e do resto da universidade); e alunos do período em que a disciplina
+                é recomendada.
+              </li>
+              <li><b>Critérios variáveis</b> (definidos pela coordenação): COA, CRA e turno.</li>
+            </ul>
+            <p>
+              Por isso, fugir da grade recomendada faz você perder prioridade. Não é obrigatório
+              seguir a grade, mas pode atrasar a formatura. Converse com seu orientador acadêmico.
+            </p>
+            <p>
+              Acompanhe pelos e-mails do sistema ou no Portal, em “Situações dos pedidos”. Você pode
+              perder uma vaga a qualquer momento enquanto o período estiver aberto. Ao fim, baixe o
+              <a href="#crpid">CRPID</a>.
+            </p>
+            <h3>Vídeos</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="2Hf1rl2NLTQ"
+                  data-title="Inscrição em disciplinas SIGA"
+                  aria-label="Reproduzir: Inscrição em disciplinas SIGA"
+                  style="background-image: url(https://i.ytimg.com/vi/2Hf1rl2NLTQ/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">0:42</span>
+                </button>
+                <figcaption>
+                  <b>Inscrição em disciplinas SIGA</b><br />Canal: Coord. Grad. ESS (UFRJ) ·
+                  <a
+                    href="https://www.youtube.com/watch?v=2Hf1rl2NLTQ"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="e8JIVSuytI8"
+                  data-title="Introdução | Mitos da Inscrição UFRJ"
+                  aria-label="Reproduzir: Introdução | Mitos da Inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/e8JIVSuytI8/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">1:33</span>
+                </button>
+                <figcaption>
+                  <b>Introdução | Mitos da Inscrição UFRJ</b><br />Canal: Siga UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=e8JIVSuytI8"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="rFjjtzWLWvw"
+                  data-title="Cadê a matéria? Sumiu! | Mitos da inscrição UFRJ"
+                  aria-label="Reproduzir: Cadê a matéria? Sumiu! | Mitos da inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/rFjjtzWLWvw/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">3:58</span>
+                </button>
+                <figcaption>
+                  <b>Cadê a matéria? Sumiu! | Mitos da inscrição UFRJ</b><br />Canal: Siga UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=rFjjtzWLWvw"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="lmmKln95Utc"
+                  data-title="O sistema me expulsou! | Mitos da inscrição UFRJ"
+                  aria-label="Reproduzir: O sistema me expulsou! | Mitos da inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/lmmKln95Utc/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">2:39</span>
+                </button>
+                <figcaption>
+                  <b>O sistema me expulsou! | Mitos da inscrição UFRJ</b><br />Canal: Siga UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=lmmKln95Utc"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="alteracao">
+            <h2>Trocar de turma ou trancar (período de alteração)</h2>
+            <h3>Transferir de turma</h3>
+            <p>
+              No Portal: “Inscrição em disciplinas” → “Minha grade horária” → clique na disciplina →
+              “Transferir” → escolha a turma → “Finalizar pedidos”.
+            </p>
+            <p>
+              <b>Atenção:</b> se você já tinha a vaga, transferir é abrir mão dela e concorrer de
+              novo. Se não conseguir a nova turma, não volta para a antiga (a antiga fica
+              “Transferido de turma”). Dá para desfazer com “Destransferir” até o fim do período de
+              regularização.
+            </p>
+            <h3>Trancar</h3>
+            <p>
+              Mesmo caminho, clicando em “Trancar”. Só valem disciplinas que apareceram no seu CRID.
+              Depois do período de alteração não há destrancamento.
+            </p>
+          </section>
+          <section class="topic" id="trancamento">
+            <h2>Trancamento de disciplinas</h2>
+            <p>
+              Se estiver sobrecarregado, você pode trancar uma ou mais disciplinas no prazo do
+              calendário. Só valem as que constam no seu CRID. Cuidado com o mínimo de
+              <b>6 créditos</b>.
+            </p>
+            <p>
+              No 1º semestre, como a inscrição é feita pela coordenação, só é possível trancar com
+              um processo e autorização especial da secretaria acadêmica do curso.
+            </p>
+            <p>
+              Depois de trancada, a disciplina só pode ser cursada no próximo semestre. Converse
+              antes com seu orientador ou com a COAA. Veja também o
+              <a
+                href="https://conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores/"
+                target="_blank"
+                rel="noopener"
+                >guia de serviços de saúde mental</a
+              >.
+            </p>
+          </section>
+          <section class="topic" id="situacoes">
+            <h2>Situações de inscrição (o que cada mensagem significa)</h2>
+            <p>
+              São avisos que aparecem no CRID e no Portal. Não significam que o pedido não foi
+              enviado: indicam o que precisa ser resolvido para você não sair da lista final da
+              disciplina.
+            </p>
+            <dl class="cols">
+              <dt>Aguardando processamento</dt>
+              <dd>
+                O sistema ainda está processando o pedido. Em breve aparece uma nova situação.
+              </dd>
+              <dt>Autorizado pelo CEG</dt>
+              <dd>Situação regular. Aparece no CRID quando uma pendência já foi resolvida.</dd>
+              <dt>Disciplina já cursada</dt>
+              <dd>
+                Não dá para cursar a mesma disciplina duas vezes. Se você nunca cursou, fale com a
+                coordenação do curso.
+              </dd>
+              <dt>Disciplina já inscrita</dt>
+              <dd>Você já está inscrito nessa disciplina.</dd>
+              <dt>Falta requisito</dt>
+              <dd>
+                O pré-requisito não foi cursado (ou ainda não foi lançado), ou a disciplina tem um
+                correquisito que não está no seu pedido. Veja os requisitos em “Grades” no Portal.
+              </dd>
+              <dt>Horário sobreposto</dt>
+              <dd>
+                Duas ou mais turmas têm horários que se sobrepõem e a inscrição é negada para todas.
+                Pode ser erro de cadastro: fale com a coordenação.
+              </dd>
+              <dt>Inscrição normal</dt>
+              <dd>Situação regular: sem pendências, pedido enviado com sucesso.</dd>
+              <dt>Inscrição trancada</dt>
+              <dd>Você trancou uma disciplina em que já tinha conseguido vaga.</dd>
+              <dt>Lotação esgotada</dt>
+              <dd>
+                Havia pessoas com maior prioridade para as vagas. No CRPID pode ser provisória; no
+                CRID é definitiva. Você pode esperar vagas abrirem, tentar de novo no período de
+                alteração, trocar para outra turma ou procurar a secretaria se a turma tiver “zero
+                vagas”.
+              </dd>
+              <dt>Mais de 32 créditos</dt>
+              <dd>
+                Não dá para cursar mais de 32 créditos no semestre, a não ser com autorização
+                especial pedida à secretaria acadêmica.
+              </dd>
+              <dt>Matrícula cancelada ou trancada</dt>
+              <dd>Sua matrícula está inativa. Procure a secretaria acadêmica para regularizar.</dd>
+              <dt>Menos de 6 créditos</dt>
+              <dd>
+                O mínimo é 6 créditos por semestre. Peça mais disciplinas ou procure a secretaria.
+              </dd>
+              <dt>Previsão pendente</dt>
+              <dd>
+                A disciplina está sem professor, sem local ou com local incorreto. A inscrição não é
+                impedida e será regularizada pela secretaria.
+              </dd>
+              <dt>Transferido de turma</dt>
+              <dd>Você tirou o pedido de uma turma e o enviou para outra da mesma disciplina.</dd>
+              <dt>Turma desativada</dt>
+              <dd>A turma foi desativada por algum motivo.</dd>
+              <dt>Ultrapassa 1/3 fora do curso</dt>
+              <dd>
+                Você pediu disciplinas de outros cursos acima da proporção permitida: 1 de outros
+                cursos para cada 3 do seu curso.
+              </dd>
+            </dl>
+          </section>
+          <section class="topic" id="crpid">
+            <h2>CRPID: o recibo dos seus pedidos</h2>
+            <p>
+              Gerado e enviado ao seu e-mail da Intranet toda vez que você clica em “Finalizar
+              pedidos” (inscrição, alteração e trancamento). Mostra o que você pediu e a situação de
+              cada pedido. <b>Não é uma inscrição.</b>
+            </p>
+            <p>
+              Colunas: <b>Controle</b> (número da turma no sistema), <b>Código</b> da disciplina,
+              <b>Nome da turma</b> (disciplina + letra da turma), <b>C.H.</b> (carga horária) e
+              <b>Situação</b>.
+            </p>
+            <h3>Vídeo</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="4uNDXCFzWyo"
+                  data-title="O que é CRID e CRPID? | Mitos da Inscrição UFRJ"
+                  aria-label="Reproduzir: O que é CRID e CRPID? | Mitos da Inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/4uNDXCFzWyo/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">2:06</span>
+                </button>
+                <figcaption>
+                  <b>O que é CRID e CRPID? | Mitos da Inscrição UFRJ</b><br />Canal: Siga UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=4uNDXCFzWyo"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="crid">
+            <h2>CRID: o comprovante das inscrições</h2>
+            <p>
+              Documento oficial que mostra em quais disciplinas você realmente conseguiu vaga. Se a
+              disciplina está no CRID, você tem a vaga; se não está, tente no período de alteração
+              ou no próximo semestre.
+            </p>
+            <p>
+              Para baixar: Portal → “Documentos” → “CRID”. Dá para emitir até o fechamento. Baixe de
+              novo uns 2 meses após o início das aulas para conferir se as situações mudaram.
+            </p>
+            <p>
+              <b>Quem é meu orientador acadêmico?</b> O nome aparece no fim do CRID, acima da
+              assinatura eletrônica. Se estiver “Não cadastrado”, procure a secretaria do curso.
+            </p>
+            <p>
+              Além das colunas do CRPID, o CRID tem <b>Créditos</b> e <b>Observação</b> (por
+              exemplo, “Autorizado pelo CEG”).
+            </p>
+            <h3>Vídeo</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="4uNDXCFzWyo"
+                  data-title="O que é CRID e CRPID? | Mitos da Inscrição UFRJ"
+                  aria-label="Reproduzir: O que é CRID e CRPID? | Mitos da Inscrição UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/4uNDXCFzWyo/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">2:06</span>
+                </button>
+                <figcaption>
+                  <b>O que é CRID e CRPID? | Mitos da Inscrição UFRJ</b><br />Canal: Siga UFRJ ·
+                  <a
+                    href="https://www.youtube.com/watch?v=4uNDXCFzWyo"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="boletim">
+            <h2>Boletim, histórico, BOA e ementário</h2>
+            <p>
+              O manual do SIGA explica cada coluna destes documentos nos capítulos 6 a 8. Resumo: o
+              <b>boletim</b> e o <b>histórico</b> mostram suas disciplinas, graus e coeficientes
+              (como o CR) por período; o <b>BOA</b> e o <b>ementário</b> trazem informações do seu
+              curso e das disciplinas.
+            </p>
+            <p>Para ver o passo a passo e o significado de cada item, abra o manual completo:</p>
+            <p>O manual completo fica no próprio Portal: “Documentos” → “Manual do Aluno”.</p>
+            <p>
+              <a class="btn" href="arquivos/manual-siga-ufrj.pdf" download
+                >Baixar o manual do SIGA (PDF)</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="documentos">
+            <h2>Declarações e documentos</h2>
+            <p>
+              No Portal você emite vários documentos. Eles já saem com <b>assinatura eletrônica</b>.
+              Estes são os que aparecem no Portal, mais o CRPID, a carteirinha e a autenticação:
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Documentos do SIGA
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Documento</th>
+                    <th scope="col">Para que serve</th>
+                    <th scope="col">Como pegar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">CRPID</th>
+                    <td>
+                      Recibo dos pedidos de inscrição, alteração e trancamento. Não é uma inscrição.
+                    </td>
+                    <td>
+                      Vai para o e-mail e baixa sozinho quando você clica em “Finalizar pedidos”.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">CRID</th>
+                    <td>Comprova em quais disciplinas você conseguiu vaga.</td>
+                    <td>Portal → “Documentos” → “CRID”. Só até o fechamento do período.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Boletim</th>
+                    <td>Todos os graus das disciplinas cursadas e os atos acadêmicos.</td>
+                    <td>Portal → “Documentos” → “Boletim”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Histórico</th>
+                    <td>
+                      Documento da Universidade com o seu percurso. Não inclui as reprovações.
+                    </td>
+                    <td>Portal → “Documentos” → “Histórico”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">BOA (Boletim de Orientação Acadêmica)</th>
+                    <td>
+                      Panorama do seu desempenho: créditos e carga horária cumpridos e que faltam, e
+                      quais disciplinas você já pode cursar. Serve de orientação para a COAA.
+                    </td>
+                    <td>Portal → “Documentos” → “BOA”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ementário</th>
+                    <td>
+                      Ementas das disciplinas que você já cursou, úteis para pedir dispensas e
+                      equivalências.
+                    </td>
+                    <td>Portal → “Documentos” → “Ementário”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaração de regularmente matriculado</th>
+                    <td>Declara que você está matriculado na UFRJ (declaração de matrícula).</td>
+                    <td>Portal → “Documentos” → “Regularmente Matriculado”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaração de bolsista</th>
+                    <td>Para quem tem bolsa. Há a opção “Todas as bolsas”.</td>
+                    <td>Portal → “Documentos” → “Bolsista”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaração de cotista</th>
+                    <td>Para quem entrou por cota.</td>
+                    <td>Portal → “Documentos” → “Cotista”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaração para Passe Livre Universitário</th>
+                    <td>Usada para pedir o passe livre de transporte para estudantes.</td>
+                    <td>Portal → “Documentos” → “Declaração para Passe Livre Universitário”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Declaração Nada Consta na Conduta Disciplinar Acadêmica</th>
+                    <td>
+                      Declara que não há registro contra você na conduta disciplinar acadêmica.
+                    </td>
+                    <td>
+                      Portal → “Documentos” → “Declaração Nada Consta na Conduta Disciplinar
+                      Acadêmica”.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Grade Horária</th>
+                    <td>Seus horários de aula no semestre.</td>
+                    <td>Portal → “Documentos” → “Grade Horária”.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Manual do Aluno</th>
+                    <td>O manual do SIGA, com o passo a passo do Portal.</td>
+                    <td>
+                      Portal → “Documentos” → “Manual do Aluno”, ou
+                      <a href="arquivos/manual-siga-ufrj.pdf" download>baixe aqui</a>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Carteirinha</th>
+                    <td>Identificação de estudante.</td>
+                    <td>
+                      Pelo aplicativo do Portal. Antes, cadastre sua foto em “Dados pessoais” e
+                      espere a aprovação.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Autenticação</th>
+                    <td>Conferir se um documento é verdadeiro.</td>
+                    <td>
+                      Portal → “Documentos” → “Autenticação”: escolha o tipo e preencha os dados.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <dl>
+              <dt>Preciso de um documento impresso, com timbre ou carimbo</dt>
+              <dd>
+                Se a instituição que pediu o documento não aceitar a versão com assinatura
+                eletrônica, peça à secretaria acadêmica do seu curso ou à DRE (Divisão de Registro
+                de Estudante), que fica no CCMN, na Cidade Universitária. E-mail da DRE:
+                <a href="mailto:direcao@dre.ufrj.br">direcao@dre.ufrj.br</a>.
+              </dd>
+              <dt>Meu CRID sumiu</dt>
+              <dd>
+                O CRID só fica disponível até a etapa de fechamento do período. Depois, as
+                disciplinas passam para o boletim e o histórico.
+              </dd>
+              <dt>Diploma</dt>
+              <dd>
+                Fale com a Divisão de Diplomas da UFRJ:
+                <a href="mailto:diplomas@pr1.ufrj.br">diplomas@pr1.ufrj.br</a>.
+              </dd>
+            </dl>
+            <h3>Vídeo: declarações disponíveis no SIGA</h3>
+            <div class="vrow">
+              <figure class="vlite">
+                <button
+                  type="button"
+                  class="vthumb"
+                  data-id="TZuzWzHR7MA"
+                  data-title="Declarações disponíveis no SIGA UFRJ"
+                  aria-label="Reproduzir: Declarações disponíveis no SIGA UFRJ"
+                  style="background-image: url(https://i.ytimg.com/vi/TZuzWzHR7MA/hqdefault.jpg)"
+                >
+                  <span class="vplay" aria-hidden="true"></span><span class="vdur">2:29</span>
+                </button>
+                <figcaption>
+                  <b>Declarações disponíveis no SIGA UFRJ</b><br />Canal: Coord. Grad. ESS (UFRJ) ·
+                  <a
+                    href="https://www.youtube.com/watch?v=TZuzWzHR7MA"
+                    target="_blank"
+                    rel="noopener"
+                    >Abrir no YouTube</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section class="topic" id="requerimentos">
+            <h2>Requerimentos e extensão</h2>
+            <ul>
+              <li>
+                <b>Disciplinas da pós-graduação:</b> Portal → “Requerimentos” → “Solicitar
+                requerimento” → “Inscrição em disciplinas da pós-graduação”.
+              </li>
+              <li>
+                <b>Nome social:</b> Portal → “Requerimentos” → “Solicitar requerimento” → “Inclusão
+                de nome social”. Depois de aceito, aparece nos dados pessoais e em documentos como a
+                carteirinha, o boletim e o histórico.
+              </li>
+              <li>
+                <b>Ações de extensão</b> (programas, projetos, cursos, oficinas e eventos): busque
+                em “Requerimentos” → “Ações de extensão”. Você precisa cumprir pelo menos 10% da
+                carga horária total do curso em extensão.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="ava-acesso">
+            <h2>O que é o AVA e como entrar</h2>
+            <p>
+              O AVA @ NCE (Ambiente Virtual Acadêmico) é a sala de aula virtual da UFRJ, mantida
+              pelo NCE. Muitos professores usam para colocar material, avisos, tarefas e notas.
+              Quem decide usar o AVA é o professor de cada disciplina.
+            </p>
+            <p>
+              O endereço é
+              <a href="https://ambientevirtual.nce.ufrj.br" target="_blank" rel="noopener"
+                >ambientevirtual.nce.ufrj.br</a
+              >. O endereço antigo, ava.ufrj.br, foi substituído em 01/02/2026, e as senhas
+              continuaram valendo.
+            </p>
+            <ol>
+              <li>Abra o endereço e clique em “Acessar”, no alto à direita.</li>
+              <li>Em “Identificação do usuário”, digite seu <b>CPF</b> (sem pontos nem traço).</li>
+              <li>Digite sua senha e clique em “Acessar”.</li>
+            </ol>
+            <p>
+              Ainda não tem senha, ou esqueceu? Veja
+              <a href="#ava-senha">primeiro acesso e senha</a>.
+            </p>
+            <p>
+              <a
+                class="btn"
+                href="https://ambientevirtual.nce.ufrj.br"
+                target="_blank"
+                rel="noopener"
+                >Abrir o AVA @ NCE</a
+              >
+              <a
+                class="btn"
+                href="https://ambientevirtual.nce.ufrj.br/admin/tool/policy/view.php?versionid=2"
+                target="_blank"
+                rel="noopener"
+                >FAQ oficial</a
+              >
+            </p>
+          </section>
+          <section class="topic" id="ava-senha">
+            <h2>Primeiro acesso, senha esquecida e e-mail que não chega</h2>
+            <p>O primeiro acesso e a senha esquecida seguem o mesmo caminho:</p>
+            <ol>
+              <li>Na tela de login, clique em “Esqueceu seu usuário ou senha?”.</li>
+              <li>Digite seu CPF (sem pontos nem traço) e clique em “Buscar”.</li>
+              <li>
+                Você recebe um e-mail do “Suporte AVA” pedindo para confirmar a redefinição de
+                senha. Confirme.
+              </li>
+              <li>
+                Chega um segundo e-mail com uma <b>senha temporária</b>. Ao entrar com ela, o AVA
+                pede para você trocar a senha.
+              </li>
+            </ol>
+            <p>Os e-mails costumam chegar na hora. Se não chegaram:</p>
+            <ul>
+              <li><b>Confira a caixa de spam.</b></li>
+              <li>
+                <b>Passou de 12 horas?</b> Escreva para
+                <a href="mailto:suporte.ava@nce.ufrj.br">suporte.ava@nce.ufrj.br</a> com seu CPF e
+                peça uma senha temporária.
+              </li>
+              <li>
+                <b>Não usa mais aquele e-mail?</b> O e-mail do AVA é o mesmo da Intranet UFRJ.
+                Troque o e-mail na Intranet (passo a passo em
+                <a href="#ava-dados">atualizar meus dados</a>) e depois escreva ao suporte com seu
+                CPF pedindo uma senha temporária.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="ava-curso">
+            <h2>Entrei, mas não vejo minha disciplina</h2>
+            <p>Há três motivos comuns:</p>
+            <ul>
+              <li>
+                <b>O professor não usa o AVA</b> nessa disciplina. Pergunte a ele se vai usar.
+              </li>
+              <li>
+                <b>Você ainda não foi inscrito na sala.</b> Peça ao professor a “chave de
+                inscrição”, procure o curso no AVA e digite a chave.
+              </li>
+              <li>
+                <b>A sala está “oculta”.</b> Todo curso nasce oculto, e o professor precisa deixá-lo
+                visível para os alunos.
+              </li>
+            </ul>
+            <p>
+              Fale primeiro com o professor. Se o problema continuar, escreva para
+              <a href="mailto:suporte.ava@nce.ufrj.br">suporte.ava@nce.ufrj.br</a> com seu CPF (sem
+              pontos nem traço) e o nome do curso no AVA.
+            </p>
+          </section>
+          <section class="topic" id="ava-dados">
+            <h2>Atualizar meus dados e meu e-mail</h2>
+            <p>
+              Nome completo, vínculo, e-mail, cidade, país, número de identificação, instituição,
+              departamento, telefones e endereço vêm da Intranet UFRJ. Para mudar algum deles, peça
+              à Secretaria Acadêmica da sua unidade. A mudança aparece no AVA no seu próximo acesso.
+            </p>
+            <p>
+              O resto você edita no próprio AVA: clique no seu nome (barra superior, à direita) →
+              “Perfil” → “Modificar perfil” → “Atualizar perfil”.
+            </p>
+            <h3>Trocar o e-mail na Intranet UFRJ</h3>
+            <ol>
+              <li>
+                Entre em
+                <a href="https://intranet.ufrj.br" target="_blank" rel="noopener"
+                  >intranet.ufrj.br</a
+                >
+                e clique em “Entrar na Intranet”.
+              </li>
+              <li>Use suas credenciais de acesso.</li>
+              <li>No bloco “Navegação”, clique em “Minha conta”.</li>
+              <li>Clique em “Alterar E-mail Intranet”.</li>
+              <li>Preencha “Senha”, “E-mail” e “Confirmação do E-mail” e clique em “Atualizar”.</li>
+            </ol>
+            <p>
+              Dúvidas sobre a matéria são com o professor; dúvidas técnicas, com o suporte do AVA.
+              O AVA funciona em qualquer navegador.
+            </p>
+          </section>
+          <section class="topic" id="dicas-onde">
+            <h2>Onde os veteranos conversam</h2>
+            <p>
+              Boa parte das dicas de quem já passou pelo curso circula nos grupos dos próprios
+              alunos. O Centro Acadêmico (CAInfo) conta que usa grupos do Telegram para trocar
+              informações e se ajudar ao longo do curso.
+            </p>
+            <ul>
+              <li>
+                <b>Grupo geral e grupos de disciplinas:</b> peça o convite ao CAInfo por e-mail:
+                <a href="mailto:cainfo@ic.ufrj.br">cainfo@ic.ufrj.br</a>.
+              </li>
+              <li>
+                <b>Avisos e datas de reuniões:</b>
+                <a href="https://t.me/cainfoufrj" target="_blank" rel="noopener"
+                  >canal do CAInfo no Telegram</a
+                >
+                e
+                <a href="https://www.instagram.com/cainfoufrj/" target="_blank" rel="noopener"
+                  >Instagram @cainfoufrj</a
+                >.
+              </li>
+              <li>
+                <b>Coordenação do BCC:</b>
+                <a href="https://bit.ly/telegram_coord_icufrj" target="_blank" rel="noopener"
+                  >Telegram da coordenação</a
+                >.
+              </li>
+              <li>
+                <b>Pessoalmente:</b> a sala do CAInfo fica no CCMN, bloco F, 1º andar (F1), das 10h
+                às 15h.
+              </li>
+            </ul>
+            <p>
+              Mais sobre o centro acadêmico em
+              <a href="curso.html#cainfo">O curso: Centro Acadêmico (CAInfo)</a>.
+            </p>
+          </section>
+          <section class="topic" id="dicas-lembretes">
+            <h2>Lembretes que ajudam a não perder o prazo</h2>
+            <p>
+              Estes lembretes vêm dos manuais e das páginas oficiais do IC e da UFRJ, e são os pontos
+              em que mais gente costuma tropeçar.
+            </p>
+            <h3>Inscrição em disciplinas</h3>
+            <ul>
+              <li>
+                Peça as disciplinas no <b>período de inscrição</b>: quem pede nele tem mais
+                prioridade do que quem pede só no período de alteração.
+              </li>
+              <li>
+                A ordem dos pedidos considera, nesta ordem, o curso, o período e depois o CRA e o
+                COA. A data e a hora do pedido são o <b>último</b> critério.
+              </li>
+              <li>
+                Você pode mudar seus pedidos até a meia-noite do último dia do período. Uma vaga que
+                parece garantida hoje pode sumir amanhã se entrar alguém com mais prioridade.
+              </li>
+              <li>
+                “Turma pendente” aceita o pedido, mas o sistema não confere choque de horário. Se
+                houver choque quando a turma for regularizada, a inscrição é invalidada. Volte a
+                conferir.
+              </li>
+              <li>
+                “Falta requisito” não impede o pedido, mas você precisa regularizar logo, porque o
+                prazo é curto.
+              </li>
+              <li>
+                No fim da sessão, o sistema gera o Plano de Estudos. Guarde, de preferência
+                imprimindo, e anote a data e a hora.
+              </li>
+            </ul>
+            <p>
+              Veja <a href="#inscricao">Como pedir disciplinas</a> e
+              <a href="#situacoes">Situações de inscrição</a>.
+            </p>
+            <h3>Documentos</h3>
+            <ul>
+              <li>
+                O <b>CRID</b> é exigido sempre que você precisar resolver alguma irregularidade no
+                histórico, no boletim ou na inscrição. Baixe e guarde a cada período.
+              </li>
+              <li>
+                O <b>CRPID</b> é só um recibo dos pedidos. Ele não garante vaga na turma.
+              </li>
+            </ul>
+            <h3>Atividades complementares e estágio</h3>
+            <ul>
+              <li>
+                Vá juntando certificados desde o primeiro semestre, inclusive nas férias. Só peça a
+                contagem quando já tiver as 90 horas, e lembre que atividade que já aparece no
+                histórico não conta de novo.
+              </li>
+              <li>
+                Antes de entrar em qualquer processo seletivo para o primeiro estágio, confira se
+                você atende aos critérios do Programa de Estágio do IC.
+              </li>
+            </ul>
+            <p>
+              Veja <a href="curso.html#complementares">Atividades complementares</a> e
+              <a href="curso.html#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>.
+            </p>
+            <h3>AVA</h3>
+            <ul>
+              <li>
+                Se o e-mail com a senha temporária não chegar, olhe o spam e confira se o e-mail na
+                Intranet UFRJ ainda é um que você acessa.
+              </li>
+            </ul>
+            <p>Veja <a href="#ava-senha">Primeiro acesso, senha esquecida e e-mail</a>.</p>
+          </section>
+          <section class="topic" id="dicas-avisos">
+            <h2>Mais avisos do manual do SIGA</h2>
+            <p>
+              Também vêm do manual “Conhecendo o SIGA” (Equipe SIGA UFRJ). Cada um tem um tópico com
+              mais detalhes.
+            </p>
+            <h3>Trancar e trocar de turma</h3>
+            <ul>
+              <li>
+                Não existe destrancamento. Uma vez trancada, a disciplina só pode ser cursada no
+                próximo semestre, e você perde a prioridade de quem está no período recomendado.
+              </li>
+              <li>
+                Trancar não mexe no seu CR: disciplina trancada não recebe nota, então não entra no
+                cálculo.
+              </li>
+              <li>
+                Trocar de turma depois da inscrição efetivada é abrir mão da vaga que você já
+                conquistou. Se desfizer o pedido dentro do prazo, você volta para a turma em que
+                estava.
+              </li>
+            </ul>
+            <p>
+              Veja <a href="#trancamento">Trancamento de disciplinas</a> e
+              <a href="#alteracao">Trocar de turma ou trancar</a>.
+            </p>
+            <h3>Acompanhar e planejar</h3>
+            <ul>
+              <li>
+                Baixe o CRID de novo cerca de 2 meses depois do início das aulas e confira se as
+                situações de inscrição mudaram.
+              </li>
+              <li>
+                Reprovou por frequência (menos de 75% de presença)? Mesmo com um bom grau, você
+                precisa se inscrever e cursar a disciplina inteira de novo.
+              </li>
+              <li>
+                Você não é obrigado a seguir a grade recomendada, mas fugir dela pode atrasar a
+                formatura. Conte com seu orientador acadêmico para escolher as disciplinas de cada
+                semestre.
+              </li>
+            </ul>
+            <p>Veja <a href="#crid">O que é o CRID</a>.</p>
+            <h3>Senha do Portal</h3>
+            <ul>
+              <li>
+                Esqueceu a senha? No Portal, clique em “Recuperar senha”, abaixo do campo de senha.
+                Se o e-mail cadastrado estiver errado, a senha não chega: faça o “Primeiro acesso”
+                de novo.
+              </li>
+            </ul>
+            <p>Veja <a href="#primeiro-acesso">Primeiro acesso ao Portal</a>.</p>
+          </section>
+          <section class="topic" id="dicas-semestre">
+            <h2>Dicas para o primeiro semestre</h2>
+            <h3>Rotina e estudo</h3>
+            <ul>
+              <li>
+                <b>Programar se aprende programando.</b> Separe um tempo curto todos os dias para
+                praticar, em vez de deixar tudo para a véspera da prova.
+              </li>
+              <li>
+                <b>Não falte à toa.</b> O mínimo é 75% de presença. Abaixo disso você reprova por
+                frequência, mesmo com nota boa. Veja
+                <a href="#boletim">Como ler o boletim e o histórico</a>.
+              </li>
+              <li>
+                <b>Estude em grupo e explique em voz alta.</b> Tentar explicar a matéria para um
+                colega mostra o que você ainda não entendeu.
+              </li>
+              <li>
+                <b>Guarde seu código num repositório (Git) desde o primeiro trabalho.</b> Você ganha
+                histórico das mudanças e já começa a montar um portfólio.
+              </li>
+              <li>
+                <b>Monte um horário fixo de estudo na semana.</b> Marque na agenda os blocos de
+                estudo como se fossem aulas. Com horário marcado, é mais difícil empurrar para
+                depois.
+              </li>
+              <li>
+                <b>Faça perguntas em aula.</b> Se você tem uma dúvida, provavelmente mais gente
+                também tem.
+              </li>
+            </ul>
+            <h3>Peça ajuda cedo</h3>
+            <ul>
+              <li>
+                <b>Entre nos grupos do CAInfo na primeira semana.</b> É lá que a turma troca
+                informação e se ajuda. Veja <a href="#dicas-onde">Onde os veteranos conversam</a>.
+              </li>
+              <li>
+                <b>Saiba a quem perguntar.</b> Dúvida sobre o curso vai para a coordenação ou para a
+                COAA. Veja <a href="curso.html#quem-e-quem">quem atende cada assunto</a>.
+              </li>
+              <li>
+                <b>Procure a monitoria.</b> Ela existe para tirar dúvidas das disciplinas. Veja
+                <a href="curso.html#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>.
+              </li>
+              <li>
+                <b>Sobrecarregado? Converse antes de trancar.</b> Fale com o orientador acadêmico ou
+                com a COAA. Se o peso for emocional, há o
+                <a
+                  href="https://conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores/"
+                  target="_blank"
+                  rel="noopener"
+                  >guia de serviços de saúde mental na UFRJ</a
+                >.
+              </li>
+            </ul>
+            <h3>Planeje o curso</h3>
+            <ul>
+              <li>
+                <b>Passe pelo mapa de Disciplinas todo semestre.</b> Antes de pedir as matérias,
+                veja o que cada uma libera. Assim você não fica travado por falta de pré-requisito.
+                <a href="disciplinas.html">Abrir o mapa</a>.
+              </li>
+              <li>
+                <b>Coloque as datas no calendário do celular.</b> Inscrição, alteração, trancamento
+                e fechamento passam rápido. Veja
+                <a href="curso.html#calendario-ic">as datas do período no IC</a>.
+              </li>
+              <li>
+                <b>Comece a extensão o quanto antes.</b> O curso exige 320 horas de atividades de
+                extensão (a disciplina ICPZ55, que não vale créditos, mas precisa ser cumprida). Se
+                você deixar para o fim, elas se somam ao estágio, ao TCC e às optativas, e a
+                sobrecarga vem toda de uma vez. Tem um motivo a mais: quem entrou a partir de
+                2025.1, como os calouros de agora, precisa de 120 horas de extensão para poder
+                estagiar. Procure as ações no Portal, em “Requerimentos” → “Ações de extensão”. Veja
+                <a href="#requerimentos">Requerimentos e extensão</a> e
+                <a href="curso.html#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>.
+              </li>
+              <li>
+                <b>Vá juntando as atividades complementares desde cedo.</b> O curso pede 90 horas, e
+                elas valem desde o primeiro semestre, inclusive nas férias. Veja
+                <a href="curso.html#complementares">Atividades complementares</a>.
+              </li>
+            </ul>
+            <h3>No campus</h3>
+            <ul>
+              <li>
+                <b>Conheça o caminho até o CCMN antes do primeiro dia.</b> Veja
+                <a href="campus.html#ccmn">como chegar ao CCMN</a>.
+              </li>
+              <li>
+                <b>Planeje o almoço entre as aulas.</b> O RU Central serve almoço das 11h às 14h15,
+                de segunda a sexta, e a refeição custa R$ 2,00 para estudantes, com documento que comprove o vínculo. Veja <a href="#ru-guia">Restaurante Universitário</a>.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="dicas-acumular">
+            <h2>Não deixe a matéria acumular</h2>
+            <p>
+              Em computação, cada assunto se apoia no anterior. Um ponto que você deixou passar volta
+              na aula seguinte e no semestre seguinte, porque várias disciplinas têm pré-requisito.
+              Veja no <a href="disciplinas.html">mapa de Disciplinas</a> o que depende de quê.
+            </p>
+            <ul>
+              <li>
+                <b>Revise no mesmo dia ou, no máximo, na mesma semana.</b> Releia o caderno, refaça
+                um exemplo da aula e anote o que não ficou claro.
+              </li>
+              <li>
+                <b>Faça as listas de exercícios junto com as aulas, não só antes da prova.</b> Em
+                programação, resolver problemas aos poucos rende mais do que uma maratona na
+                véspera.
+              </li>
+              <li>
+                <b>Tire a dúvida logo.</b> Pergunte ao professor, aos colegas ou na monitoria na
+                mesma semana. Uma dúvida pequena vira bola de neve. Veja
+                <a href="curso.html#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>.
+              </li>
+              <li>
+                <b>Já acumulou? Faça uma lista do que ficou para trás e comece pelo assunto mais
+                básico.</b> Um assunto por dia é mais fácil do que tentar recuperar tudo de uma vez.
+              </li>
+              <li>
+                <b>Se a matéria saiu do controle, converse antes de decidir.</b> Fale com o
+                orientador acadêmico ou com a COAA. O período de trancamento é curto: veja as
+                <a href="index.html">datas do semestre na página inicial</a> e o tópico
+                <a href="#trancamento">Trancamento de disciplinas</a>.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="dicas-antes">
+            <h2>Antes do primeiro dia</h2>
+            <ul>
+              <li>
+                <b>Faça o primeiro acesso antes das aulas.</b> Cadastre o e-mail na Intranet e entre
+                no Portal do Aluno. Veja <a href="#primeiro-acesso">Primeiro acesso ao Portal</a>.
+              </li>
+              <li>
+                <b>Baixe os PDFs de apoio.</b> O Manual do SIGA e o guia da PR7 para calouros ficam
+                em <a href="#arquivos">Arquivos e links oficiais</a>.
+              </li>
+              <li>
+                <b>Siga a Equipe SIGA no Instagram.</b> O próprio manual diz que ela divulga dicas e
+                datas importantes:
+                <a href="https://www.instagram.com/equipesiga_ufrj/" target="_blank" rel="noopener"
+                  >@equipesiga_ufrj</a
+                >.
+              </li>
+              <li>
+                <b>Leia o Manual do Calouro da UFRJ.</b> Tem os primeiros passos de quem acabou de
+                entrar:
+                <a
+                  href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/"
+                  target="_blank"
+                  rel="noopener"
+                  >Conexão UFRJ</a
+                >.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="dicas-trabalhos">
+            <h2>Trabalhos e provas</h2>
+            <ul>
+              <li>
+                <b>Leia o enunciado inteiro antes de começar.</b> Muita nota se perde por não fazer o
+                que foi pedido.
+              </li>
+              <li>
+                <b>Comece cedo e entregue primeiro uma versão que funciona.</b> Depois você melhora.
+                Um programa simples que roda vale mais que um completo que não compila.
+              </li>
+              <li>
+                <b>Teste com casos pequenos e com casos estranhos</b> (lista vazia, número zero,
+                texto em branco) antes de entregar.
+              </li>
+              <li>
+                <b>Leia a mensagem de erro inteira.</b> Ela costuma dizer a linha e o motivo do
+                problema.
+              </li>
+              <li>
+                <b>Use ajuda e referências, mas entenda o que você entregou.</b> Copiar sem entender
+                cobra o preço na prova.
+              </li>
+              <li>
+                <b>Consulte o ementário no começo do semestre</b> para saber o conteúdo de cada
+                disciplina. Veja <a href="#boletim">Boletim, histórico, BOA e ementário</a>.
+              </li>
+              <li>
+                <b>Divida o trabalho em partes pequenas, cada uma com uma data.</b> Um trabalho de
+                duas semanas vira quatro entregas suas, de meia semana cada.
+              </li>
+              <li>
+                <b>Em trabalho de grupo, combine quem faz o quê desde o começo.</b> Use o Git para
+                juntar o código sem apagar o trabalho dos colegas.
+              </li>
+              <li>
+                <b>Depois da prova ou do trabalho corrigido, veja onde você errou.</b> Entender o
+                erro evita repeti-lo na próxima.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="dicas-carreira">
+            <h2>Carreira e experiência</h2>
+            <ul>
+              <li>
+                <b>Aproveite as oportunidades extracurriculares.</b> Competições (maratonas,
+                olimpíadas), iniciação científica, monitoria e eventos como a Semana da Computação
+                ajudam a aprender fora da sala de aula, e boa parte conta horas de atividades
+                complementares. Veja
+                <a href="curso.html#complementares">Atividades complementares</a>.
+              </li>
+              <li>
+                <b>Participe dos eventos que a UFRJ oferece e vá às palestras que achar
+                interessantes.</b> Elas ajudam a conhecer áreas e pessoas, e assistir a palestra,
+                seminário ou congresso vale 3 horas de atividade complementar por evento (até 18
+                horas). Guarde o certificado. Pergunte nos grupos do CAInfo o que está acontecendo:
+                veja <a href="#dicas-onde">Onde os veteranos conversam</a>.
+              </li>
+              <li>
+                <b>Busque estágio e experiência prática assim que puder, mas confira o requisito.</b>
+                A Comissão de Estágio só autoriza quem já tem todos os créditos até o 4º período,
+                isto é, foi aprovado em todas as disciplinas até lá, e tem CRA de 6,0 ou mais. O
+                estágio é opcional. Até chegar lá, projetos, monitoria e iniciação científica também
+                são experiência prática. Veja
+                <a href="curso.html#estagio-tcc">Estágio, monitoria, TCC e intercâmbio</a>.
+              </li>
+              <li>
+                <b>Comece cedo a pesquisar o mercado de trabalho.</b> Ver o que as empresas e as
+                áreas da computação pedem ajuda a descobrir de qual delas você mais gosta. O curso
+                abre seis caminhos: veja
+                <a href="curso.html#curso-perfis">os seis perfis</a>.
+              </li>
+              <li>
+                <b>Monte um perfil no GitHub e publique seus projetos de disciplina,</b> quando o
+                professor permitir. Com o tempo, isso vira portfólio.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="dicas-cuide">
+            <h2>Cuide de você</h2>
+            <ul>
+              <li>
+                <b>Equilibre estudo e vida social.</b> Reserve tempo para descansar, se mexer e ver
+                os amigos. Você rende mais estudando descansado, e a turma também é uma rede de
+                apoio.
+              </li>
+              <li>
+                <b>Durma bem e faça pausas ao estudar.</b> Estudar cansado rende pouco e cobra no dia
+                seguinte.
+              </li>
+              <li>
+                <b>Evite a armadilha da comparação.</b> Sempre vai ter alguém que parece saber mais
+                ou andar mais rápido, mas cada pessoa chega com uma bagagem diferente. Compare-se com
+                você mesmo no começo do semestre. Pedir ajuda cedo é normal e costuma resolver
+                rápido.
+              </li>
+            </ul>
+          </section>
+          <!--
+            Dicas dos veteranos: para acrescentar dicas escritas por veteranos, copie um bloco
+            <section class="topic" id="dicas-NOME"> ... </section> daqui, troque o id e o texto, e
+            inclua "dicas-NOME" na lista ABAS.dicas do script no fim da página e no índice
+            "Neste guia".
+          -->
+          <section class="topic" id="ufrj-vida">
+            <h2>Vida acadêmica</h2>
+            <p>Atalhos para o que a UFRJ oferece. Os links levam aos tópicos do Guia e do Campus.</p>
+            <ul>
+              <li>
+                <b>Olhe as bolsas e auxílios cedo.</b> O acesso é por processo seletivo, então fique
+                de olho nos editais. Veja <a href="#bolsas">Bolsas e auxílios (PR7)</a>.
+              </li>
+              <li>
+                <b>Descubra onde estudar.</b> O campus tem bibliotecas com horários e contatos. Veja
+                <a href="campus.html#bibliotecas">Bibliotecas na Cidade Universitária</a>.
+              </li>
+              <li>
+                <b>Consulte o cardápio antes de ir ao RU.</b> O
+                <a href="https://devmobufrj.github.io/BandejApp/" target="_blank" rel="noopener"
+                  >BandejApp</a
+                >
+                mostra o cardápio e os horários dos restaurantes universitários.
+              </li>
+              <li>
+                <b>Guarde os contatos de segurança e da ouvidoria.</b> Veja
+                <a href="#seguranca">Segurança e ouvidoria</a>.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="bolsas">
+            <h2>Bolsas e auxílios (PR7)</h2>
+            <p>
+              A Pró-Reitoria de Políticas Estudantis (PR7) oferece seis tipos de auxílio:
+              <b
+                >Alimentação, Educação Infantil, Material Didático, Moradia, Permanência e
+                Transporte</b
+              >.
+            </p>
+            <p>
+              O acesso é por processo seletivo, aberto no início de cada período. A renda familiar
+              per capita precisa ser de até 1,5 salário mínimo. Os editais ficam no site da PR7,
+              então fique de olho nas datas logo no começo do semestre.
+            </p>
+            <p>
+              <a
+                class="btn"
+                href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/"
+                target="_blank"
+                rel="noopener"
+                >Editais (PR7)</a
+              >
+              <a
+                class="btn"
+                href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/beneficios-atuais/"
+                target="_blank"
+                rel="noopener"
+                >Lista de benefícios</a
+              >
+              <a class="btn" href="arquivos/guia-pr7-calouros.pdf" download
+                >Baixar o Guia da PR7 para calouros (PDF)</a
+              >
+            </p>
+            <p>
+              Mais detalhes: <a href="#pr7-auxilios">quais são os auxílios e quanto valem</a>,
+              <a href="#pr7-como">como pedir sem cair em pegadinha</a> e
+              <a href="#pr7-apoio">outros serviços da PR7</a>.
+            </p>
+          </section>
+          <section class="topic" id="pr7-auxilios">
+            <h2>Auxílios da PR7: quais são e quanto valem</h2>
+            <p>
+              Valores da página oficial “Benefícios atuais” da UFRJ, consultada em 03/11/2026. A
+              página não informa a data da última atualização, então confirme o valor no edital.
+            </p>
+            <div class="tabela-wrap">
+              <table class="tabela">
+                <caption>
+                  Auxílios da PR7
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Auxílio</th>
+                    <th scope="col">Para quem</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Alimentação</th>
+                    <td>Refeições gratuitas nos Restaurantes Universitários.</td>
+                    <td>Refeição gratuita</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Transporte</th>
+                    <td>
+                      Cursos presenciais. A modalidade intermunicipal é para quem mora em município
+                      diferente do campus de matrícula. No BCC (campus do Fundão, no Rio), é a que
+                      interessa. As outras duas são dos campi de Caxias e de Macaé.
+                    </td>
+                    <td>Intermunicipal: R$ 456 por mês (Caxias: R$ 240; Macaé: R$ 120)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Educação Infantil</th>
+                    <td>
+                      Estudantes com dependentes com menos de 6 anos. É preciso comprovar que você é
+                      o responsável legal.
+                    </td>
+                    <td>R$ 385 por mês</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Material Didático</th>
+                    <td>Compra de material didático e pedagógico para as atividades do curso.</td>
+                    <td>R$ 300 (a página não diz a periodicidade)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Moradia</th>
+                    <td>
+                      Quem mora fora da família porque a distância impede ir e voltar todo dia e não
+                      tem vaga na Residência Estudantil. O edital diz se a modalidade é em dinheiro
+                      ou em vaga na residência.
+                    </td>
+                    <td>R$ 960 por mês</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Permanência</th>
+                    <td>
+                      Quem entrou pela cota de renda, com matrícula regular e renda per capita de até
+                      0,5 salário mínimo. Segundo o Guia da PR7 (2022), não depende de edital.
+                    </td>
+                    <td>R$ 700 por mês, conforme a disponibilidade de orçamento</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              <b>Quem pode concorrer:</b> estudantes de graduação presencial com renda familiar per
+              capita de até 1,5 salário mínimo, o limite do PNAES (Programa Nacional de Assistência
+              Estudantil). O edital pode pedir outros critérios. Os auxílios seguem a Resolução
+              Consuni nº 02/2019.
+            </p>
+            <p>
+              Fontes: página “Benefícios atuais” da UFRJ e Guia da PR7 para o calouro (PR7, 2022).
+            </p>
+          </section>
+          <section class="topic" id="pr7-como">
+            <h2>Como pedir um auxílio sem cair em pegadinha</h2>
+            <p>
+              Reunimos os avisos do Guia da PR7 para o calouro (2022). Confirme sempre no edital do
+              semestre.
+            </p>
+            <ul>
+              <li>
+                <b>Os auxílios saem em edital, em geral no começo do semestre.</b> Leia o edital
+                inteiro para entender as regras e os critérios. Acompanhe a PR7 no Instagram
+                <a href="https://www.instagram.com/pr7_ufrj/" target="_blank" rel="noopener"
+                  >@pr7_ufrj</a
+                >
+                e no site
+                <a href="http://pr7.ufrj.br/" target="_blank" rel="noopener">pr7.ufrj.br</a>
+                (endereços do Guia da PR7 de 2022).
+              </li>
+              <li>
+                <b>Tem mais gente inscrita do que vagas.</b> Por isso a PR7 faz uma análise
+                socioeconômica, e o resultado pode sair até 3 meses depois das inscrições. A
+                concessão não é imediata: não conte com o dinheiro nos primeiros meses.
+              </li>
+              <li>
+                <b>Cadastre sua conta no SIGA.</b> É responsabilidade sua. A conta precisa ser
+                <b>corrente e em seu nome</b>: não vale poupança, conta conjunta nem conta de
+                terceiros. Se der problema no cadastro, escreva para
+                <a href="mailto:portalaluno@dre.ufrj.br">portalaluno@dre.ufrj.br</a>. Mantenha seus
+                dados atualizados.
+              </li>
+              <li>
+                <b>Quem já tem graduação não entra.</b> Os auxílios do PNAES não aceitam quem tem
+                matrícula simultânea ou já concluiu curso de graduação ou de pós-graduação.
+              </li>
+              <li>
+                <b>Dá para acumular auxílios.</b> Alimentação, Transporte, Educação Infantil,
+                Material Didático, Moradia, PCD, Inclusão Digital e Permanência podem ser somados,
+                dentro dos limites do edital. O Auxílio Situações Emergenciais não pode ser somado a
+                nenhum deles.
+              </li>
+              <li>
+                <b>Olhe o e-mail e o spam todo dia.</b> O e-mail cadastrado no SIGA é o canal que a
+                PR7 usa para convocar. Veja
+                <a href="#ava-dados">Atualizar meus dados e meu e-mail</a>.
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="pr7-apoio">
+            <h2>Outros serviços da PR7</h2>
+            <p>
+              A PR7 não é só auxílio financeiro. Estes são os contatos do Guia da PR7 para o calouro
+              (2022). Se algum e-mail não responder, tente
+              <a href="mailto:atendimento@pr7.ufrj.br">atendimento@pr7.ufrj.br</a> ou o telefone
+              (21) 3733-1985, da página oficial de assistência estudantil.
+            </p>
+            <ul>
+              <li>
+                <b>Atendimento social e orientação sobre auxílios (DAE):</b>
+                <a href="mailto:dae@pr7.ufrj.br">dae@pr7.ufrj.br</a>. Cuida da seleção e do
+                acompanhamento dos auxílios financeiros.
+              </li>
+              <li>
+                <b>Saúde do estudante (DISAE):</b>
+                <a href="mailto:disae@pr7.ufrj.br">disae@pr7.ufrj.br</a>.
+              </li>
+              <li>
+                <b>Apoio pedagógico (DIPED):</b>
+                <a href="mailto:diped@pr7.ufrj.br">diped@pr7.ufrj.br</a>.
+              </li>
+              <li>
+                <b>Esporte, cultura e lazer (DECULT):</b>
+                <a href="mailto:decult@pr7.ufrj.br">decult@pr7.ufrj.br</a>.
+              </li>
+              <li>
+                <b>Residência Estudantil (DIREST):</b>
+                <a href="mailto:residencia1@pr7.ufrj.br">residencia1@pr7.ufrj.br</a>.
+              </li>
+              <li>
+                <b>Inclusão e acessibilidade (AIA):</b>
+                <a href="mailto:pr7inclusiva@pr7.ufrj.br">pr7inclusiva@pr7.ufrj.br</a>. Atua contra
+                a exclusão de pessoas LGBTQIA+, pretas, pardas e indígenas, mulheres e pessoas com
+                deficiência ou transtornos do desenvolvimento.
+              </li>
+              <li>
+                <b>Emergência financeira:</b> o Guia da PR7 (2022) descreve o Auxílio Situações
+                Emergenciais, para quem comprova extrema vulnerabilidade que impeça a permanência na
+                UFRJ. Não precisa esperar edital: peça orientação ao DAE. Vale por até 6 meses e é
+                para quem tem renda per capita de até 0,5 salário mínimo.
+              </li>
+            </ul>
+            <p>
+              A página oficial “Benefícios atuais” não lista esse auxílio, então confirme com o DAE
+              se ele continua valendo. Veja também
+              <a href="#dicas-cuide">Cuide de você</a> e <a href="#contatos">Contatos e apoio</a>.
+            </p>
+          </section>
+          <section class="topic" id="ru-guia">
+            <h2>Restaurante Universitário</h2>
+            <p>
+              A refeição custa R$ 2,00 para estudantes, com documento que comprove o vínculo.
+              Endereços, horários e como pagar estão na página <a href="campus.html#ru">Campus</a>.
+            </p>
+          </section>
+          <section class="topic" id="seguranca">
+            <h2>Segurança e ouvidoria</h2>
+            <ul>
+              <li>
+                <b>Diseg (segurança), WhatsApp da sede:</b> (21) 99871-1621 ·
+                <b>Diseg Fundão:</b> (21) 97380-2554. Use para denúncias, sugestões e dúvidas.
+              </li>
+              <li>
+                <b>Ouvidoria-Geral:</b>
+                <a href="mailto:ouvidoria@reitoria.ufrj.br">ouvidoria@reitoria.ufrj.br</a> · (21)
+                3938-1619.
+              </li>
+            </ul>
+            <p>
+              Fonte:
+              <a
+                href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/"
+                target="_blank"
+                rel="noopener"
+                >Manual do Calouro UFRJ (Conexão UFRJ, 2025)</a
+              >. Confira os números antes de usar.
+            </p>
+          </section>
+          <section class="topic" id="contatos">
+            <h2>Contatos e apoio</h2>
+            <ul>
+              <li>
+                <b>Dúvidas do Portal / SIGA:</b>
+                <a href="mailto:portalaluno@dre.ufrj.br">portalaluno@dre.ufrj.br</a>
+              </li>
+              <li><b>DRE:</b> <a href="mailto:direcao@dre.ufrj.br">direcao@dre.ufrj.br</a></li>
+              <li>
+                <b>Diplomas (PR1):</b>
+                <a href="mailto:diplomas@pr1.ufrj.br">diplomas@pr1.ufrj.br</a>
+              </li>
+              <li>
+                <b>Instituto de Computação:</b>
+                <a href="curso.html#quem-e-quem">e-mails do curso</a>
+                ·
+                <a href="https://ic.ufrj.br/info/contato/" target="_blank" rel="noopener"
+                  >contato e localização</a
+                >
+                ·
+                <a href="https://bit.ly/telegram_coord_icufrj" target="_blank" rel="noopener"
+                  >Telegram da coordenação do BCC</a
+                >
+              </li>
+              <li>
+                <b>Secretaria acadêmica do curso:</b> para disciplinas com zero vagas, sem professor
+                ou sem local, e para pedir regularizações.
+              </li>
+              <li>
+                <b>Saúde mental:</b>
+                <a
+                  href="https://conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores/"
+                  target="_blank"
+                  rel="noopener"
+                  >Guia de serviços de saúde mental na UFRJ</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="topic" id="glossario">
+            <h2>Glossário</h2>
+            <dl class="cols">
+              <dt>CRPID</dt>
+              <dd>
+                Confirmação de Registro de Pedido de Inscrição em Disciplinas: o recibo dos seus
+                pedidos. Não é uma inscrição.
+              </dd>
+              <dt>CRID</dt>
+              <dd>
+                Confirmação de Registro de Inscrição em Disciplinas: documento oficial com as
+                inscrições efetivadas.
+              </dd>
+              <dt>Crédito</dt>
+              <dd>
+                1 crédito equivale a 15 horas de aula teórica ou 30 horas de aula prática por
+                semestre.
+              </dd>
+              <dt>COA</dt>
+              <dd>Total de créditos obtidos acumulados. Pode contar na classificação de vagas.</dd>
+              <dt>CRA</dt>
+              <dd>Coeficiente de rendimento acumulado. Pode contar na classificação de vagas.</dd>
+              <dt>DRE</dt>
+              <dd>Seu número de matrícula na UFRJ.</dd>
+              <dt>CEG</dt>
+              <dd>Conselho de Ensino de Graduação.</dd>
+              <dt>COAA</dt>
+              <dd>Comissão de Orientação e Acompanhamento Acadêmico do curso.</dd>
+              <dt>RCS</dt>
+              <dd>
+                Requisito Curricular Suplementar: atividade exigida para concluir o curso que não é
+                uma disciplina (monografia, estágio, projeto etc.).
+              </dd>
+              <dt>SIGA</dt>
+              <dd>Sistema Integrado de Gestão Acadêmica: o Portal do Aluno, onde você pede disciplinas e baixa documentos.</dd>
+              <dt>IC</dt>
+              <dd>Instituto de Computação, a unidade da UFRJ que oferece o BCC.</dd>
+              <dt>CCMN</dt>
+              <dd>Centro de Ciências Matemáticas e da Natureza, o prédio do IC na Cidade Universitária.</dd>
+              <dt>CAInfo</dt>
+              <dd>Centro Acadêmico do curso, feito pelos próprios alunos.</dd>
+              <dt>PR1</dt>
+              <dd>Pró-Reitoria de Graduação: publica o calendário acadêmico.</dd>
+              <dt>PR7</dt>
+              <dd>Pró-Reitoria de Políticas Estudantis: bolsas e auxílios.</dd>
+              <dt>Pré-requisito / correquisito</dt>
+              <dd>
+                Pré-requisito: disciplina que você precisa ter cursado antes. Correquisito:
+                disciplina que precisa ser pedida junto.
+              </dd>
+            </dl>
+          </section>
+          <section class="topic" id="arquivos">
+            <h2>Arquivos e links oficiais</h2>
+            <p>
+              <a class="btn" href="arquivos/manual-siga-ufrj.pdf" download>Manual do SIGA (PDF)</a>
+              <a class="btn" href="arquivos/guia-pr7-calouros.pdf" download
+                >Guia da PR7 para calouros (PDF)</a
+              >
+              <a
+                class="btn"
+                href="https://ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf"
+                target="_blank"
+                rel="noopener"
+                >Projeto Pedagógico do BCC (PDF)</a
+              >
+              <a
+                class="btn"
+                href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/"
+                target="_blank"
+                rel="noopener"
+                >Manual do Calouro UFRJ (Conexão UFRJ)</a
+              >
+              <a class="btn" href="index.html#links">Todos os links importantes</a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 03/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="busca.js"></script>
+    <script>
+      // No celular, o índice começa fechado para não ocupar a tela.
+      if (matchMedia("(max-width:720px)").matches) document.getElementById("tocd").open = false;
+      // Abas do Guia: SIGA, UFRJ, AVA e Dicas dos veteranos. O que não está em ABAS é de SIGA.
+      const ABAS = {
+        ava: ["ava-acesso", "ava-senha", "ava-curso", "ava-dados"],
+        dicas: ["dicas-onde", "dicas-lembretes", "dicas-avisos", "dicas-semestre", "dicas-acumular", "dicas-antes", "dicas-trabalhos", "dicas-carreira", "dicas-cuide"],
+        ufrj: ["ufrj-vida", "bolsas", "pr7-auxilios", "pr7-como", "pr7-apoio", "ru-guia", "seguranca", "contatos"],
+      };
+      const lado = (id) => Object.keys(ABAS).find((k) => ABAS[k].includes(id)) || "siga";
+      let atual = "siga";
+      const busca = document.getElementById("busca"),
+        vazio = document.getElementById("vazio"),
+        tops = [...document.querySelectorAll(".topic")],
+        itens = [...document.querySelectorAll(".toc li")],
+        botoes = [...document.querySelectorAll(".abas button")];
+      // Com busca, mostra os tópicos de qualquer aba que tenham o texto; sem busca, os da aba atual.
+      function mostrar() {
+        const q = busca.value.trim();
+        let n = 0;
+        tops.forEach((t) => {
+          const ok = q ? contem(t.textContent, q) : lado(t.id) === atual;
+          t.hidden = !ok;
+          if (ok) n++;
+        });
+        itens.forEach((li) => (li.hidden = !q && lado(li.querySelector("a").hash.slice(1)) !== atual));
+        botoes.forEach((b) => b.setAttribute("aria-pressed", b.dataset.aba === atual));
+        vazio.style.display = n ? "none" : "block";
+      }
+      busca.addEventListener("input", mostrar);
+      botoes.forEach((b) =>
+        b.addEventListener("click", () => {
+          atual = b.dataset.aba;
+          busca.value = "";
+          mostrar();
+        })
+      );
+      // Link antigo de um tópico que agora está em "O curso" leva para a página nova.
+      const MOVIDOS = ["curso-bcc", "curso-estrutura", "curso-perfis", "curso-flexivel", "curso-ementas", "curso-pesquisa", "curso-aulas", "quem-e-quem", "complementares", "estagio-tcc", "curso-formatura", "cainfo", "contas", "calendario-ic"];
+      if (MOVIDOS.includes(location.hash.slice(1))) location.replace("curso.html" + location.hash);
+      // Link como guia.html#ava-acesso abre a aba certa e rola até o tópico.
+      function irPara() {
+        const el = document.getElementById(location.hash.slice(1));
+        if (!el || !el.classList.contains("topic")) return;
+        atual = lado(el.id);
+        busca.value = "";
+        mostrar();
+        el.scrollIntoView();
+      }
+      addEventListener("hashchange", irPara);
+      mostrar();
+      irPara();
+      addEventListener("load", irPara); // o navegador pode rolar para o topo ao terminar de carregar
+    </script>
+    <script>
+      // Clicar numa miniatura de vídeo troca a imagem pelo player do YouTube (versão sem cookies).
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest(".vthumb");
+        if (!b) return;
+        const f = document.createElement("iframe");
+        f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.id + "?autoplay=1";
+        f.title = b.dataset.title;
+        f.allow = "autoplay; encrypted-media; picture-in-picture";
+        f.allowFullscreen = true;
+        f.referrerPolicy = "strict-origin-when-cross-origin";
+        b.replaceWith(f);
+        f.focus();
+      });
+    </script>
+      <script src="tabelas.js"></script>
+  </body>
+</html>

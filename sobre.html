@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre — Calouro BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Link para pular o menu (acessibilidade) -->
+    <a class="skip" href="#main">Ir para o conteúdo</a>
+    <!-- Aviso: este site é um trabalho de alunos e não é oficial -->
+    <div class="draft">
+      Projeto de disciplina feito por alunos do BCC, não é um site oficial da UFRJ. Confira sempre
+      as informações nas fontes oficiais.
+    </div>
+    <!-- Topo azul: logos, menu e título da página -->
+    <div class="hero small">
+      <div class="topwrap">
+        <header class="top">
+          <div class="lockup">
+            <img
+              class="ufrj"
+              src="img/ufrj-horizontal-negativa-telas.png"
+              alt="UFRJ"
+              width="139"
+              height="84"
+            />
+            <div class="sep" aria-hidden="true"></div>
+            <span class="icbadge"
+              ><img src="img/logo-ic.svg" alt="Instituto de Computação" width="40" height="28"
+            /></span>
+            <div class="unit">Bacharelado em<br />Ciência da Computação</div>
+          </div>
+          <nav class="parts" aria-label="Partes do site">
+            <a href="index.html">Início</a><a href="guia.html">Guia</a
+            ><a href="curso.html">O curso</a><a href="disciplinas.html">Disciplinas</a
+            ><a href="campus.html">Campus</a><a href="sobre.html" aria-current="page">Sobre</a>
+          </nav>
+        </header>
+      </div>
+      <div class="in">
+        <h1>Sobre o projeto</h1>
+        <p class="lead">O que foi feito, o que usamos em cada parte e de onde veio cada material.</p>
+      </div>
+    </div>
+    <!-- Conteúdo da página -->
+    <main id="main" class="wrap">
+      <section class="topic" id="projeto">
+        <h2>O projeto</h2>
+        <p>
+          Trabalho da disciplina <b>Habilidades Sociais para o Trabalho (ICP145)</b>, do BCC/UFRJ:
+          prototipar um recurso para ajudar os calouros do curso. O grupo fez este site, que reúne o
+          que o calouro precisa saber em cada fase do semestre. Não é um site oficial da UFRJ nem do
+          Instituto de Computação.
+        </p>
+      </section>
+
+      <section class="topic" id="porque">
+        <h2>Por que fizemos este site</h2>
+        <p>
+          A UFRJ já publica muito conteúdo para quem está entrando: manuais, vídeos, páginas dos
+          institutos, calendário, mapas e avisos. O mesmo material ajuda quem já estuda aqui há mais
+          tempo. O problema é que ele está espalhado. Para saber como pedir disciplinas, quando
+          trancar, onde almoçar e qual ônibus pegar, a pessoa passa por vários sites, PDFs e canais
+          de vídeo, cada um organizado de um jeito.
+        </p>
+        <p>
+          Não faltava informação. Faltava um lugar que juntasse e colocasse em ordem o que já existe.
+          Foi esse o problema que escolhemos resolver.
+        </p>
+        <h3>Como resolvemos</h3>
+        <ul>
+          <li>
+            <b>Por momento do semestre.</b> O <a href="index.html">Início</a> divide tudo em 6 fases
+            e mostra o que fazer em cada uma, em vez de obrigar a pessoa a saber o que procurar.
+          </li>
+          <li>
+            <b>Uma busca só.</b> Ela encontra tópicos de várias páginas do site, sem precisar saber
+            em qual site da UFRJ está a resposta.
+          </li>
+          <li>
+            <b>Cada assunto num lugar só.</b> O <a href="guia.html">Guia</a> reúne SIGA, AVA,
+            documentos e bolsas. <a href="disciplinas.html">Disciplinas</a> mostra o que cada matéria
+            exige e o que libera. <a href="campus.html">Campus</a> junta ônibus, mapas, RUs e
+            bibliotecas.
+          </li>
+          <li>
+            <b>Fonte oficial sempre à mão.</b> Não criamos regras novas: o site resume e aponta para
+            o material da UFRJ, e a seção <a href="#fontes">Fontes</a> mostra de onde veio cada
+            coisa.
+          </li>
+          <li>
+            <b>Vídeos dentro do assunto.</b> Os 9 vídeos oficiais aparecem no tópico a que pertencem,
+            em vez de ficarem perdidos nos canais.
+          </li>
+          <li>
+            <b>Texto direto e feito para o celular.</b> Linguagem simples, e as tabelas viram
+            cartões na tela pequena.
+          </li>
+        </ul>
+        <p>
+          O site não substitui as páginas da UFRJ e não é oficial: é um caminho para chegar nelas
+          mais rápido. As informações mudam, por isso cada assunto aponta para a fonte.
+        </p>
+      </section>
+
+      <section class="topic" id="numeros">
+        <h2>O site em números</h2>
+        <ul class="numeros">
+          <li><b>6</b> páginas</li>
+          <li><b>48</b> tópicos (34 no Guia e 14 em O curso)</li>
+          <li><b>150</b> disciplinas do BCC</li>
+          <li><b>9</b> vídeos da UFRJ</li>
+          <li><b>66</b> links para fontes</li>
+          <li><b>16</b> testes automáticos</li>
+        </ul>
+      </section>
+
+      <section class="topic" id="estrutura">
+        <h2>Estrutura do site</h2>
+        <p>O menu e o rodapé aparecem em todas as páginas. Abaixo, o que cada página tem.</p>
+        <figure class="estrutura">
+          <a href="img/estrutura-do-site.png" target="_blank" rel="noopener">
+            <img
+              src="img/estrutura-do-site.png"
+              alt="Mapa do site: as seis páginas (Início, Guia, O curso, Disciplinas, Campus e Sobre) e as partes de cada uma, entre o cabeçalho e o rodapé comuns a todas."
+              width="1440"
+              height="647"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            Wireframe feito no
+            <a
+              href="https://www.figma.com/proto/OB16bBApcPuEbbSfHYMzXH/Calouro-BCC-UFRJ---Wireframe-do-site?node-id=5-632&amp;t=U0WhMc27zTstbilz-1"
+              target="_blank"
+              rel="noopener"
+              >Figma</a
+            >. Clique na imagem para ver em tamanho grande.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="topic" id="feito">
+        <h2>O que foi feito</h2>
+        <p>Seis páginas, cada uma com um papel:</p>
+        <ul>
+          <li>
+            <b>Início:</b> linha do tempo com as 6 fases do semestre, datas, busca e links
+            importantes, como os e-mails da secretaria com botão para copiar.
+          </li>
+          <li>
+            <b>Guia:</b> 34 tópicos com busca, em quatro abas (SIGA, UFRJ, AVA e Dicas dos
+            veteranos), com os vídeos oficiais dentro de cada assunto.
+          </li>
+          <li>
+            <b>O curso:</b> como o BCC se organiza, os seis perfis, optativas, quem é quem,
+            atividades complementares, estágio, TCC, CAInfo e e-mail do IC.
+          </li>
+          <li>
+            <b>Disciplinas:</b> as 150 matérias do BCC (38 obrigatórias e 112 optativas). Ao clicar
+            numa, mostra o que ela exige e o que libera.
+          </li>
+          <li>
+            <b>Campus:</b> ônibus internos, mapa clicável, RUs com horários e bibliotecas.
+          </li>
+          <li>
+            <b>Sobre:</b> o porquê do projeto, a estrutura, as tecnologias e as fontes.
+          </li>
+        </ul>
+      </section>
+
+      <section class="topic" id="como">
+        <h2>Como foi feito</h2>
+        <ol>
+          <li>
+            Das ideias levantadas (wiki, mapa de disciplinas, mapa do campus, linha do tempo e
+            vídeos), o grupo juntou quatro em um só site.
+          </li>
+          <li>
+            Listamos o conteúdo necessário de cada aba e pesquisamos em fontes oficiais da UFRJ.
+          </li>
+          <li>
+            Construímos o site por partes, revendo cada tela, com as cores e a fonte do guia de
+            identidade visual da UFRJ.
+          </li>
+          <li>Testamos os links e o uso no computador e no celular, e publicamos no Vercel.</li>
+        </ol>
+        <p>O site é feito em HTML, CSS e JavaScript simples, sem biblioteca de interface.</p>
+      </section>
+
+      <section class="topic" id="tecnologias">
+        <h2>O que foi usado e onde</h2>
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption>
+              Tecnologias do site, onde cada uma entrou e para que serve
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecnologia</th>
+                <th scope="col">Onde</th>
+                <th scope="col">Para quê</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HTML</th>
+                <td>As 6 páginas.</td>
+                <td>Texto, tabelas, links e a estrutura de cada tela.</td>
+              </tr>
+              <tr>
+                <th scope="row">CSS</th>
+                <td>Todas as páginas, no arquivo <code>style.css</code>.</td>
+                <td>Cores e fonte Montserrat da UFRJ, layout para computador e celular.</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript: busca</th>
+                <td>Início, Guia, O curso e Disciplinas (<code>busca.js</code>).</td>
+                <td>Busca nos tópicos, sem acento e sem diferenciar maiúscula.</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript: fases</th>
+                <td>Início (<code>fases.js</code>).</td>
+                <td>Datas de cada uma das 6 fases do semestre 2026.2.</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript: tabelas</th>
+                <td>Guia, O curso e Campus (<code>tabelas.js</code>).</td>
+                <td>No celular, cada linha da tabela vira um cartão.</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript dentro das páginas</th>
+                <td>Guia, Disciplinas, Campus e Início.</td>
+                <td>Abas do Guia, lista de disciplinas com pré-requisitos, player de vídeo e botão Copiar.</td>
+              </tr>
+              <tr>
+                <th scope="row">Leaflet e <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a></th>
+                <td>Campus.</td>
+                <td>Mapa clicável com RUs, bibliotecas e pontos de ônibus.</td>
+              </tr>
+              <tr>
+                <th scope="row">Node.js</th>
+                <td>Arquivos <code>*.test.js</code>.</td>
+                <td>16 testes automáticos da busca, das fases e das tabelas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Figma</th>
+                <td>Antes de programar, <a href="https://www.figma.com/proto/OB16bBApcPuEbbSfHYMzXH/Calouro-BCC-UFRJ---Wireframe-do-site?node-id=5-632&amp;t=U0WhMc27zTstbilz-1" target="_blank" rel="noopener">wireframe do site</a>.</td>
+                <td>Desenho da estrutura das 6 páginas.</td>
+              </tr>
+              <tr>
+                <th scope="row">Git e GitHub</th>
+                <td>Repositório do código.</td>
+                <td>Histórico de mudanças do código.</td>
+              </tr>
+              <tr>
+                <th scope="row">Vercel</th>
+                <td>Site no ar.</td>
+                <td>Publicação do site em <b>calouro-bcc-ufrj.vercel.app</b>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic" id="documentos">
+        <h2>Documentos e código</h2>
+        <p>Dois documentos em PDF mostram o conteúdo do site e como as informações foram levantadas. O código está aberto no GitHub.</p>
+        <ul>
+          <li>
+            <a href="arquivos/conteudo-do-site.pdf" download>Conteúdo do site (PDF)</a>: todos os
+            textos do site, página por página.
+          </li>
+          <li>
+            <a href="arquivos/como-levantamos-as-informacoes.pdf" download
+              >Como levantamos as informações (PDF)</a
+            >: cada item do site, de onde veio a informação e onde ele aparece.
+          </li>
+          <li>
+            <a
+              href="https://github.com/williand3v/calouro-bcc-versao-final"
+              target="_blank"
+              rel="noopener"
+              >Código do site no GitHub</a
+            >: todos os arquivos do site.
+          </li>
+        </ul>
+      </section>
+
+      <section class="topic" id="fontes">
+        <h2>Fontes</h2>
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption>
+              Materiais usados, onde cada um aparece no site e o que forneceu
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Material</th>
+                <th scope="col">Onde aparece</th>
+                <th scope="col">O que forneceu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><a href="arquivos/manual-siga-ufrj.pdf" download>Manual do Aluno "Conhecendo o SIGA"</a> (Equipe SIGA UFRJ)</th>
+                <td><a href="guia.html">Guia</a> (aba SIGA)</td>
+                <td>Fases, inscrição, CRID e documentos.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/" target="_blank" rel="noopener">Manual do Calouro UFRJ</a> (Conexão UFRJ) e <a href="arquivos/guia-pr7-calouros.pdf" download>Guia da PR7 para calouros</a></th>
+                <td><a href="guia.html">Guia</a></td>
+                <td>Bolsas, residência, RU e segurança.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://ic.ufrj.br/info/grade-curricular-bcc/" target="_blank" rel="noopener">Grade curricular do BCC</a> (Instituto de Computação)</th>
+                <td><a href="disciplinas.html">Disciplinas</a> e <a href="curso.html">O curso</a></td>
+                <td>Disciplinas, créditos e requisitos.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://prefeitura.ufrj.br/servicos/transporte-integrado/linhas-internas/" target="_blank" rel="noopener">Linhas internas</a> e <a href="https://prefeitura.ufrj.br/mapas/" target="_blank" rel="noopener">mapas</a> da Prefeitura Universitária</th>
+                <td><a href="campus.html">Campus</a></td>
+                <td>Ônibus internos e mapas.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/restaurantes-universitarios/" target="_blank" rel="noopener">Página dos RUs</a> e <a href="https://devmobufrj.github.io/BandejApp/#/Informacoes" target="_blank" rel="noopener">BandejApp</a></th>
+                <td><a href="campus.html">Campus</a></td>
+                <td>Endereços, preços e horários dos RUs.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://sibi.ufrj.br/2019/09/17/informacoes-bibliotecas-ciencias-exatas-e-da-terra/" target="_blank" rel="noopener">SiBI</a></th>
+                <td><a href="campus.html">Campus</a></td>
+                <td>Bibliotecas.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a></th>
+                <td><a href="campus.html">Campus</a> (mapa clicável)</td>
+                <td>Coordenadas dos pontos do mapa.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf" target="_blank" rel="noopener">Calendário Acadêmico 2026</a> (Conselho Universitário)</th>
+                <td><a href="index.html">Início</a> e <a href="curso.html">O curso</a></td>
+                <td>Datas das fases do semestre.</td>
+              </tr>
+              <tr>
+                <th scope="row">Vídeos dos canais Siga UFRJ, Coord. Grad. ESS (UFRJ) e Biblioteca do NCE, no YouTube</th>
+                <td><a href="guia.html">Guia</a>, <a href="campus.html">Campus</a> e <a href="index.html">Início</a></td>
+                <td>9 vídeos dentro dos assuntos.</td>
+              </tr>
+              <tr>
+                <th scope="row"><a href="https://ufrj.br/comunicacao/identidade-visual/" target="_blank" rel="noopener">Identidade visual da UFRJ</a></th>
+                <td>Todas as páginas</td>
+                <td>Logo, cor e fonte.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Fontes por aba</h3>
+        <p>A tabela acima traz as fontes principais. Aqui estão as fontes de cada aba, com os endereços.</p>
+        <div class="fontes-aba">
+          <details class="opt">
+            <summary>Início</summary>
+            <ul><li>"Conhecendo o SIGA: Manual do Aluno" (Equipe SIGA UFRJ; cópia em <a href="arquivos/manual-siga-ufrj.pdf">arquivos/manual-siga-ufrj.pdf</a>): fases, o que fazer em cada uma, regra de que no 1º período a inscrição é feita pela coordenação.</li><li>Portal do Aluno: <a href="https://portal.ufrj.br/" target="_blank" rel="noopener">portal.ufrj.br</a></li><li>Intranet (primeiro acesso): <a href="https://intranet.ufrj.br/" target="_blank" rel="noopener">intranet.ufrj.br</a></li><li>Calendário acadêmico da graduação 2026 (Conselho Universitário): <a href="https://consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf" target="_blank" rel="noopener">consuni.ufrj.br/images/Resolucoes/Calendario_academico_2026.pdf</a></li><li>Manual do Calouro UFRJ (Conexão UFRJ, 2025): <a href="https://conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade/" target="_blank" rel="noopener">conexao.ufrj.br/2025/03/manual-do-calouro-ufrj-os-primeiros-passos-para-quem-acabou-de-entrar-na-universidade</a></li><li>BandejApp (cardápio e horários dos RUs): <a href="https://devmobufrj.github.io/BandejApp/" target="_blank" rel="noopener">devmobufrj.github.io/BandejApp</a></li><li>Instagram da Equipe SIGA: <a href="https://www.instagram.com/equipesiga_ufrj/" target="_blank" rel="noopener">instagram.com/equipesiga_ufrj</a></li><li>Extensão (UFRJ): <a href="https://ufrj.br/extensao-e-sociedade/extensao/" target="_blank" rel="noopener">ufrj.br/extensao-e-sociedade/extensao</a></li><li>Bolsas e auxílios (assistência estudantil): <a href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/" target="_blank" rel="noopener">ufrj.br/ensino-e-pesquisa/assistencia-estudantil</a></li><li>Contatos do Portal, da DRE e de diplomas: e-mails do manual do SIGA (portalaluno@dre.ufrj.br, direcao@dre.ufrj.br, diplomas@pr1.ufrj.br)</li></ul>
+          </details>
+          <details class="opt">
+            <summary>Guia</summary>
+            <ul><li>Manual do Aluno do SIGA: primeiro acesso, fases, como pedir disciplinas, trocar de turma, trancar, as 16 situações de inscrição, CRPID, CRID, requerimentos, extensão, glossário, documentos.</li><li>Menu "Documentos" do Portal do Aluno e descrição do vídeo "Declarações disponíveis no SIGA UFRJ".</li><li>Bolsas e benefícios: <a href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/beneficios-atuais/" target="_blank" rel="noopener">ufrj.br/ensino-e-pesquisa/assistencia-estudantil/beneficios-atuais</a></li><li>Guia da PR7 para calouros (PDF, 2022): <a href="https://ufrj.br/wp-content/uploads/2022/04/GuiaPR7calouros.pdf" target="_blank" rel="noopener">ufrj.br/wp-content/uploads/2022/04/GuiaPR7calouros.pdf</a> (cópia em <a href="arquivos/guia-pr7-calouros.pdf">arquivos/guia-pr7-calouros.pdf</a>)</li><li>Restaurantes Universitários: <a href="https://ufrj.br/ensino-e-pesquisa/assistencia-estudantil/restaurantes-universitarios/" target="_blank" rel="noopener">ufrj.br/ensino-e-pesquisa/assistencia-estudantil/restaurantes-universitarios</a></li><li>Segurança (Diseg) e Ouvidoria, aplicativo do Portal: Manual do Calouro UFRJ (Conexão, 2025), link acima.</li><li>Contatos do Instituto de Computação: <a href="https://ic.ufrj.br/info/contato/" target="_blank" rel="noopener">ic.ufrj.br/info/contato</a> e <a href="https://ic.ufrj.br/info/sobre-o-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/sobre-o-bcc</a></li><li>Telegram da coordenação do BCC (citado na página do IC): <a href="https://bit.ly/telegram_coord_icufrj" target="_blank" rel="noopener">bit.ly/telegram_coord_icufrj</a></li><li>Aplicativo Portal Aluno UFRJ (Android): <a href="https://play.google.com/store/apps/details?id=br.ufrj.gnosys.mobile&amp;hl=pt_BR" target="_blank" rel="noopener">play.google.com/store/apps/details?id=br.ufrj.gnosys.mobile&amp;hl=pt_BR</a></li><li>Guia de serviços de saúde mental (Conexão UFRJ): <a href="https://conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores/" target="_blank" rel="noopener">conexao.ufrj.br/2025/01/janeiro-branco-guia-de-servicos-de-saude-mental-na-ufrj-para-estudantes-e-servidores</a></li><li>Seções "O curso de BCC", "Quem é quem", "Atividades complementares", "Estágio, monitoria, TCC e intercâmbio", "Centro Acadêmico" e "Datas do período no IC":<ul><li>Sobre o BCC: <a href="https://ic.ufrj.br/info/sobre-o-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/sobre-o-bcc</a></li><li>Estrutura administrativa e e-mails: <a href="https://ic.ufrj.br/info/estrutura-administrativa/" target="_blank" rel="noopener">ic.ufrj.br/info/estrutura-administrativa</a></li><li>Atividades complementares: <a href="https://ic.ufrj.br/info/atividades-complementares-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/atividades-complementares-bcc</a></li><li>Estágio: <a href="https://ic.ufrj.br/info/normas-estagio-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/normas-estagio-bcc</a></li><li>TCC: <a href="https://ic.ufrj.br/info/tcc-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/tcc-bcc</a></li><li>Intercâmbio: <a href="https://ic.ufrj.br/info/intercambio-internacional/" target="_blank" rel="noopener">ic.ufrj.br/info/intercambio-internacional</a></li><li>Formulários: <a href="https://ic.ufrj.br/info/formularios-graduacao/" target="_blank" rel="noopener">ic.ufrj.br/info/formularios-graduacao</a></li><li>Monitoria: <a href="https://www.dcc.ufrj.br/~monitoriadcc/" target="_blank" rel="noopener">dcc.ufrj.br/~monitoriadcc</a></li><li>CAInfo: <a href="https://ic.ufrj.br/info/cainfo/" target="_blank" rel="noopener">ic.ufrj.br/info/cainfo</a></li><li>E-mail do IC e laboratórios: <a href="https://ic.ufrj.br/info/lci/" target="_blank" rel="noopener">ic.ufrj.br/info/lci</a> e <a href="https://ic.ufrj.br/info/cadastro/" target="_blank" rel="noopener">ic.ufrj.br/info/cadastro</a></li><li>AVA @ NCE (endereço e FAQ do usuário): <a href="https://ambientevirtual.nce.ufrj.br" target="_blank" rel="noopener">ambientevirtual.nce.ufrj.br</a> e <a href="https://ava.ufrj.br" target="_blank" rel="noopener">ava.ufrj.br</a> (aviso da mudança de endereço de 01/02/2026); FAQ do usuário: <a href="https://ambientevirtual.nce.ufrj.br/admin/tool/policy/view.php?versionid=2" target="_blank" rel="noopener">ambientevirtual.nce.ufrj.br/admin/tool/policy/view.php?versionid=2</a>; Intranet: <a href="https://intranet.ufrj.br" target="_blank" rel="noopener">intranet.ufrj.br</a></li><li>Calendário do IC: <a href="https://ic.ufrj.br/info/calendario-academico/" target="_blank" rel="noopener">ic.ufrj.br/info/calendario-academico</a></li><li>Colação de grau e diploma digital: <a href="https://ic.ufrj.br/info/colacao-de-grau-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/colacao-de-grau-bcc</a></li><li>Perfis, optativas, pesquisa, infraestrutura e estágio no PPC: <a href="https://ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf" target="_blank" rel="noopener">ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf</a></li><li>Programa de Estágio (em vigor desde 2025.1): <a href="https://ic.ufrj.br/estagio/estagio2025.pdf" target="_blank" rel="noopener">ic.ufrj.br/estagio/estagio2025.pdf</a></li><li>Ementas (repositório de currículos do SIGA): <a href="https://siga.ufrj.br/sira/repositorio-curriculo/ListaCursos.html" target="_blank" rel="noopener">siga.ufrj.br/sira/repositorio-curriculo/ListaCursos.html</a> (caminho descrito em <a href="https://ic.ufrj.br/info/formas-de-acesso-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/formas-de-acesso-bcc</a>)</li></ul></li></ul>
+          </details>
+          <details class="opt">
+            <summary>Disciplinas</summary>
+            <ul><li>Grade curricular do BCC (Instituto de Computação): <a href="https://ic.ufrj.br/info/grade-curricular-bcc/" target="_blank" rel="noopener">ic.ufrj.br/info/grade-curricular-bcc</a><ul><li>As 11 tabelas da página (9 períodos obrigatórios, optativas de escolha restrita e de escolha condicionada) foram lidas direto do HTML. São 150 disciplinas com código, nome, créditos, carga horária e requisitos.</li></ul></li><li>Projeto Pedagógico do BCC 2022 (PDF): <a href="https://ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf" target="_blank" rel="noopener">ic.ufrj.br/graduacao/Projeto-Pedag%C3%B3gico-BCC-2022.pdf</a></li></ul>
+          </details>
+          <details class="opt">
+            <summary>Campus</summary>
+            <ul><li>Linhas de ônibus internos (Prefeitura Universitária): <a href="https://prefeitura.ufrj.br/servicos/transporte-integrado/linhas-internas/" target="_blank" rel="noopener">prefeitura.ufrj.br/servicos/transporte-integrado/linhas-internas</a> (linhas 1 a 6, horários e itinerários)</li><li>Mapa oficial da Cidade Universitária (Prefeitura Universitária): <a href="https://prefeitura.ufrj.br/mapas/" target="_blank" rel="noopener">prefeitura.ufrj.br/mapas</a>. Arquivo usado: <a href="https://prefeitura.ufrj.br/wp-content/uploads/2023/07/MAPA-1_CIDUNI_B.png" target="_blank" rel="noopener">prefeitura.ufrj.br/wp-content/uploads/2023/07/MAPA-1_CIDUNI_B.png</a> (781 × 768 px), copiado para <code>img/mapa-cidade-universitaria.png</code></li><li>Mapa clicável: mapas e posições do OpenStreetMap (<a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">openstreetmap.org</a>), consultados pela API Overpass. Pontos: CCMN, parada CT/CCMN, RU Central, RU CT, RU2 CT, RU Letras, Estação de Integração UFRJ</li><li>Endereço e telefones do IC: <a href="https://ic.ufrj.br/info/contato/" target="_blank" rel="noopener">ic.ufrj.br/info/contato</a></li><li>Restaurantes Universitários: página da UFRJ (endereços e preço de R$ 2,00 para estudantes), página das unidades em ru.ufrj.br (endereço e telefones do RU Central) e o BandejApp: <a href="https://devmobufrj.github.io/BandejApp/#/Informacoes" target="_blank" rel="noopener">devmobufrj.github.io/BandejApp/#/Informacoes</a> (horários e pagamento)</li><li>Bibliotecas (SiBI): <a href="https://sibi.ufrj.br/2019/09/17/informacoes-bibliotecas-ciencias-exatas-e-da-terra/" target="_blank" rel="noopener">sibi.ufrj.br/2019/09/17/informacoes-bibliotecas-ciencias-exatas-e-da-terra</a> e catálogo Minerva: <a href="https://minerva.ufrj.br/F?RN=139388233" target="_blank" rel="noopener">minerva.ufrj.br/F?RN=139388233</a></li><li>Como chegar de ônibus da cidade: Moovit (<a href="https://moovitapp.com/" target="_blank" rel="noopener">moovitapp.com</a>), com a informação do grupo de que alguns ônibus deixam em frente ao CCMN</li></ul>
+          </details>
+          <details class="opt">
+            <summary>Vídeos</summary>
+            <ul><li>Como acessar o SIGA UFRJ pela primeira vez (Coord. Grad. ESS (UFRJ)): <a href="https://www.youtube.com/watch?v=wdaMdkM_VzQ" target="_blank" rel="noopener">youtube.com/watch?v=wdaMdkM_VzQ</a></li><li>Inscrição em disciplinas SIGA (Coord. Grad. ESS (UFRJ)): <a href="https://www.youtube.com/watch?v=2Hf1rl2NLTQ" target="_blank" rel="noopener">youtube.com/watch?v=2Hf1rl2NLTQ</a></li><li>Declarações disponíveis no SIGA UFRJ (Coord. Grad. ESS (UFRJ)): <a href="https://www.youtube.com/watch?v=TZuzWzHR7MA" target="_blank" rel="noopener">youtube.com/watch?v=TZuzWzHR7MA</a></li><li>Introdução (Mitos da Inscrição UFRJ) (Siga UFRJ): <a href="https://www.youtube.com/watch?v=e8JIVSuytI8" target="_blank" rel="noopener">youtube.com/watch?v=e8JIVSuytI8</a></li><li>Corre que a inscrição abriu! (Siga UFRJ): <a href="https://www.youtube.com/watch?v=J0uClBvRVgM" target="_blank" rel="noopener">youtube.com/watch?v=J0uClBvRVgM</a></li><li>Cadê a matéria? Sumiu! (Siga UFRJ): <a href="https://www.youtube.com/watch?v=rFjjtzWLWvw" target="_blank" rel="noopener">youtube.com/watch?v=rFjjtzWLWvw</a></li><li>O sistema me expulsou! (Siga UFRJ): <a href="https://www.youtube.com/watch?v=lmmKln95Utc" target="_blank" rel="noopener">youtube.com/watch?v=lmmKln95Utc</a></li><li>O que é CRID e CRPID? (Siga UFRJ): <a href="https://www.youtube.com/watch?v=4uNDXCFzWyo" target="_blank" rel="noopener">youtube.com/watch?v=4uNDXCFzWyo</a></li><li>Boas-vindas, Biblioteca do NCE/UFRJ 2023: Calouros de Ciência da Computação (Biblioteca do NCE): <a href="https://www.youtube.com/watch?v=Z3XFYhk-xbU" target="_blank" rel="noopener">youtube.com/watch?v=Z3XFYhk-xbU</a></li></ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="topic" id="limites">
+        <h2>Avisos</h2>
+        <ul>
+          <li>
+            As informações foram pesquisadas em <b>outubro de 2026</b> e mudam. Confira sempre nas
+            fontes oficiais.
+          </li>
+          <li>
+            O currículo que vale para você depende do seu ano de ingresso. A grade do site é a de
+            2022.
+          </li>
+                  </ul>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="foot">
+      <div class="in foot3">
+        <p class="fl">
+          Fontes: Manual do Aluno (Equipe SIGA UFRJ), site do Instituto de Computação e Prefeitura
+          Universitária. O calendário acadêmico (datas) é publicado pela PR1.
+          <br />Última atualização: 04/11/2026.
+          Achou um erro?
+          <a href="https://github.com/williand3v/calouro-bcc-versao-final/issues/new" target="_blank" rel="noopener">Avise aqui</a>.
+        </p>
+        <img
+          src="img/ufrj-horizontal-negativa-telas.png"
+          alt="UFRJ"
+          width="139"
+          height="84"
+          loading="lazy"
+        />
+        <p class="fr">
+          <b
+            >Projeto de disciplina (Habilidades Sociais para o Trabalho), feito por alunos do BCC.
+            Não é um site oficial da UFRJ nem do Instituto de Computação.</b
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="tabelas.js"></script>
+  </body>
+</html>
